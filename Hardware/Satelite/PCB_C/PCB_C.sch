@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:PCB_C-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -1044,8 +1044,6 @@ Wire Wire Line
 	12900 900  12900 850 
 Text Label 15100 2200 0    50   ~ 0
 GPOUT
-Text Label 15100 1700 0    50   ~ 0
-ISET
 Text Label 15100 1800 0    50   ~ 0
 CHG
 $Comp
@@ -1160,8 +1158,6 @@ Wire Wire Line
 	15000 2000 15400 2000
 Wire Wire Line
 	15000 2100 15400 2100
-Wire Wire Line
-	15000 1700 15400 1700
 Wire Wire Line
 	15000 1800 15400 1800
 Wire Wire Line
@@ -1418,8 +1414,6 @@ Text Label 7900 1850 2    50   ~ 0
 P1
 Text Label 5400 1950 0    50   ~ 0
 CHG
-Text Label 7900 2150 2    50   ~ 0
-ISET
 Text Label 7900 2250 2    50   ~ 0
 SDO
 Text Label 7900 2350 2    50   ~ 0
@@ -1564,8 +1558,6 @@ Wire Wire Line
 Wire Wire Line
 	10250 2200 10250 2300
 Connection ~ 10100 2200
-Wire Wire Line
-	7250 2150 7900 2150
 $Comp
 L power:GND #PWR047
 U 1 1 5D119944
@@ -1687,18 +1679,6 @@ Wire Wire Line
 	8650 7250 9250 7250
 Wire Wire Line
 	8150 7350 7750 7350
-$Comp
-L PCB_C-rescue:ESP32-WROOM-32-RF_Module U3
-U 1 1 5D74DFF0
-P 6650 2850
-F 0 "U3" H 5900 4350 50  0000 C CNN
-F 1 "ESP32-WROOM-32" H 6200 4250 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 6650 1350 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 6350 2900 50  0001 C CNN
-F 4 "ESP32-WROOM-32" H 6650 2850 50  0001 C CNN "Manufacturer Part Number"
-	1    6650 2850
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR017
 U 1 1 5D74E6B0
@@ -2466,4 +2446,15 @@ D2 F7 FD DA 6B 00 00 60 22 3B 71 00 00 09 09 71 00 00 09 09 71 00 00 09 09 71 00
 09 71 00 00 09 FD 17 3C 6D 9D 90 5F F2 D3 C3 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L RF_Module:ESP32-WROOM-32 U?
+U 1 1 5D11D3F2
+P 6650 2850
+F 0 "U?" H 7050 4350 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 7050 4250 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 6650 1350 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 6350 2900 50  0001 C CNN
+	1    6650 2850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
