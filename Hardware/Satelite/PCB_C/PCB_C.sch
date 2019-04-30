@@ -2332,13 +2332,14 @@ D2 F7 FD DA 6B 00 00 60 22 3B 71 00 00 09 09 71 00 00 09 09 71 00 00 09 09 71 00
 EndData
 $EndBitmap
 $Comp
-L RF_Module:ESP32-WROOM-32 U?
-U 1 1 5D11D3F2
+L RF_Module:ESP32-WROOM-32U U?
+U 1 1 5CCE43C3
 P 6650 2850
 F 0 "U?" H 7050 4350 50  0000 C CNN
-F 1 "ESP32-WROOM-32" H 7050 4250 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 6650 1350 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 6350 2900 50  0001 C CNN
+F 1 "ESP32-WROOM-32U" H 7050 4250 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32U" H 6650 1350 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 6350 2900 50  0001 C CNN
+F 4 "ESP32-WROOM-32U" H 6650 2850 50  0001 C CNN "Manufacturer Part Number"
 	1    6650 2850
 	1    0    0    -1  
 $EndComp
