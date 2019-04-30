@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:PCB_E-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -502,7 +502,7 @@ Wire Wire Line
 Text Label 9650 4700 0    50   ~ 0
 IO6
 $Comp
-L AXTEC_IC:MH_CanSat MH1
+L PCB_E-rescue:MH_CanSat-AXTEC_IC MH1
 U 1 1 5BC69FBC
 P 5250 4650
 F 0 "MH1" H 5528 4765 50  0000 L CNN
@@ -568,38 +568,38 @@ Connection ~ 8050 2150
 Wire Wire Line
 	8050 2150 8050 2250
 $Comp
-L AXTEC_IC:Spacer M1
+L PCB_E-rescue:Spacer-AXTEC_IC M1
 U 1 1 5C332544
 P 4400 5450
 F 0 "M1" H 4479 5443 50  0000 L CNN
 F 1 "Spacer" H 4479 5351 50  0000 L CNN
 F 2 "AXTEC:Empty_Footprint" H 4300 5600 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 4400 5700 50  0001 C CNN
-F 4 "R30-3011002" H 4479 5305 50  0001 L CNN "Manufacturer Part Number"
+F 4 "R30-3011202" H 4479 5305 50  0001 L CNN "Manufacturer Part Number"
 	1    4400 5450
 	1    0    0    -1  
 $EndComp
 $Comp
-L AXTEC_IC:Spacer M2
+L PCB_E-rescue:Spacer-AXTEC_IC M2
 U 1 1 5C332635
 P 5250 5450
 F 0 "M2" H 5329 5443 50  0000 L CNN
 F 1 "Spacer" H 5329 5351 50  0000 L CNN
 F 2 "AXTEC:Empty_Footprint" H 5150 5600 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 5250 5700 50  0001 C CNN
-F 4 "R30-3011002" H 5329 5305 50  0001 L CNN "Manufacturer Part Number"
+F 4 "R30-3011202" H 5329 5305 50  0001 L CNN "Manufacturer Part Number"
 	1    5250 5450
 	1    0    0    -1  
 $EndComp
 $Comp
-L AXTEC_IC:Spacer M3
+L PCB_E-rescue:Spacer-AXTEC_IC M3
 U 1 1 5C332687
 P 6000 5450
 F 0 "M3" H 6079 5443 50  0000 L CNN
 F 1 "Spacer" H 6079 5351 50  0000 L CNN
 F 2 "AXTEC:Empty_Footprint" H 5900 5600 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 6000 5700 50  0001 C CNN
-F 4 "R30-3011002" H 6079 5305 50  0001 L CNN "Manufacturer Part Number"
+F 4 "R30-3011202" H 6079 5305 50  0001 L CNN "Manufacturer Part Number"
 	1    6000 5450
 	1    0    0    -1  
 $EndComp
@@ -648,7 +648,7 @@ F 3 "~" H 5750 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AXTEC_IC:Conector_Expansion_CanSat J12
+L PCB_E-rescue:Conector_Expansion_CanSat-AXTEC_IC J12
 U 1 1 5C26BB39
 P 8750 2100
 F 0 "J12" H 9143 2965 50  0000 C CNN

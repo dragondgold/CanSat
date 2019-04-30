@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# FT231XS-Interface_USB-PCB_D-rescue
+# FT231XS-Interface_USB-PCB_D-rescue-PCB_D-rescue
 #
-DEF FT231XS-Interface_USB-PCB_D-rescue U 0 40 Y Y 1 F N
+DEF FT231XS-Interface_USB-PCB_D-rescue-PCB_D-rescue U 0 40 Y Y 1 F N
 F0 "U" -550 800 50 H V L CNN
-F1 "FT231XS-Interface_USB-PCB_D-rescue" 300 800 50 H V L CNN
+F1 "FT231XS-Interface_USB-PCB_D-rescue-PCB_D-rescue" 300 800 50 H V L CNN
 F2 "Package_SO:SSOP-20_3.9x8.7mm_P0.635mm" 600 -950 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST

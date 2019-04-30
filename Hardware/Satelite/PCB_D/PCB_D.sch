@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:PCB_D-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -926,7 +926,7 @@ F 0 "M1" H 4829 1543 50  0000 L CNN
 F 1 "Spacer" H 4829 1451 50  0000 L CNN
 F 2 "AXTEC:Empty_Footprint" H 4650 1700 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 4750 1800 50  0001 C CNN
-F 4 "R30-3011002" H 4829 1405 50  0001 L CNN "Manufacturer Part Number"
+F 4 "R30-3011202" H 4829 1405 50  0001 L CNN "Manufacturer Part Number"
 	1    4750 1550
 	1    0    0    -1  
 $EndComp
@@ -938,7 +938,7 @@ F 0 "M2" H 5379 1543 50  0000 L CNN
 F 1 "Spacer" H 5379 1451 50  0000 L CNN
 F 2 "AXTEC:Empty_Footprint" H 5200 1700 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 5300 1800 50  0001 C CNN
-F 4 "R30-3011002" H 5379 1405 50  0001 L CNN "Manufacturer Part Number"
+F 4 "R30-3011202" H 5379 1405 50  0001 L CNN "Manufacturer Part Number"
 	1    5300 1550
 	1    0    0    -1  
 $EndComp
@@ -950,7 +950,7 @@ F 0 "M3" H 5929 1543 50  0000 L CNN
 F 1 "Spacer" H 5929 1451 50  0000 L CNN
 F 2 "AXTEC:Empty_Footprint" H 5750 1700 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 5850 1800 50  0001 C CNN
-F 4 "R30-3011002" H 5929 1405 50  0001 L CNN "Manufacturer Part Number"
+F 4 "R30-3011202" H 5929 1405 50  0001 L CNN "Manufacturer Part Number"
 	1    5850 1550
 	1    0    0    -1  
 $EndComp
@@ -1263,7 +1263,7 @@ Wire Wire Line
 Wire Wire Line
 	9750 2800 9850 2800
 $Comp
-L PCB_D-rescue:FT231XS-Interface_USB-PCB_D-rescue U3
+L PCB_D-rescue:FT231XS-Interface_USB-PCB_D-rescue-PCB_D-rescue U3
 U 1 1 5C33DAA5
 P 8750 3000
 F 0 "U3" H 9250 3900 50  0000 C CNN
