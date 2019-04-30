@@ -968,8 +968,8 @@ F 0 "J3" H 15300 2250 50  0000 C CNN
 F 1 "Conector_PCB_B-C" H 15600 2150 50  0000 C CNN
 F 2 "AXTEC:Conector_PCB_B-C_Lado_C" H 14150 2200 50  0001 C CNN
 F 3 "" H 14150 2200 50  0001 C CNN
-F 4 "Hecho con dos 10132797-025100LF y sus dos opuestos 10132798-022100LF" H 0   -150 50  0001 C CNN "Notes"
-F 5 "10132797-025100LF" H 14250 1450 50  0001 C CNN "Manufacturer Part Number"
+F 4 "Hecho con dos 53307-2071 y sus dos opuestos 52465-2071" H 0   -150 50  0001 C CNN "Notes"
+F 5 "53307-2071" H 14250 1450 50  0001 C CNN "Manufacturer Part Number"
 F 6 "2" H 14250 1450 50  0001 C CNN "Quantity"
 	1    14250 1450
 	1    0    0    -1  

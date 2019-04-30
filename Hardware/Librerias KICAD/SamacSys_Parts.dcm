@@ -151,4 +151,10 @@ K
 F https://www.diodes.com/assets/Datasheets/AP9211.pdf
 $ENDCMP
 #
+$CMP 52465-2071
+D Molex 0.8mm 20 Way 2 Row Straight PCB Socket Surface Mount Board to Board
+K
+F https://www.molex.com/molex/products/datasheet.jsp?part=active/0524652071_PCB_RECEPTACLES.xml
+$ENDCMP
+#
 #End Doc Library
