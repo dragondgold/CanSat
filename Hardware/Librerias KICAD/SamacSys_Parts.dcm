@@ -145,4 +145,10 @@ K
 F http://www.ti.com/lit/gpn/bq21040
 $ENDCMP
 #
+$CMP AP9211SA-AC-HAC-7
+D Battery Management Multicell Batt MGR PMIC Protection Int
+K
+F https://www.diodes.com/assets/Datasheets/AP9211.pdf
+$ENDCMP
+#
 #End Doc Library

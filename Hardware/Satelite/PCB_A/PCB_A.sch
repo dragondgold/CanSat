@@ -81,57 +81,6 @@ F5 "SI" I R 1600 3550 50
 F6 "CS" O R 1600 3350 50 
 $EndSheet
 $Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 5BAE15D7
-P 3100 1400
-F 0 "J1" H 3050 1500 50  0000 L CNN
-F 1 "Batería LiPo (Soldada)" H 2650 1150 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3100 1400 50  0001 C CNN
-F 3 "~" H 3100 1400 50  0001 C CNN
-	1    3100 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 5BAE1DFC
-P 2600 1700
-F 0 "#PWR05" H 2600 1450 50  0001 C CNN
-F 1 "GND" H 2605 1527 50  0000 C CNN
-F 2 "" H 2600 1700 50  0001 C CNN
-F 3 "" H 2600 1700 50  0001 C CNN
-	1    2600 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 1500 2600 1700
-$Comp
-L SamacSys_Parts:SSM3J338R,LF Q1
-U 1 1 5BAE3EF9
-P 1750 1700
-F 0 "Q1" V 2317 1800 50  0000 C CNN
-F 1 "SSM3J338R,LF" V 2226 1800 50  0000 C CNN
-F 2 "SamacSys_Parts:SSM3J332RLFT" H 2200 1650 50  0001 L CNN
-F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30384&prodName=SSM3J338R" H 2200 1550 50  0001 L CNN
-F 4 "MOSFET Small-signal MOSFET Vdss= -12V, ID= -6A" H 2200 1450 50  0001 L CNN "Description"
-F 5 "Toshiba" H 2200 1250 50  0001 L CNN "Manufacturer_Name"
-F 6 "SSM3J338R,LF" H 2200 1150 50  0001 L CNN "Manufacturer Part Number"
-F 7 "SSM3J338R,LF" H 2200 850 50  0001 L CNN "Arrow Part Number"
-F 8 "https://www.arrow.com/en/products/ssm3j338rlf/toshiba" H 2200 750 50  0001 L CNN "Arrow Price/Stock"
-	1    1750 1700
-	0    1    -1   0   
-$EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 5BAE63D7
-P 1750 1700
-F 0 "#PWR03" H 1750 1450 50  0001 C CNN
-F 1 "GND" H 1755 1527 50  0000 C CNN
-F 2 "" H 1750 1700 50  0001 C CNN
-F 3 "" H 1750 1700 50  0001 C CNN
-	1    1750 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR012
 U 1 1 5BAE96AC
 P 8250 5250
@@ -167,63 +116,12 @@ Text Label 8050 5900 1    50   ~ 0
 S_GLOBO
 Text Label 9650 2650 2    50   ~ 0
 P1
-$Comp
-L Device:C_Small C?
-U 1 1 5BB16517
-P 1350 1550
-AR Path="/5BA17F9C/5BB16517" Ref="C?"  Part="1" 
-AR Path="/5BA1A7F9/5BB16517" Ref="C?"  Part="1" 
-AR Path="/5BA1A77A/5BB16517" Ref="C?"  Part="1" 
-AR Path="/5BB16517" Ref="C1"  Part="1" 
-F 0 "C1" H 1450 1550 50  0000 L CNN
-F 1 "1uF" H 1450 1450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1350 1550 50  0001 C CNN
-F 3 "~" H 1350 1550 50  0001 C CNN
-F 4 "LMK107B7105MA-T" H 1350 1550 50  0001 C CNN "Manufacturer Part Number"
-F 5 "10V" H 1350 1550 50  0001 C CNN "Voltage"
-F 6 "X7R" H 1350 1550 50  0001 C CNN "Dielectric"
-	1    1350 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 1400 1350 1400
-Wire Wire Line
-	1350 1400 1350 1450
-$Comp
-L power:GND #PWR02
-U 1 1 5BB18143
-P 1350 1700
-F 0 "#PWR02" H 1350 1450 50  0001 C CNN
-F 1 "GND" H 1355 1527 50  0000 C CNN
-F 2 "" H 1350 1700 50  0001 C CNN
-F 3 "" H 1350 1700 50  0001 C CNN
-	1    1350 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 1650 1350 1700
-Connection ~ 1350 1400
 Text Label 7300 3450 0    50   ~ 0
 CS
 Wire Wire Line
 	1600 3350 2350 3350
 Text Label 2000 3350 0    50   ~ 0
 CS
-$Comp
-L power:+BATT #PWR01
-U 1 1 5BC12477
-P 1000 1200
-F 0 "#PWR01" H 1000 1050 50  0001 C CNN
-F 1 "+BATT" H 1014 1375 50  0000 C CNN
-F 2 "" H 1000 1200 50  0001 C CNN
-F 3 "" H 1000 1200 50  0001 C CNN
-	1    1000 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1000 1200 1000 1400
-Wire Wire Line
-	1000 1400 1350 1400
 $Comp
 L power:+BATT #PWR07
 U 1 1 5BC131BC
@@ -297,8 +195,8 @@ Wire Notes Line
 Wire Notes Line
 	11100 550  11100 3750
 Wire Notes Line
-	700  2350 3600 2350
-Text Notes 1050 900  0    157  ~ 0
+	700  2350 4100 2350
+Text Notes 1400 850  0    157  ~ 0
 Conector Bateria\n
 Wire Notes Line
 	700  2400 3600 2400
@@ -536,24 +434,6 @@ F 4 "R30-3011002" H 3079 7055 50  0001 L CNN "Manufacturer Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Polyfuse F1
-U 1 1 5C662BCD
-P 2650 1400
-F 0 "F1" V 2423 1400 50  0000 C CNN
-F 1 "Polyfuse" V 2515 1400 50  0000 C CNN
-F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 2700 1200 50  0001 L CNN
-F 3 "~" H 2650 1400 50  0001 C CNN
-F 4 "0ZCG0150FF2C" V 2650 1400 50  0001 C CNN "Manufacturer Part Number"
-	1    2650 1400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2150 1400 2500 1400
-Wire Wire Line
-	2800 1400 2900 1400
-Wire Wire Line
-	2600 1500 2900 1500
-$Comp
 L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 5C33AF12
 P 5250 7150
@@ -567,12 +447,12 @@ $EndComp
 $Comp
 L power:+BATT #PWR014
 U 1 1 5C2D3F1A
-P 4600 1150
-F 0 "#PWR014" H 4600 1000 50  0001 C CNN
-F 1 "+BATT" H 4614 1325 50  0000 C CNN
-F 2 "" H 4600 1150 50  0001 C CNN
-F 3 "" H 4600 1150 50  0001 C CNN
-	1    4600 1150
+P 5050 1100
+F 0 "#PWR014" H 5050 950 50  0001 C CNN
+F 1 "+BATT" H 5064 1275 50  0000 C CNN
+F 2 "" H 5050 1100 50  0001 C CNN
+F 3 "" H 5050 1100 50  0001 C CNN
+	1    5050 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -660,93 +540,93 @@ SCLK
 $Comp
 L Connector:TestPoint_Probe TP2
 U 1 1 5C2DEC1A
-P 4600 1450
-F 0 "TP2" H 5350 1600 50  0000 R CNN
-F 1 "TestPoint_GPSTX" H 5350 1500 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4800 1450 50  0001 C CNN
-F 3 "~" H 4800 1450 50  0001 C CNN
-	1    4600 1450
+P 5050 1400
+F 0 "TP2" H 5800 1550 50  0000 R CNN
+F 1 "TestPoint_GPSTX" H 5800 1450 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5250 1400 50  0001 C CNN
+F 3 "~" H 5250 1400 50  0001 C CNN
+	1    5050 1400
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 1450 4900 1450
-Text Label 4700 1450 0    50   ~ 0
+	5050 1400 5350 1400
+Text Label 5150 1400 0    50   ~ 0
 GPS_TX
 $Comp
 L Connector:TestPoint_Probe TP3
 U 1 1 5C2E59E7
-P 4600 1650
-F 0 "TP3" H 5350 1800 50  0000 R CNN
-F 1 "TestPoint_P1" H 5350 1700 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4800 1650 50  0001 C CNN
-F 3 "~" H 4800 1650 50  0001 C CNN
-	1    4600 1650
+P 5050 1600
+F 0 "TP3" H 5800 1750 50  0000 R CNN
+F 1 "TestPoint_P1" H 5800 1650 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5250 1600 50  0001 C CNN
+F 3 "~" H 5250 1600 50  0001 C CNN
+	1    5050 1600
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 1650 4900 1650
-Text Label 4700 1650 0    50   ~ 0
+	5050 1600 5350 1600
+Text Label 5150 1600 0    50   ~ 0
 P1
 $Comp
 L Connector:TestPoint_Probe TP4
 U 1 1 5C2E7A24
-P 4600 1850
-F 0 "TP4" H 5350 2000 50  0000 R CNN
-F 1 "TestPoint_P1" H 5350 1900 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4800 1850 50  0001 C CNN
-F 3 "~" H 4800 1850 50  0001 C CNN
-	1    4600 1850
+P 5050 1800
+F 0 "TP4" H 5800 1950 50  0000 R CNN
+F 1 "TestPoint_P1" H 5800 1850 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5250 1800 50  0001 C CNN
+F 3 "~" H 5250 1800 50  0001 C CNN
+	1    5050 1800
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 1850 4900 1850
+	5050 1800 5350 1800
 $Comp
 L Connector:TestPoint_Probe TP5
 U 1 1 5C2E94B0
-P 4600 2050
-F 0 "TP5" H 5350 2200 50  0000 R CNN
-F 1 "TestPoint_P1" H 5350 2100 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4800 2050 50  0001 C CNN
-F 3 "~" H 4800 2050 50  0001 C CNN
-	1    4600 2050
+P 5050 2000
+F 0 "TP5" H 5800 2150 50  0000 R CNN
+F 1 "TestPoint_P1" H 5800 2050 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5250 2000 50  0001 C CNN
+F 3 "~" H 5250 2000 50  0001 C CNN
+	1    5050 2000
 	-1   0    0    -1  
 $EndComp
-Text Label 4650 1850 0    50   ~ 0
+Text Label 5100 1800 0    50   ~ 0
 S_GLOBO
-Text Label 5150 2050 2    50   ~ 0
+Text Label 5600 2000 2    50   ~ 0
 S_PARACAIDAS
 Wire Wire Line
-	4600 2050 5150 2050
+	5050 2000 5600 2000
 Wire Wire Line
 	5950 2050 5950 2000
 Wire Wire Line
-	4600 1150 4600 1250
+	5050 1100 5050 1200
 $Comp
 L Connector:TestPoint_Probe TP1
 U 1 1 5C2FCED2
-P 4600 1250
-F 0 "TP1" H 5350 1400 50  0000 R CNN
-F 1 "TestPoint_BATT" H 5350 1300 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4800 1250 50  0001 C CNN
-F 3 "~" H 4800 1250 50  0001 C CNN
-	1    4600 1250
+P 5050 1200
+F 0 "TP1" H 5800 1350 50  0000 R CNN
+F 1 "TestPoint_BATT" H 5800 1250 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5250 1200 50  0001 C CNN
+F 3 "~" H 5250 1200 50  0001 C CNN
+	1    5050 1200
 	-1   0    0    -1  
 $EndComp
 Wire Notes Line
-	3650 2350 6900 2350
+	4150 2350 6900 2350
 Wire Notes Line
 	6900 2350 6900 550 
 Wire Notes Line
-	6900 550  3650 550 
+	6900 550  4150 550 
 Wire Notes Line
-	3650 550  3650 2350
+	4150 550  4150 2350
 Wire Notes Line
-	700  550  3600 550 
+	700  550  4100 550 
 Wire Notes Line
-	3600 550  3600 2350
+	4100 550  4100 2350
 Wire Notes Line
 	700  550  700  2350
-Text Notes 4200 850  0    157  ~ 0
+Text Notes 4450 850  0    157  ~ 0
 Puntos de prueba\n
 $Bitmap
 Pos 8050 6750
@@ -1070,4 +950,167 @@ F 3 "" H 8050 1100 50  0001 C CNN
 	1    8050 1100
 	1    0    0    -1  
 $EndComp
+$Comp
+L SamacSys_Parts:AP9211SA-AC-HAC-7 U4
+U 1 1 5D050D68
+P 2450 1650
+F 0 "U4" H 3050 1915 50  0000 C CNN
+F 1 "AP9211SA-AF-HAC-7" H 3050 1824 50  0000 C CNN
+F 2 "AP9211SA-AF-HAC-7" H 3500 1750 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP9211.pdf" H 3500 1650 50  0001 L CNN
+F 4 "Battery Management Multicell Batt MGR PMIC Protection Int" H 3500 1550 50  0001 L CNN "Description"
+F 5 "0" H 3500 1450 50  0001 L CNN "Height"
+F 6 "AP9211SA-AF-HAC-7" H 3500 1250 50  0001 L CNN "Manufacturer Part Number"
+	1    2450 1650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR01
+U 1 1 5BC12477
+P 950 1150
+F 0 "#PWR01" H 950 1000 50  0001 C CNN
+F 1 "+BATT" H 964 1325 50  0000 C CNN
+F 2 "" H 950 1150 50  0001 C CNN
+F 3 "" H 950 1150 50  0001 C CNN
+	1    950  1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:SSM3J338R,LF Q1
+U 1 1 5BAE3EF9
+P 2850 1700
+F 0 "Q1" V 3417 1800 50  0000 C CNN
+F 1 "SSM3J338R,LF" V 3326 1800 50  0000 C CNN
+F 2 "SamacSys_Parts:SSM3J332RLFT" H 3300 1650 50  0001 L CNN
+F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30384&prodName=SSM3J338R" H 3300 1550 50  0001 L CNN
+F 4 "MOSFET Small-signal MOSFET Vdss= -12V, ID= -6A" H 3300 1450 50  0001 L CNN "Description"
+F 5 "Toshiba" H 3300 1250 50  0001 L CNN "Manufacturer_Name"
+F 6 "SSM3J338R,LF" H 3300 1150 50  0001 L CNN "Manufacturer Part Number"
+F 7 "SSM3J338R,LF" H 3300 850 50  0001 L CNN "Arrow Part Number"
+F 8 "https://www.arrow.com/en/products/ssm3j338rlf/toshiba" H 3300 750 50  0001 L CNN "Arrow Price/Stock"
+	1    2850 1700
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5BAE15D7
+P 3850 1400
+F 0 "J1" H 3800 1500 50  0000 L CNN
+F 1 "Batería LiPo (Soldada)" V 4000 950 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3850 1400 50  0001 C CNN
+F 3 "~" H 3850 1400 50  0001 C CNN
+	1    3850 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1500 3350 1700
+$Comp
+L Device:Polyfuse F1
+U 1 1 5C662BCD
+P 3400 1400
+F 0 "F1" V 3173 1400 50  0000 C CNN
+F 1 "Polyfuse" V 3265 1400 50  0000 C CNN
+F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 3450 1200 50  0001 L CNN
+F 3 "~" H 3400 1400 50  0001 C CNN
+F 4 "0ZCG0150FF2C" V 3400 1400 50  0001 C CNN "Manufacturer Part Number"
+	1    3400 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 1400 3650 1400
+Wire Wire Line
+	3350 1500 3650 1500
+Wire Wire Line
+	3350 1700 2850 1700
+Connection ~ 2850 1700
+Wire Wire Line
+	2450 1650 2450 1700
+Wire Wire Line
+	2850 1700 2450 1700
+Connection ~ 2450 1700
+Wire Wire Line
+	2450 1700 2450 1750
+$Comp
+L Device:C_Small C?
+U 1 1 5D09E78F
+P 2600 2000
+AR Path="/5BA17F9C/5D09E78F" Ref="C?"  Part="1" 
+AR Path="/5BA1A7F9/5D09E78F" Ref="C?"  Part="1" 
+AR Path="/5D09E78F" Ref="C1"  Part="1" 
+F 0 "C1" H 2400 1950 50  0000 L CNN
+F 1 "100nF" H 2350 1850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2600 2000 50  0001 C CNN
+F 3 "~" H 2600 2000 50  0001 C CNN
+F 4 "GCM155R71C104KA55D" H 2600 2000 50  0001 C CNN "Manufacturer Part Number"
+	1    2600 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 1850 2600 1850
+$Comp
+L Device:R_Small R14
+U 1 1 5D0AEF9A
+P 2600 1550
+F 0 "R14" H 2541 1504 50  0000 R CNN
+F 1 "330" H 2541 1595 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2600 1550 50  0001 C CNN
+F 3 "~" H 2600 1550 50  0001 C CNN
+F 4 "RC0603FR-07330RL" H 2600 1550 50  0001 C CNN "Manufacturer Part Number"
+	1    2600 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 1650 2600 1850
+Wire Wire Line
+	2600 1450 2600 1400
+Wire Wire Line
+	2600 1400 2650 1400
+Wire Wire Line
+	2600 1900 2600 1850
+Connection ~ 2600 1850
+Wire Wire Line
+	2600 2100 2600 2200
+Wire Wire Line
+	2600 2200 2850 2200
+Wire Wire Line
+	2850 2200 2850 1700
+Wire Wire Line
+	2600 1400 2600 1200
+Connection ~ 2600 1400
+Wire Wire Line
+	950  1200 950  1150
+Wire Wire Line
+	950  1200 2600 1200
+Wire Wire Line
+	1250 1750 950  1750
+Wire Wire Line
+	950  1750 950  1800
+$Comp
+L power:GND #PWR02
+U 1 1 5D0C4FD0
+P 950 1800
+F 0 "#PWR02" H 950 1550 50  0001 C CNN
+F 1 "GND" H 955 1627 50  0000 C CNN
+F 2 "" H 950 1800 50  0001 C CNN
+F 3 "" H 950 1800 50  0001 C CNN
+	1    950  1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 5D0C92B7
+P 1150 1650
+F 0 "R13" V 1346 1650 50  0000 C CNN
+F 1 "2.7k" V 1255 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1150 1650 50  0001 C CNN
+F 3 "~" H 1150 1650 50  0001 C CNN
+F 4 "RC0603FR-072K7L" V 1150 1650 50  0001 C CNN "Manufacturer Part Number"
+	1    1150 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1050 1650 950  1650
+Wire Wire Line
+	950  1650 950  1750
+Connection ~ 950  1750
 $EndSCHEMATC
