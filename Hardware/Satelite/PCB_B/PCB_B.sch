@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:PCB_B-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 5
 Title "PCB_C - Jerarquía"
 Date "2019-01-19"
 Rev "1.0.0"
@@ -17,12 +17,12 @@ $EndDescr
 $Comp
 L power:+BATT #PWR0101
 U 1 1 5BC0F0ED
-P 4650 1400
-F 0 "#PWR0101" H 4650 1250 50  0001 C CNN
-F 1 "+BATT" H 4664 1575 50  0000 C CNN
-F 2 "" H 4650 1400 50  0001 C CNN
-F 3 "" H 4650 1400 50  0001 C CNN
-	1    4650 1400
+P 7700 1000
+F 0 "#PWR0101" H 7700 850 50  0001 C CNN
+F 1 "+BATT" H 7714 1175 50  0000 C CNN
+F 2 "" H 7700 1000 50  0001 C CNN
+F 3 "" H 7700 1000 50  0001 C CNN
+	1    7700 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -442,81 +442,23 @@ Wire Wire Line
 Connection ~ 8850 1200
 Text Label 8300 1200 0    50   ~ 0
 BATT_INTERNO
-Text Label 7150 1650 0    50   ~ 0
-BATT_INTERNO
-$Sheet
-S 6300 1550 600  350 
-U 5BC24746
-F0 "Sensado Corriente" 50
-F1 "Sensado Corriente.sch" 50
-F2 "VIN" I R 6900 1650 50 
-F3 "VOUT" O L 6300 1650 50 
-F4 "ISENSE" O R 6900 1800 50 
-$EndSheet
-Wire Wire Line
-	6900 1650 7750 1650
-Wire Wire Line
-	6900 1800 7750 1800
-Text Label 7150 1800 0    50   ~ 0
+Text Label 5950 2100 2    50   ~ 0
 I_SENSE_BATT
 Wire Wire Line
-	5600 1650 6300 1650
-Wire Wire Line
-	5600 1800 6100 1800
-Text Label 5800 1800 0    50   ~ 0
+	5250 1800 5750 1800
+Text Label 5750 1800 2    50   ~ 0
 GPOUT
 Wire Wire Line
-	5600 1900 6100 1900
+	5250 1900 5750 1900
 Wire Wire Line
-	5600 2000 6100 2000
-Text Label 5800 1900 0    50   ~ 0
+	5250 2000 5750 2000
+Text Label 5750 1900 2    50   ~ 0
 SDA
-Text Label 5800 2000 0    50   ~ 0
+Text Label 5750 2000 2    50   ~ 0
 SCL
-$Sheet
-S 3150 1450 650  650 
-U 5BC300BF
-F0 "Cargador de batería" 50
-F1 "Cargador de batería.sch" 50
-F2 "VBAT" B R 3800 1650 50 
-F3 "VIN" I R 3800 1550 50 
-F4 "CHG_DISABLE" I R 3800 1800 50 
-F5 "ISET" I R 3800 1900 50 
-F6 "CHG" O R 3800 2000 50 
-$EndSheet
 Wire Wire Line
-	4650 1400 4650 1650
-$Comp
-L power:VBUS #PWR0111
-U 1 1 5BC35CC7
-P 4350 1400
-F 0 "#PWR0111" H 4350 1250 50  0001 C CNN
-F 1 "VBUS" H 4364 1575 50  0000 C CNN
-F 2 "" H 4350 1400 50  0001 C CNN
-F 3 "" H 4350 1400 50  0001 C CNN
-	1    4350 1400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4350 1400 4350 1550
-Connection ~ 4650 1650
-Wire Wire Line
-	4650 1650 4850 1650
-Wire Wire Line
-	3800 1550 4350 1550
-Wire Wire Line
-	3800 1650 4650 1650
-Wire Wire Line
-	3800 1800 4350 1800
-Wire Wire Line
-	3800 1900 4350 1900
-Wire Wire Line
-	3800 2000 4350 2000
-Text Label 3850 1800 0    50   ~ 0
-CHG_DISABLE
-Text Label 3850 1900 0    50   ~ 0
-ISET
-Text Label 3850 2000 0    50   ~ 0
+	4000 2000 4300 2000
+Text Label 4300 2000 2    50   ~ 0
 CHG
 Wire Notes Line
 	8050 2400 8050 550 
@@ -555,32 +497,29 @@ F 7 "2" H 9500 1500 50  0001 C CNN "Quantity 2"
 $EndComp
 Wire Wire Line
 	10050 3750 10600 3750
-Wire Wire Line
-	10350 1700 10850 1700
 $Sheet
-S 4850 1550 750  650 
+S 4500 1550 750  650 
 U 5BC28DAC
 F0 "Fuel Gauge" 50
 F1 "Fuel Gauge.sch" 50
-F2 "VBAT" B R 5600 1650 50 
-F3 "SYS" B L 4850 1650 50 
-F4 "GPOUT" O R 5600 1800 50 
-F5 "SDA" B R 5600 1900 50 
-F6 "SCL" I R 5600 2000 50 
+F2 "VBAT" B R 5250 1650 50 
+F3 "SYS" B L 4500 1650 50 
+F4 "GPOUT" O R 5250 1800 50 
+F5 "SDA" B R 5250 1900 50 
+F6 "SCL" I R 5250 2000 50 
+F7 "ISENSE" O R 5250 2100 50 
 $EndSheet
 $Comp
 L AXTEC_IC:+3V3_Internal #PWR2
 U 1 1 5BD12D06
-P 10850 1600
-F 0 "#PWR2" H 10850 2000 50  0001 C CNN
-F 1 "+3V3_Internal" H 10835 1775 50  0000 C CNN
-F 2 "" H 10850 1600 50  0001 C CNN
-F 3 "" H 10850 1600 50  0001 C CNN
-	1    10850 1600
+P 10450 1050
+F 0 "#PWR2" H 10450 1450 50  0001 C CNN
+F 1 "+3V3_Internal" H 10435 1225 50  0000 C CNN
+F 2 "" H 10450 1050 50  0001 C CNN
+F 3 "" H 10450 1050 50  0001 C CNN
+	1    10450 1050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10850 1600 10850 1700
 Wire Wire Line
 	10050 5450 10600 5450
 Wire Wire Line
@@ -607,8 +546,6 @@ Text Label 10150 4450 0    50   ~ 0
 SDA
 Text Label 10150 4550 0    50   ~ 0
 SCL
-Text Label 10150 4150 0    50   ~ 0
-ISET
 Text Label 10150 4250 0    50   ~ 0
 CHG
 Wire Wire Line
@@ -662,24 +599,24 @@ F 3 "" H 8300 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8950 1600 8550 1600
+	8950 1600 8400 1600
 Wire Wire Line
-	8950 1800 8550 1800
+	8950 1800 8400 1800
 Wire Wire Line
-	8950 1900 8550 1900
+	8950 1900 8400 1900
 Wire Wire Line
-	8950 2000 8550 2000
+	8950 2000 8400 2000
 Wire Wire Line
-	8950 2100 8550 2100
-Text Label 8600 1800 0    50   ~ 0
+	8950 2100 8400 2100
+Text Label 8400 1800 0    50   ~ 0
 SDO
-Text Label 8600 1900 0    50   ~ 0
+Text Label 8400 1900 0    50   ~ 0
 SDI
-Text Label 8600 2000 0    50   ~ 0
+Text Label 8400 2000 0    50   ~ 0
 CS
-Text Label 8600 2100 0    50   ~ 0
+Text Label 8400 2100 0    50   ~ 0
 SCLK
-Text Label 8600 1600 0    50   ~ 0
+Text Label 8400 1600 0    50   ~ 0
 S_GLOBO
 Text Label 8400 1700 0    50   ~ 0
 S_PARACAIDAS
@@ -689,9 +626,9 @@ Wire Wire Line
 	10750 1200 10350 1200
 Wire Wire Line
 	10750 1300 10350 1300
-Text Label 10400 1300 0    50   ~ 0
+Text Label 10750 1300 2    50   ~ 0
 GPS_TX
-Text Label 10400 1200 0    50   ~ 0
+Text Label 10750 1200 2    50   ~ 0
 P1
 $Comp
 L power:VBUS #PWR0116
@@ -719,18 +656,18 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0117
 U 1 1 5C2B551C
-P 10750 1800
-F 0 "#PWR0117" H 10750 1550 50  0001 C CNN
-F 1 "GND" H 10754 1626 50  0000 C CNN
-F 2 "" H 10750 1800 50  0001 C CNN
-F 3 "" H 10750 1800 50  0001 C CNN
-	1    10750 1800
+P 10900 1700
+F 0 "#PWR0117" H 10900 1450 50  0001 C CNN
+F 1 "GND" H 10904 1526 50  0000 C CNN
+F 2 "" H 10900 1700 50  0001 C CNN
+F 3 "" H 10900 1700 50  0001 C CNN
+	1    10900 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10350 1600 10750 1600
+	10350 1600 10900 1600
 Wire Wire Line
-	10750 1600 10750 1800
+	10900 1600 10900 1700
 $Comp
 L Device:C_Small C?
 U 1 1 5C2C895A
@@ -1045,8 +982,6 @@ Wire Wire Line
 Wire Wire Line
 	10050 4550 10650 4550
 Wire Wire Line
-	10050 4150 10650 4150
-Wire Wire Line
 	8600 5600 8600 5500
 Connection ~ 8600 4900
 Wire Wire Line
@@ -1137,10 +1072,6 @@ F 4 "R30-3011202" H 6379 6855 50  0001 L CNN "Manufacturer Part Number"
 	1    6300 7000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10050 4350 10650 4350
-Text Label 10150 4350 0    50   ~ 0
-CHG_DISABLE
 $Comp
 L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 5C33960E
@@ -1476,4 +1407,167 @@ Wire Wire Line
 	8500 2800 8500 2850
 Wire Wire Line
 	8500 3150 8500 3350
+Text Label 5950 1650 2    50   ~ 0
+BATT_INTERNO
+Connection ~ 7000 1650
+Wire Wire Line
+	7000 1650 7700 1650
+Wire Wire Line
+	6800 1650 7000 1650
+Wire Wire Line
+	7000 1600 7000 1650
+$Comp
+L Device:D_Schottky D1
+U 1 1 5CD2E872
+P 7000 1450
+F 0 "D1" V 7046 1371 50  0000 R CNN
+F 1 "D_Schottky" V 6955 1371 50  0000 R CNN
+F 2 "Diode_SMD:D_SMB" H 7000 1450 50  0001 C CNN
+F 3 "~" H 7000 1450 50  0001 C CNN
+F 4 "MBRS2040LT3G" V 7000 1450 50  0001 C CNN "Manufacturer Part Number"
+	1    7000 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 1250 6600 1300
+Wire Wire Line
+	7000 900  7000 1000
+Wire Wire Line
+	6600 950  6600 900 
+Connection ~ 6600 1300
+Wire Wire Line
+	6600 1350 6600 1300
+Wire Wire Line
+	7000 1300 6600 1300
+$Comp
+L power:GND #PWR?
+U 1 1 5CCDA8EC
+P 7000 1000
+AR Path="/5BB6C3A1/5CCDA8EC" Ref="#PWR?"  Part="1" 
+AR Path="/5BB6C83B/5CCDA8EC" Ref="#PWR?"  Part="1" 
+AR Path="/5BC14C3C/5CCDA8EC" Ref="#PWR?"  Part="1" 
+AR Path="/5CCDA8EC" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 7000 750 50  0001 C CNN
+F 1 "GND" H 7005 827 50  0000 C CNN
+F 2 "" H 7000 1000 50  0001 C CNN
+F 3 "" H 7000 1000 50  0001 C CNN
+	1    7000 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CCCB39F
+P 6600 1100
+AR Path="/5BA17F9C/5CCCB39F" Ref="R?"  Part="1" 
+AR Path="/5BA1A7F9/5CCCB39F" Ref="R?"  Part="1" 
+AR Path="/5BA1A77A/5CCCB39F" Ref="R?"  Part="1" 
+AR Path="/5CCCB39F" Ref="R11"  Part="1" 
+AR Path="/5BB1631B/5CCCB39F" Ref="R?"  Part="1" 
+AR Path="/5BC28DAC/5CCCB39F" Ref="R?"  Part="1" 
+F 0 "R11" V 6700 1100 50  0000 L CNN
+F 1 "10k" V 6500 1100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6530 1100 50  0001 C CNN
+F 3 "~" H 6600 1100 50  0001 C CNN
+F 4 "RC0603JR-0710KL" V 6600 1100 50  0001 C CNN "Manufacturer Part Number"
+	1    6600 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1650 5250 1650
+$Comp
+L SamacSys_Parts:SSM3J338R,LF Q1
+U 1 1 5CCA0FA0
+P 6600 1350
+F 0 "Q1" V 7075 1450 50  0000 C CNN
+F 1 "SSM3J338R,LF" V 7166 1450 50  0000 C CNN
+F 2 "SamacSys_Parts:SSM3J332RLFT" H 7050 1300 50  0001 L CNN
+F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30384&prodName=SSM3J338R" H 7050 1200 50  0001 L CNN
+F 4 "MOSFET Small-signal MOSFET Vdss= -12V, ID= -6A" H 7050 1100 50  0001 L CNN "Description"
+F 5 "Toshiba" H 7050 900 50  0001 L CNN "Manufacturer_Name"
+F 6 "SSM3J338R,LF" H 7050 800 50  0001 L CNN "Manufacturer Part Number"
+F 7 "SSM3J338R,LF" H 7050 500 50  0001 L CNN "Arrow Part Number"
+F 8 "https://www.arrow.com/en/products/ssm3j338rlf/toshiba" H 7050 400 50  0001 L CNN "Arrow Price/Stock"
+	1    6600 1350
+	0    -1   1    0   
+$EndComp
+$Sheet
+S 3350 1450 650  650 
+U 5BC300BF
+F0 "Cargador de batería" 50
+F1 "Cargador de batería.sch" 50
+F2 "VBAT" B R 4000 1650 50 
+F3 "VIN" I L 3350 1550 50 
+F4 "CHG" O R 4000 2000 50 
+$EndSheet
+Wire Wire Line
+	4000 1650 4400 1650
+Wire Wire Line
+	6600 1300 6200 1300
+$Comp
+L power:VBUS #PWR0111
+U 1 1 5BC35CC7
+P 3150 1000
+F 0 "#PWR0111" H 3150 850 50  0001 C CNN
+F 1 "VBUS" H 3164 1175 50  0000 C CNN
+F 2 "" H 3150 1000 50  0001 C CNN
+F 3 "" H 3150 1000 50  0001 C CNN
+	1    3150 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 900  7000 900 
+Wire Wire Line
+	3150 1000 3150 1550
+Wire Wire Line
+	3150 1550 3350 1550
+Wire Wire Line
+	4400 1650 4400 1400
+Wire Wire Line
+	4400 1400 6100 1400
+Wire Wire Line
+	6100 1400 6100 1650
+Wire Wire Line
+	6100 1650 6200 1650
+Connection ~ 4400 1650
+Wire Wire Line
+	4400 1650 4500 1650
+$Comp
+L power:VBUS #PWR08
+U 1 1 5CE2ECED
+P 6200 1000
+F 0 "#PWR08" H 6200 850 50  0001 C CNN
+F 1 "VBUS" H 6214 1175 50  0000 C CNN
+F 2 "" H 6200 1000 50  0001 C CNN
+F 3 "" H 6200 1000 50  0001 C CNN
+	1    6200 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1300 6200 1000
+Wire Wire Line
+	5950 2100 5250 2100
+Wire Wire Line
+	10350 1400 10750 1400
+Wire Wire Line
+	10750 1500 10350 1500
+Text Label 10750 1400 2    50   ~ 0
+SW1
+Text Label 10750 1500 2    50   ~ 0
+SW2
+Wire Wire Line
+	7700 1000 7700 1250
+Wire Wire Line
+	7700 1400 7700 1650
+Text Label 7700 1400 3    50   ~ 0
+SW1
+Text Label 7700 1250 1    50   ~ 0
+SW2
+Text Label 10750 1800 2    50   ~ 0
+CHG
+Wire Wire Line
+	10450 1050 10450 1700
+Wire Wire Line
+	10450 1700 10350 1700
+Wire Wire Line
+	10750 1800 10350 1800
 $EndSCHEMATC

@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:PCB_B-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 5
 Title "3.3V expansión"
 Date "2019-01-19"
 Rev "1.0.0"

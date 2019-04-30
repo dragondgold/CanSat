@@ -139,4 +139,10 @@ K
 F http://www.johansontechnology.com/images/stories/ip/rf-antennas/Antenna_0915AT43A0026_v2.pdf
 $ENDCMP
 #
+$CMP BQ21040DBVR
+D 0.8A Single Input Single-Cell Li-Ion and Li-Pol Battery Charger
+K
+F http://www.ti.com/lit/gpn/bq21040
+$ENDCMP
+#
 #End Doc Library
