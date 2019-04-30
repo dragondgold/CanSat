@@ -112,10 +112,6 @@ F 3 "" H 15700 9500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15350 9100 14800 9100
-Wire Wire Line
-	14800 9000 15350 9000
-Wire Wire Line
 	15650 9400 15650 9450
 Wire Wire Line
 	15650 9450 15700 9450
@@ -123,69 +119,20 @@ Wire Wire Line
 	15750 9400 15750 9450
 Wire Wire Line
 	15750 9450 15700 9450
-$Comp
-L SamacSys_Parts:BQ24392RSER IC3
-U 1 1 5BBE8A84
-P 13300 8800
-F 0 "IC3" H 14050 9065 50  0000 C CNN
-F 1 "BQ24392RSER" H 14050 8974 50  0000 C CNN
-F 2 "SamacSys_Parts:RSE(R-PUQFN-N10)" H 14650 8900 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/bq24392" H 14650 8800 50  0001 L CNN
-F 4 "SPST USB 2.0 High-Speed Switch With Battery Charging Detection" H 14650 8700 50  0001 L CNN "Description"
-F 5 "Texas Instruments" H 14650 8500 50  0001 L CNN "Manufacturer_Name"
-F 6 "BQ24392RSER" H 14650 8400 50  0001 L CNN "Manufacturer Part Number"
-F 7 "8279327P" H 14650 8300 50  0001 L CNN "RS Part Number"
-F 8 "http://uk.rs-online.com/web/p/products/8279327P" H 14650 8200 50  0001 L CNN "RS Price/Stock"
-F 9 "BQ24392RSER" H 14650 8100 50  0001 L CNN "Arrow Part Number"
-F 10 "https://www.arrow.com/en/products/bq24392rser/texas-instruments" H 14650 8000 50  0001 L CNN "Arrow Price/Stock"
-	1    13300 8800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14800 8800 15050 8800
 Wire Wire Line
 	15050 8750 15050 8800
-Connection ~ 15050 8800
 Wire Wire Line
 	15050 8800 15350 8800
-$Comp
-L power:GND #PWR058
-U 1 1 5BBEBEBA
-P 14950 9500
-F 0 "#PWR058" H 14950 9250 50  0001 C CNN
-F 1 "GND" H 14955 9327 50  0000 C CNN
-F 2 "" H 14950 9500 50  0001 C CNN
-F 3 "" H 14950 9500 50  0001 C CNN
-	1    14950 9500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14800 9300 14950 9300
-Wire Wire Line
-	14950 9300 14950 9500
-Text Label 11900 9050 0    50   ~ 0
-CHG_DETECT
-$Comp
-L power:VBUS #PWR045
-U 1 1 5BC0A264
-P 13050 9250
-F 0 "#PWR045" H 13050 9100 50  0001 C CNN
-F 1 "VBUS" H 13065 9423 50  0000 C CNN
-F 2 "" H 13050 9250 50  0001 C CNN
-F 3 "" H 13050 9250 50  0001 C CNN
-	1    13050 9250
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
-	11800 8100 16000 8100
+	14850 8100 16000 8100
 Wire Notes Line
 	16000 8100 16000 9800
 Wire Notes Line
-	16000 9800 11800 9800
+	16000 9800 14850 9800
 Wire Notes Line
-	11800 9800 11800 8100
-Text Notes 12550 8350 0    118  ~ 0
-USB y detección de cargador
+	14850 9800 14850 8100
+Text Notes 15200 8350 0    118  ~ 0
+USB
 Wire Notes Line
 	550  3050 3550 3050
 Wire Notes Line
@@ -1402,8 +1349,6 @@ Text Label 11050 6100 0    50   ~ 0
 V_SENSE_5V
 Text Label 5250 5800 0    50   ~ 0
 I_SENSE_BATT
-Text Label 5400 1850 0    50   ~ 0
-CHG_DETECT
 Text Label 7900 2050 2    50   ~ 0
 AUX_ENABLE
 Text Label 7900 3950 2    50   ~ 0
@@ -1438,8 +1383,6 @@ Wire Wire Line
 	5250 6100 5900 6100
 Wire Wire Line
 	5900 5800 5250 5800
-Wire Wire Line
-	5400 1850 6050 1850
 Wire Wire Line
 	7900 3250 7250 3250
 Wire Wire Line
@@ -1909,62 +1852,6 @@ Wire Wire Line
 Wire Wire Line
 	15100 4650 15550 4650
 $Comp
-L Device:R R8
-U 1 1 5C2BF325
-P 12600 8850
-F 0 "R8" H 12670 8896 50  0000 L CNN
-F 1 "5k6" H 12670 8804 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 12530 8850 50  0001 C CNN
-F 3 "~" H 12600 8850 50  0001 C CNN
-F 4 "RC0603FR-075K6L" H 12600 8850 50  0001 C CNN "Manufacturer Part Number"
-	1    12600 8850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13050 9250 13250 9250
-Wire Wire Line
-	13250 9250 13250 9200
-Wire Wire Line
-	13250 9200 13300 9200
-$Comp
-L Device:R R9
-U 1 1 5C3B0D3B
-P 12600 9250
-F 0 "R9" H 12670 9296 50  0000 L CNN
-F 1 "10k" H 12670 9204 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 12530 9250 50  0001 C CNN
-F 3 "~" H 12600 9250 50  0001 C CNN
-F 4 "RC0603JR-0710KL" H 12600 9250 50  0001 C CNN "Manufacturer Part Number"
-	1    12600 9250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13300 9000 13050 9000
-Wire Wire Line
-	13050 9000 13050 8650
-Wire Wire Line
-	13050 8650 12600 8650
-$Comp
-L power:GND #PWR011
-U 1 1 5C412A14
-P 12600 9500
-F 0 "#PWR011" H 12600 9250 50  0001 C CNN
-F 1 "GND" H 12605 9327 50  0000 C CNN
-F 2 "" H 12600 9500 50  0001 C CNN
-F 3 "" H 12600 9500 50  0001 C CNN
-	1    12600 9500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12600 9400 12600 9500
-Wire Wire Line
-	12600 9000 12600 9050
-Wire Wire Line
-	12600 8650 12600 8700
-Wire Wire Line
-	12600 9100 12600 9050
-Connection ~ 12600 9050
-$Comp
 L power:+BATT #PWR01
 U 1 1 5BC3E6F0
 P 1150 5750
@@ -1975,8 +1862,6 @@ F 3 "" H 1150 5750 50  0001 C CNN
 	1    1150 5750
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	11900 9050 12600 9050
 $Comp
 L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 5C32959E
