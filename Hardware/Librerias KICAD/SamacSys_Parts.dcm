@@ -157,4 +157,16 @@ K
 F https://www.molex.com/molex/products/datasheet.jsp?part=active/0524652071_PCB_RECEPTACLES.xml
 $ENDCMP
 #
+$CMP 451-00001
+D Bluetooth Modules (802.15.1) BL654 - Bluetooth v5 802.15.4 / NFC Mod
+K
+F https://www.mouser.com/datasheet/2/223/BL654_Datasheet_v1_2-1479813.pdf
+$ENDCMP
+#
+$CMP W25Q32BVSSIG
+D 3v 32Mbit Serial Flash with Dual and Quad SPI
+K
+F http://www.winbond.com/resource-files/w25q32bv_revi_100413_wo_automotive.pdf
+$ENDCMP
+#
 #End Doc Library
