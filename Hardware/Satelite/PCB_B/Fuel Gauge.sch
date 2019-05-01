@@ -319,7 +319,7 @@ D2 F7 FD DA 6B 00 00 60 22 3B 71 00 00 09 09 71 00 00 09 09 71 00 00 09 09 71 00
 EndData
 $EndBitmap
 Text HLabel 7000 5500 2    50   Output ~ 0
-VSENSE
+ISENSE
 $Comp
 L Amplifier_Operational:MCP6001-OT U?
 U 1 1 5CE8DBB7
