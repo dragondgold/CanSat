@@ -1409,80 +1409,8 @@ Wire Wire Line
 	8500 3150 8500 3350
 Text Label 5950 1650 2    50   ~ 0
 BATT_INTERNO
-$Comp
-L Device:D_Schottky D1
-U 1 1 5CD2E872
-P 6800 1450
-F 0 "D1" V 6846 1371 50  0000 R CNN
-F 1 "MBRS2040LT3G" V 6755 1371 50  0000 R CNN
-F 2 "Diode_SMD:D_SMB" H 6800 1450 50  0001 C CNN
-F 3 "~" H 6800 1450 50  0001 C CNN
-F 4 "MBRS2040LT3G" V 6800 1450 50  0001 C CNN "Manufacturer Part Number"
-	1    6800 1450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6400 1250 6400 1300
-Wire Wire Line
-	6800 900  6800 1000
-Wire Wire Line
-	6400 950  6400 900 
-Connection ~ 6400 1300
-Wire Wire Line
-	6400 1350 6400 1300
-Wire Wire Line
-	6800 1300 6400 1300
-$Comp
-L power:GND #PWR?
-U 1 1 5CCDA8EC
-P 6800 1000
-AR Path="/5BB6C3A1/5CCDA8EC" Ref="#PWR?"  Part="1" 
-AR Path="/5BB6C83B/5CCDA8EC" Ref="#PWR?"  Part="1" 
-AR Path="/5BC14C3C/5CCDA8EC" Ref="#PWR?"  Part="1" 
-AR Path="/5CCDA8EC" Ref="#PWR017"  Part="1" 
-F 0 "#PWR017" H 6800 750 50  0001 C CNN
-F 1 "GND" H 6805 827 50  0000 C CNN
-F 2 "" H 6800 1000 50  0001 C CNN
-F 3 "" H 6800 1000 50  0001 C CNN
-	1    6800 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5CCCB39F
-P 6400 1100
-AR Path="/5BA17F9C/5CCCB39F" Ref="R?"  Part="1" 
-AR Path="/5BA1A7F9/5CCCB39F" Ref="R?"  Part="1" 
-AR Path="/5BA1A77A/5CCCB39F" Ref="R?"  Part="1" 
-AR Path="/5CCCB39F" Ref="R11"  Part="1" 
-AR Path="/5BB1631B/5CCCB39F" Ref="R?"  Part="1" 
-AR Path="/5BC28DAC/5CCCB39F" Ref="R?"  Part="1" 
-F 0 "R11" V 6500 1100 50  0000 L CNN
-F 1 "10k" V 6300 1100 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6330 1100 50  0001 C CNN
-F 3 "~" H 6400 1100 50  0001 C CNN
-F 4 "RC0603JR-0710KL" V 6400 1100 50  0001 C CNN "Manufacturer Part Number"
-	1    6400 1100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5950 1650 5250 1650
-$Comp
-L SamacSys_Parts:SSM3J338R,LF Q1
-U 1 1 5CCA0FA0
-P 6400 1350
-F 0 "Q1" V 6875 1450 50  0000 C CNN
-F 1 "SSM3J338R,LF" V 6966 1450 50  0000 C CNN
-F 2 "SamacSys_Parts:SSM3J332RLFT" H 6850 1300 50  0001 L CNN
-F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30384&prodName=SSM3J338R" H 6850 1200 50  0001 L CNN
-F 4 "MOSFET Small-signal MOSFET Vdss= -12V, ID= -6A" H 6850 1100 50  0001 L CNN "Description"
-F 5 "Toshiba" H 6850 900 50  0001 L CNN "Manufacturer_Name"
-F 6 "SSM3J338R,LF" H 6850 800 50  0001 L CNN "Manufacturer Part Number"
-F 7 "SSM3J338R,LF" H 6850 500 50  0001 L CNN "Arrow Part Number"
-F 8 "https://www.arrow.com/en/products/ssm3j338rlf/toshiba" H 6850 400 50  0001 L CNN "Arrow Price/Stock"
-	1    6400 1350
-	0    1    1    0   
-$EndComp
 $Sheet
 S 3350 1450 650  650 
 U 5BC300BF
@@ -1494,8 +1422,6 @@ F4 "CHG" O R 4000 2000 50
 $EndSheet
 Wire Wire Line
 	4000 1650 4400 1650
-Wire Wire Line
-	6400 1300 6100 1300
 $Comp
 L power:VBUS #PWR0111
 U 1 1 5BC35CC7
@@ -1507,8 +1433,6 @@ F 3 "" H 3150 1000 50  0001 C CNN
 	1    3150 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6400 900  6800 900 
 Wire Wire Line
 	3150 1000 3150 1550
 Wire Wire Line
@@ -1524,19 +1448,6 @@ Wire Wire Line
 Connection ~ 4400 1650
 Wire Wire Line
 	4400 1650 4500 1650
-$Comp
-L power:VBUS #PWR08
-U 1 1 5CE2ECED
-P 6100 1050
-F 0 "#PWR08" H 6100 900 50  0001 C CNN
-F 1 "VBUS" H 6114 1225 50  0000 C CNN
-F 2 "" H 6100 1050 50  0001 C CNN
-F 3 "" H 6100 1050 50  0001 C CNN
-	1    6100 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 1300 6100 1050
 Wire Wire Line
 	5950 2100 5250 2100
 Wire Wire Line
@@ -1567,5 +1478,97 @@ Wire Wire Line
 	6800 1650 7700 1650
 Wire Wire Line
 	6800 1600 6800 1650
+Wire Wire Line
+	6100 1300 6100 1050
+$Comp
+L power:VBUS #PWR08
+U 1 1 5CE2ECED
+P 6100 1050
+F 0 "#PWR08" H 6100 900 50  0001 C CNN
+F 1 "VBUS" H 6114 1225 50  0000 C CNN
+F 2 "" H 6100 1050 50  0001 C CNN
+F 3 "" H 6100 1050 50  0001 C CNN
+	1    6100 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 900  6800 900 
+Wire Wire Line
+	6400 1300 6100 1300
+$Comp
+L Device:R R?
+U 1 1 5CCCB39F
+P 6400 1100
+AR Path="/5BA17F9C/5CCCB39F" Ref="R?"  Part="1" 
+AR Path="/5BA1A7F9/5CCCB39F" Ref="R?"  Part="1" 
+AR Path="/5BA1A77A/5CCCB39F" Ref="R?"  Part="1" 
+AR Path="/5CCCB39F" Ref="R11"  Part="1" 
+AR Path="/5BB1631B/5CCCB39F" Ref="R?"  Part="1" 
+AR Path="/5BC28DAC/5CCCB39F" Ref="R?"  Part="1" 
+F 0 "R11" V 6500 1100 50  0000 L CNN
+F 1 "10k" V 6300 1100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6330 1100 50  0001 C CNN
+F 3 "~" H 6400 1100 50  0001 C CNN
+F 4 "RC0603JR-0710KL" V 6400 1100 50  0001 C CNN "Manufacturer Part Number"
+	1    6400 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CCDA8EC
+P 6800 1000
+AR Path="/5BB6C3A1/5CCDA8EC" Ref="#PWR?"  Part="1" 
+AR Path="/5BB6C83B/5CCDA8EC" Ref="#PWR?"  Part="1" 
+AR Path="/5BC14C3C/5CCDA8EC" Ref="#PWR?"  Part="1" 
+AR Path="/5CCDA8EC" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 6800 750 50  0001 C CNN
+F 1 "GND" H 6805 827 50  0000 C CNN
+F 2 "" H 6800 1000 50  0001 C CNN
+F 3 "" H 6800 1000 50  0001 C CNN
+	1    6800 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1300 6600 1300
+Connection ~ 6400 1300
+Wire Wire Line
+	6400 950  6400 900 
+Wire Wire Line
+	6800 900  6800 1000
+Wire Wire Line
+	6400 1250 6400 1300
+$Comp
+L Device:D_Schottky D1
+U 1 1 5CD2E872
+P 6800 1450
+F 0 "D1" V 6846 1371 50  0000 R CNN
+F 1 "MBRS2040LT3G" V 6755 1371 50  0000 R CNN
+F 2 "Diode_SMD:D_SMB" H 6800 1450 50  0001 C CNN
+F 3 "~" H 6800 1450 50  0001 C CNN
+F 4 "MBRS2040LT3G" V 6800 1450 50  0001 C CNN "Manufacturer Part Number"
+	1    6800 1450
+	0    -1   -1   0   
+$EndComp
 Connection ~ 6800 1650
+$Comp
+L SamacSys_Parts:SSM3J338R,LF Q1
+U 1 1 5CCA0FA0
+P 6600 1350
+F 0 "Q1" V 7075 1450 50  0000 C CNN
+F 1 "SSM3J338R,LF" V 7166 1450 50  0000 C CNN
+F 2 "SamacSys_Parts:SSM3J332RLFT" H 7050 1300 50  0001 L CNN
+F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30384&prodName=SSM3J338R" H 7050 1200 50  0001 L CNN
+F 4 "MOSFET Small-signal MOSFET Vdss= -12V, ID= -6A" H 7050 1100 50  0001 L CNN "Description"
+F 5 "Toshiba" H 7050 900 50  0001 L CNN "Manufacturer_Name"
+F 6 "SSM3J338R,LF" H 7050 800 50  0001 L CNN "Manufacturer Part Number"
+F 7 "SSM3J338R,LF" H 7050 500 50  0001 L CNN "Arrow Part Number"
+F 8 "https://www.arrow.com/en/products/ssm3j338rlf/toshiba" H 7050 400 50  0001 L CNN "Arrow Price/Stock"
+	1    6600 1350
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6600 1350 6600 1300
+Connection ~ 6600 1300
+Wire Wire Line
+	6600 1300 6400 1300
 $EndSCHEMATC
