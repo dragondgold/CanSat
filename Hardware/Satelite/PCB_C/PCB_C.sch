@@ -1972,19 +1972,7 @@ Wire Wire Line
 Wire Wire Line
 	9650 5050 10250 5050
 Wire Wire Line
-	9650 5550 10000 5550
-Wire Wire Line
-	9650 5450 10000 5450
-Wire Wire Line
 	9650 5250 10250 5250
-Wire Wire Line
-	6800 5550 6500 5550
-Wire Wire Line
-	6800 5350 6500 5350
-Wire Wire Line
-	6500 5250 6800 5250
-Wire Wire Line
-	6800 5150 6500 5150
 $Comp
 L power:GND #PWR015
 U 1 1 5D0605B3
