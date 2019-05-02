@@ -668,19 +668,6 @@ F 11 "https://www.arrow.com/en/products/cc1101rgp/texas-instruments" H 3050 4550
 	1    1700 4950
 	1    0    0    -1  
 $EndComp
-$Comp
-L AXTEC_IC:+3V3_Internal #PWR?
-U 1 1 5BCB8B7A
-P 900 7350
-AR Path="/5BCB8B7A" Ref="#PWR?"  Part="1" 
-AR Path="/5BA17F9C/5BCB8B7A" Ref="#PWR36"  Part="1" 
-F 0 "#PWR36" H 900 7750 50  0001 C CNN
-F 1 "+3V3_Internal" H 885 7523 50  0000 C CNN
-F 2 "" H 900 7350 50  0001 C CNN
-F 3 "" H 900 7350 50  0001 C CNN
-	1    900  7350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3300 4950 3300 4850
 Wire Wire Line
@@ -1139,19 +1126,6 @@ Wire Wire Line
 	6700 4500 6900 4500
 Wire Wire Line
 	6900 4500 6900 4600
-$Comp
-L AXTEC_IC:+3V3_Internal #PWR?
-U 1 1 5DE3B026
-P 6250 4400
-AR Path="/5DE3B026" Ref="#PWR?"  Part="1" 
-AR Path="/5BA17F9C/5DE3B026" Ref="#PWR50"  Part="1" 
-F 0 "#PWR50" H 6250 4800 50  0001 C CNN
-F 1 "+3V3_Internal" H 6235 4573 50  0000 C CNN
-F 2 "" H 6250 4400 50  0001 C CNN
-F 3 "" H 6250 4400 50  0001 C CNN
-	1    6250 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6250 4400 6250 4500
 Wire Wire Line
@@ -1477,4 +1451,30 @@ Wire Wire Line
 Connection ~ 7350 3650
 Wire Wire Line
 	7350 3650 7350 3700
+$Comp
+L AXTEC_IC:+3V3_Internal #PWR?
+U 1 1 5D657627
+P 900 7350
+AR Path="/5D657627" Ref="#PWR?"  Part="1" 
+AR Path="/5BA17F9C/5D657627" Ref="#PWR36"  Part="1" 
+F 0 "#PWR36" H 900 7750 50  0001 C CNN
+F 1 "+3V3_Internal" H 885 7523 50  0000 C CNN
+F 2 "" H 900 7350 50  0001 C CNN
+F 3 "" H 900 7350 50  0001 C CNN
+	1    900  7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L AXTEC_IC:+3V3_Internal #PWR?
+U 1 1 5D65CED0
+P 6250 4400
+AR Path="/5D65CED0" Ref="#PWR?"  Part="1" 
+AR Path="/5BA17F9C/5D65CED0" Ref="#PWR50"  Part="1" 
+F 0 "#PWR50" H 6250 4800 50  0001 C CNN
+F 1 "+3V3_Internal" H 6235 4573 50  0000 C CNN
+F 2 "" H 6250 4400 50  0001 C CNN
+F 3 "" H 6250 4400 50  0001 C CNN
+	1    6250 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
