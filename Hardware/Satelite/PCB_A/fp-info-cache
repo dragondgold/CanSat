@@ -1,4 +1,4 @@
-15680772633829627
+15690113258754333
 AXTEC
 A2235-H
 
@@ -64490,6 +64490,48 @@ rotary encoder
 0
 5
 4
+SamacSys_Parts
+45100001
+451-00001-2
+Antenna
+0
+72
+72
+SamacSys_Parts
+524652071
+52465-2071
+Connector
+0
+20
+20
+SamacSys_Parts
+AP9211SAACHAC7
+U-DFN2030-6 (Type C)
+Integrated Circuit
+0
+7
+7
+SamacSys_Parts
+NE555DR
+D (R-PDSO-G8)
+Integrated Circuit
+0
+8
+8
+SamacSys_Parts
+SOIC127P790X216-8N
+8-Pin SOIC 208-mil (Package Code SS)_1
+Integrated Circuit
+0
+8
+8
+SamacSys_Parts
+SOT95P280X145-6N
+DBV (R-PDSO-G6)
+Integrated Circuit
+0
+6
+6
 Sensor_Audio
 Infineon_PG-LLGA-5-1
 Infineon_PG-LLGA-5-1 StepUp generated footprint, https://www.infineon.com/cms/en/product/packages/PG-LLGA/PG-LLGA-5-1/

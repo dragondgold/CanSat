@@ -28,7 +28,7 @@
   (pad 4 smd rect (at 1.25 0.95 90) (size 0.6 1.2) (layers F.Cu F.Paste))
   (pad 5 smd rect (at 1.25 0 90) (size 0.6 1.2) (layers F.Cu F.Paste))
   (pad 6 smd rect (at 1.25 -0.95 90) (size 0.6 1.2) (layers F.Cu F.Paste))
-  (model C:\msys32\home\tmax4\esp\Hardware\Librerias KICAD\SamacSys_Parts.3dshapes\BQ21040DBVR.stp
+  (model C:\msys32\home\tmax4\esp\Hardware\Librerias-KICAD\SamacSys_Parts.3dshapes\BQ21040DBVR.stp
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

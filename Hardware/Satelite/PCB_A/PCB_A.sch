@@ -956,7 +956,7 @@ U 1 1 5D050D68
 P 2450 1650
 F 0 "U4" H 3050 1915 50  0000 C CNN
 F 1 "AP9211SA-AF-HAC-7" H 3050 1824 50  0000 C CNN
-F 2 "AP9211SA-AF-HAC-7" H 3500 1750 50  0001 L CNN
+F 2 "SamacSys_Parts:AP9211SAACHAC7" H 3500 1750 50  0001 L CNN
 F 3 "https://www.diodes.com/assets/Datasheets/AP9211.pdf" H 3500 1650 50  0001 L CNN
 F 4 "Battery Management Multicell Batt MGR PMIC Protection Int" H 3500 1550 50  0001 L CNN "Description"
 F 5 "0" H 3500 1450 50  0001 L CNN "Height"
