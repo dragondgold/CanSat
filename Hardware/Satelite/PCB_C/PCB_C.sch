@@ -2071,7 +2071,7 @@ U 1 1 5CCDB640
 P 9400 10100
 F 0 "U4" H 10150 10365 50  0000 C CNN
 F 1 "TXS0104ERGYR" H 10150 10274 50  0000 C CNN
-F 2 "RGY(S-PVQFN-N14)" H 10750 10200 50  0001 L CNN
+F 2 "Package_DFN_QFN:Texas_S-PVQFN-N14" H 10750 10200 50  0001 L CNN
 F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TXS0104E&&fileType=pdf" H 10750 10100 50  0001 L CNN
 F 4 "Texas Instruments TXS0104ERGYR, Voltage Level Translator, Open Drain, 1.65  3.6 V, 2.3  5.5 V, 14-Pin" H 10750 10000 50  0001 L CNN "Description"
 F 5 "" H 10750 9900 50  0001 L CNN "Height"
@@ -2109,7 +2109,7 @@ U 1 1 5CF7BA33
 P 3350 10100
 F 0 "U1" H 4100 10365 50  0000 C CNN
 F 1 "TXS0104ERGYR" H 4100 10274 50  0000 C CNN
-F 2 "RGY(S-PVQFN-N14)" H 4700 10200 50  0001 L CNN
+F 2 "Package_DFN_QFN:Texas_S-PVQFN-N14" H 4700 10200 50  0001 L CNN
 F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TXS0104E&&fileType=pdf" H 4700 10100 50  0001 L CNN
 F 4 "Texas Instruments TXS0104ERGYR, Voltage Level Translator, Open Drain, 1.65  3.6 V, 2.3  5.5 V, 14-Pin" H 4700 10000 50  0001 L CNN "Description"
 F 5 "" H 4700 9900 50  0001 L CNN "Height"
