@@ -46,18 +46,18 @@ F1 "GPS.sch" 50
 F2 "TX" O R 1700 5450 50 
 $EndSheet
 Wire Wire Line
-	1600 3450 2350 3450
+	1550 3350 2000 3350
 Wire Wire Line
-	1600 3550 2350 3550
+	1550 3450 2000 3450
 Wire Wire Line
-	1600 3650 2350 3650
+	1550 3550 2000 3550
 Wire Wire Line
 	1700 5450 2450 5450
-Text Label 2000 3450 0    50   ~ 0
+Text Label 2000 3350 2    50   ~ 0
 SDO
-Text Label 2000 3550 0    50   ~ 0
+Text Label 2000 3450 2    50   ~ 0
 SDI
-Text Label 2000 3650 0    50   ~ 0
+Text Label 2000 3550 2    50   ~ 0
 SCLK
 Text Label 2100 5450 0    50   ~ 0
 GPS_TX
@@ -70,15 +70,15 @@ SCLK
 Text Label 9650 2750 2    50   ~ 0
 GPS_TX
 $Sheet
-S 1050 3300 550  700 
+S 1000 3200 550  700 
 U 5BA17F9C
 F0 "CC1101" 50
 F1 "CC1101.sch" 50
-F2 "ANT" B R 1600 3900 50 
-F3 "SCLK" I R 1600 3650 50 
-F4 "SO" O R 1600 3450 50 
-F5 "SI" I R 1600 3550 50 
-F6 "CS" O R 1600 3350 50 
+F2 "ANT" B R 1550 3800 50 
+F3 "SCLK" I R 1550 3550 50 
+F4 "SO" O R 1550 3350 50 
+F5 "SI" I R 1550 3450 50 
+F6 "CS" O R 1550 3250 50 
 $EndSheet
 $Comp
 L power:GND #PWR012
@@ -119,8 +119,8 @@ P1
 Text Label 7300 3450 0    50   ~ 0
 CS
 Wire Wire Line
-	1600 3350 2350 3350
-Text Label 2000 3350 0    50   ~ 0
+	1550 3250 2000 3250
+Text Label 2000 3250 2    50   ~ 0
 CS
 $Comp
 L power:+BATT #PWR07
@@ -166,16 +166,16 @@ $EndComp
 $Comp
 L power:GND #PWR06
 U 1 1 5BCC3FF5
-P 3300 4050
-F 0 "#PWR06" H 3300 3800 50  0001 C CNN
-F 1 "GND" H 3305 3877 50  0000 C CNN
-F 2 "" H 3300 4050 50  0001 C CNN
-F 3 "" H 3300 4050 50  0001 C CNN
-	1    3300 4050
+P 3250 3950
+F 0 "#PWR06" H 3250 3700 50  0001 C CNN
+F 1 "GND" H 3255 3777 50  0000 C CNN
+F 2 "" H 3250 3950 50  0001 C CNN
+F 3 "" H 3250 3950 50  0001 C CNN
+	1    3250 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 3900 1600 3900
+	2350 3800 1550 3800
 Text Notes 8100 850  0    157  ~ 0
 Conector PCB A-B\n
 Wire Notes Line
@@ -206,7 +206,7 @@ Wire Notes Line
 	3600 4500 700  4500
 Wire Notes Line
 	700  4500 700  2400
-Text Notes 1600 2950 0    157  ~ 0
+Text Notes 1600 3050 0    157  ~ 0
 CC1101\n\n
 Text Notes 7350 4100 0    157  ~ 0
 SERVOS GLOBO Y PARACAIDA\n
@@ -268,27 +268,27 @@ AGUJEROS DE MONTAJE
 $Comp
 L SamacSys_Parts:CONUFL001-SMD J2
 U 1 1 5BC6411A
-P 2800 3900
-F 0 "J2" H 2825 4165 50  0000 C CNN
-F 1 "CONUFL001-SMD" H 2825 4074 50  0000 C CNN
-F 2 "SamacSys_Parts:CONUFL001-SMD" H 3100 4000 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/CONUFL001-SMD.pdf" H 3100 3900 50  0001 L CNN
-F 4 "RF Connectors / Coaxial Connectors U.FL Straight Surface Mount Jack" H 3100 3800 50  0001 L CNN "Description"
-F 5 "Linx Technologies" H 3100 3600 50  0001 L CNN "Manufacturer_Name"
-F 6 "CONUFL001-SMD" H 3100 3500 50  0001 L CNN "Manufacturer Part Number"
-F 7 "CONUFL001-SMD" H 3100 3200 50  0001 L CNN "Arrow Part Number"
-	1    2800 3900
+P 2750 3800
+F 0 "J2" H 2775 4065 50  0000 C CNN
+F 1 "CONUFL001-SMD" H 2775 3974 50  0000 C CNN
+F 2 "SamacSys_Parts:CONUFL001-SMD" H 3050 3900 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/CONUFL001-SMD.pdf" H 3050 3800 50  0001 L CNN
+F 4 "RF Connectors / Coaxial Connectors U.FL Straight Surface Mount Jack" H 3050 3700 50  0001 L CNN "Description"
+F 5 "Linx Technologies" H 3050 3500 50  0001 L CNN "Manufacturer_Name"
+F 6 "CONUFL001-SMD" H 3050 3400 50  0001 L CNN "Manufacturer Part Number"
+F 7 "CONUFL001-SMD" H 3050 3100 50  0001 L CNN "Arrow Part Number"
+	1    2750 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 3900 3300 3900
+	3200 3800 3250 3800
 Wire Wire Line
-	3300 3900 3300 4000
+	3250 3800 3250 3900
 Wire Wire Line
-	3250 4000 3300 4000
-Connection ~ 3300 4000
+	3200 3900 3250 3900
+Connection ~ 3250 3900
 Wire Wire Line
-	3300 4000 3300 4050
+	3250 3900 3250 3950
 Wire Wire Line
 	7300 3050 7800 3050
 Wire Wire Line

@@ -10,6 +10,14 @@ D GPS Modules SiRFStarIV GPS receiver SMT ROM mod
 F http://update.maestro-wireless.com/GNSS/A2235-H/Maestro_GPS_Receiver_A2235_H_User_Manual_V13.pdf
 $ENDCMP
 #
+$CMP B39921B3588U410
+D SAW RF filter
+$ENDCMP
+#
+$CMP CC1190
+D 850 – 950 MHz RF Front End
+$ENDCMP
+#
 $CMP ESP32-WROOM-32
 D ESP32-WROOM-32
 $ENDCMP
