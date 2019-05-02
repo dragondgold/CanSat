@@ -17,7 +17,8 @@ $ENDCMP
 #
 $CMP BMX055
 D Small versatile 9-axis sensor module
-F http://www.mouser.com/ds/2/621/BST-BMX055-DS000-02-586421.pdf
+K
+F 
 $ENDCMP
 #
 $CMP BQ24091DGQT
@@ -57,7 +58,8 @@ $ENDCMP
 #
 $CMP LFXTAL016178
 D IQD FREQUENCY PRODUCTS - LFXTAL016178 - CRYSTAL, 32.768KHZ, 6PF, SMD
-F http://www.iqdfrequencyproducts.com/products/pn/LFXTAL016178Bulk.pdf
+K
+F http://uk.rs-online.com/web/p/products/1484350P
 $ENDCMP
 #
 $CMP MCP1501T-33E_CHY
@@ -77,7 +79,8 @@ $ENDCMP
 #
 $CMP MS563702BA03-50
 D Sensor Pressure 2bar Barometric SMD MS563702BA03-50, Barometric Pressure Sensor, 1200mbar 0 ??? 3.6 V Output, 4-Pin QFN
-F http://docs-europe.electrocomponents.com/webdocs/142c/0900766b8142cddb.pdf
+K
+F http://uk.rs-online.com/web/p/products/1704370
 $ENDCMP
 #
 $CMP NE555D
@@ -102,11 +105,13 @@ $ENDCMP
 #
 $CMP Si7006-A20-IM1
 D Si7006 Digital RH temp sensor w filter Silicon Labs Si7006-A20-IM1 Temperature & Humidity Sensor, -40  +125 C, 6-Pin DFN
-F https://www.silabs.com/documents/public/data-sheets/Si7006-A20.pdf
+K
+F http://uk.rs-online.com/web/p/products/8652283P
 $ENDCMP
 #
 $CMP TCA9802DGKR
 D Level-Translating I2C Bus Buffer/Repeater
+K
 F http://www.ti.com/lit/gpn/tca9802
 $ENDCMP
 #
