@@ -645,21 +645,6 @@ Text Label 13400 5850 0    50   ~ 0
 SDA_EXT
 $Comp
 L Device:C_Small C?
-U 1 1 5BCA2C7F
-P 1150 4000
-AR Path="/5BB122CA/5BCA2C7F" Ref="C?"  Part="1" 
-AR Path="/5BB12371/5BCA2C7F" Ref="C?"  Part="1" 
-AR Path="/5BCA2C7F" Ref="C1"  Part="1" 
-F 0 "C1" H 1058 3954 50  0000 R CNN
-F 1 "1uF" H 1058 4045 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1150 4000 50  0001 C CNN
-F 3 "~" H 1150 4000 50  0001 C CNN
-F 4 "GRM155R61E105KA12D" H 1150 4000 50  0001 C CNN "Manufacturer Part Number"
-	1    1150 4000
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C?
 U 1 1 5BCFF353
 P 11350 9750
 AR Path="/5BB122CA/5BCFF353" Ref="C?"  Part="1" 
@@ -1155,66 +1140,6 @@ Wire Wire Line
 Connection ~ 5400 3100
 Text Label 10250 5050 2    50   ~ 0
 SPI_BUFFER_EN
-Text Notes 1600 3300 0    118  ~ 0
-+VREF ADC
-Wire Notes Line
-	550  4500 550  3100
-Wire Notes Line
-	3550 4500 550  4500
-Wire Notes Line
-	3550 3100 3550 4500
-Wire Notes Line
-	550  3100 3550 3100
-Wire Wire Line
-	2700 3850 3100 3850
-Text Label 2800 3850 0    50   ~ 0
-+VREF
-Wire Wire Line
-	2800 4050 2800 4150
-Wire Wire Line
-	2700 4050 2800 4050
-Wire Wire Line
-	2800 3950 2700 3950
-Connection ~ 2800 4050
-Wire Wire Line
-	2800 3950 2800 4050
-Wire Wire Line
-	1400 4050 1400 4150
-Wire Wire Line
-	1500 4050 1400 4050
-Wire Wire Line
-	1400 3850 1150 3850
-Wire Wire Line
-	1400 3950 1400 3850
-Wire Wire Line
-	1500 3950 1400 3950
-Connection ~ 1400 3850
-Wire Wire Line
-	1500 3850 1400 3850
-Wire Wire Line
-	1150 4100 1150 4150
-Wire Wire Line
-	1150 3900 1150 3850
-Connection ~ 1150 3850
-Wire Wire Line
-	1150 3850 1150 3750
-$Comp
-L SamacSys_Parts:MCP1501T-33E_CHY IC1
-U 1 1 5BC3E089
-P 2700 3850
-F 0 "IC1" H 3300 4116 50  0000 C CNN
-F 1 "MCP1501T-33E_CHY" H 3300 4024 50  0000 C CNN
-F 2 "SamacSys_Parts:SOT95P270X145-6N" H 3750 3950 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCP1501T-33E_CHY.pdf" H 3750 3850 50  0001 L CNN
-F 4 "Voltage References Precision Buffered Voltage Reference" H 3750 3750 50  0001 L CNN "Description"
-F 5 "1.45" H 3750 3650 50  0001 L CNN "Height"
-F 6 "Microchip" H 3750 3550 50  0001 L CNN "Manufacturer_Name"
-F 7 "MCP1501T-33E/CHY" H 3750 3450 50  0001 L CNN "Manufacturer Part Number"
-F 8 "MCP1501T-33E/CHY" H 3750 3150 50  0001 L CNN "Arrow Part Number"
-F 9 "https://www.arrow.com/en/products/mcp1501t-33echy/microchip-technology" H 3750 3050 50  0001 L CNN "Arrow Price/Stock"
-	1    2700 3850
-	-1   0    0    -1  
-$EndComp
 $Comp
 L AXTEC_IC:Conector_Expansion_CanSat J4
 U 1 1 5E0F05D9
@@ -1247,17 +1172,6 @@ Wire Wire Line
 	15100 4550 15550 4550
 Wire Wire Line
 	15100 4650 15550 4650
-$Comp
-L power:+BATT #PWR01
-U 1 1 5BC3E6F0
-P 1150 3750
-F 0 "#PWR01" H 1150 3600 50  0001 C CNN
-F 1 "+BATT" H 1165 3923 50  0000 C CNN
-F 2 "" H 1150 3750 50  0001 C CNN
-F 3 "" H 1150 3750 50  0001 C CNN
-	1    1150 3750
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 5C32959E
@@ -1551,39 +1465,6 @@ F 3 "" H 13500 8750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	13500 8750 13850 8750
-$Comp
-L power:GNDA #PWR0103
-U 1 1 5C301DAD
-P 2800 4150
-F 0 "#PWR0103" H 2800 3900 50  0001 C CNN
-F 1 "GNDA" H 2804 3976 50  0000 C CNN
-F 2 "" H 2800 4150 50  0001 C CNN
-F 3 "" H 2800 4150 50  0001 C CNN
-	1    2800 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR0106
-U 1 1 5C375184
-P 1400 4150
-F 0 "#PWR0106" H 1400 3900 50  0001 C CNN
-F 1 "GNDA" H 1404 3976 50  0000 C CNN
-F 2 "" H 1400 4150 50  0001 C CNN
-F 3 "" H 1400 4150 50  0001 C CNN
-	1    1400 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR0107
-U 1 1 5C375315
-P 1150 4150
-F 0 "#PWR0107" H 1150 3900 50  0001 C CNN
-F 1 "GNDA" H 1154 3976 50  0000 C CNN
-F 2 "" H 1150 4150 50  0001 C CNN
-F 3 "" H 1150 4150 50  0001 C CNN
-	1    1150 4150
-	1    0    0    -1  
-$EndComp
 $Bitmap
 Pos 12950 10250
 Scale 1.000000
@@ -1684,13 +1565,9 @@ Wire Notes Line
 Wire Notes Line
 	2600 11150 5650 11150
 Wire Notes Line
-	550  6750 550  4600
+	550  4300 550  3100
 Wire Notes Line
-	3350 6750 550  6750
-Wire Notes Line
-	3350 4600 3350 6750
-Wire Notes Line
-	550  4600 3350 4600
+	550  3100 3550 3100
 $Comp
 L Device:R R6
 U 1 1 5D069FEE
@@ -2203,36 +2080,7 @@ F 7 "TXS0104ERGYR" H 10750 9700 50  0001 L CNN "Manufacturer Part Number"
 	1    9400 10100
 	1    0    0    -1  
 $EndComp
-$Comp
-L AXTEC_IC:MH_CanSat MH1
-U 1 1 5BCAAD71
-P 1900 5700
-F 0 "MH1" H 2178 5815 50  0000 L CNN
-F 1 "MH_CanSat" H 2178 5724 50  0000 L CNN
-F 2 "AXTEC:MH_CanSat" H 1900 5700 50  0001 C CNN
-F 3 "" H 1900 5700 50  0001 C CNN
-	1    1900 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR081
-U 1 1 5BCAAE9A
-P 1900 5900
-F 0 "#PWR081" H 1900 5650 50  0001 C CNN
-F 1 "GND" H 1905 5727 50  0000 C CNN
-F 2 "" H 1900 5900 50  0001 C CNN
-F 3 "" H 1900 5900 50  0001 C CNN
-	1    1900 5900
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 5800 1900 5800
-Connection ~ 1900 5800
-Wire Wire Line
-	1900 5800 2050 5800
-Wire Wire Line
-	1900 5900 1900 5800
-Text Notes 900  4850 0    118  ~ 0
+Text Notes 950  3350 0    118  ~ 0
 AGUJEROS DE MONTAJE
 Wire Wire Line
 	10900 10700 11100 10700
@@ -2430,10 +2278,10 @@ SWO
 Text Label 2050 10300 2    50   ~ 0
 nRST
 $Comp
-L Sensor_Temperature:Si7051-A20 U?
+L Sensor_Temperature:Si7051-A20 U7
 U 1 1 5D3B31C1
 P 2850 2400
-F 0 "U?" H 3150 2800 50  0000 L CNN
+F 0 "U7" H 3150 2800 50  0000 L CNN
 F 1 "Si7051-A20" H 2950 2700 50  0000 L CNN
 F 2 "Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.65x2.55mm" H 2850 2000 50  0001 C CNN
 F 3 "https://www.silabs.com/documents/public/data-sheets/Si7050-1-3-4-5-A20.pdf" H 2650 2700 50  0001 C CNN
@@ -2442,10 +2290,10 @@ F 4 "SI7051-A20-IM" H 2850 2400 50  0001 C CNN "Manufacturer Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L AXTEC_IC:+3V3_Internal #PWR?
+L AXTEC_IC:+3V3_Internal #PWR1
 U 1 1 5D3FBC3E
 P 2850 1800
-F 0 "#PWR?" H 2850 2200 50  0001 C CNN
+F 0 "#PWR1" H 2850 2200 50  0001 C CNN
 F 1 "+3V3_Internal" H 2835 1973 50  0000 C CNN
 F 2 "" H 2850 1800 50  0001 C CNN
 F 3 "" H 2850 1800 50  0001 C CNN
@@ -2458,7 +2306,8 @@ U 1 1 5D3FD0BC
 P 2850 1950
 AR Path="/5BB122CA/5D3FD0BC" Ref="C?"  Part="1" 
 AR Path="/5BB12371/5D3FD0BC" Ref="C?"  Part="1" 
-F 0 "C?" H 2758 1904 50  0000 R CNN
+AR Path="/5D3FD0BC" Ref="C1"  Part="1" 
+F 0 "C1" H 2758 1904 50  0000 R CNN
 F 1 "1uF" H 2758 1995 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 2850 1950 50  0001 C CNN
 F 3 "~" H 2850 1950 50  0001 C CNN
@@ -2471,10 +2320,10 @@ Wire Wire Line
 Wire Wire Line
 	2850 2050 2850 2100
 $Comp
-L power:GND #PWR?
+L power:GND #PWR041
 U 1 1 5D45F3A9
 P 2850 2700
-F 0 "#PWR?" H 2850 2450 50  0001 C CNN
+F 0 "#PWR041" H 2850 2450 50  0001 C CNN
 F 1 "GND" H 2855 2527 50  0000 C CNN
 F 2 "" H 2850 2700 50  0001 C CNN
 F 3 "" H 2850 2700 50  0001 C CNN
@@ -2489,4 +2338,37 @@ Text Label 2150 2400 0    50   ~ 0
 SDA
 Text Label 2150 2300 0    50   ~ 0
 SCL
+Wire Notes Line
+	3550 3100 3550 4300
+Wire Notes Line
+	3550 4300 550  4300
+Wire Wire Line
+	2000 3950 2000 3850
+Wire Wire Line
+	2000 3850 2150 3850
+Connection ~ 2000 3850
+Wire Wire Line
+	1850 3850 2000 3850
+$Comp
+L power:GND #PWR081
+U 1 1 5BCAAE9A
+P 2000 3950
+F 0 "#PWR081" H 2000 3700 50  0001 C CNN
+F 1 "GND" H 2005 3777 50  0000 C CNN
+F 2 "" H 2000 3950 50  0001 C CNN
+F 3 "" H 2000 3950 50  0001 C CNN
+	1    2000 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L AXTEC_IC:MH_CanSat MH1
+U 1 1 5BCAAD71
+P 2000 3750
+F 0 "MH1" H 2278 3865 50  0000 L CNN
+F 1 "MH_CanSat" H 2278 3774 50  0000 L CNN
+F 2 "AXTEC:MH_CanSat" H 2000 3750 50  0001 C CNN
+F 3 "" H 2000 3750 50  0001 C CNN
+	1    2000 3750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

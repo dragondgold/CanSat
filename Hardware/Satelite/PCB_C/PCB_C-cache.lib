@@ -430,30 +430,6 @@ X 4 4 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# SamacSys_Parts_MCP1501T-33E_CHY
-#
-DEF SamacSys_Parts_MCP1501T-33E_CHY IC 0 30 Y Y 1 F N
-F0 "IC" 1050 300 50 H V L CNN
-F1 "SamacSys_Parts_MCP1501T-33E_CHY" 1050 200 50 H V L CNN
-F2 "SOT95P270X145-6N" 1050 100 50 H I L CNN
-F3 "https://componentsearchengine.com/Datasheets/1/MCP1501T-33E_CHY.pdf" 1050 0 50 H I L CNN
-F4 "Voltage References Precision Buffered Voltage Reference" 1050 -100 50 H I L CNN "Description"
-F5 "1.45" 1050 -200 50 H I L CNN "Height"
-F6 "Microchip" 1050 -300 50 H I L CNN "Manufacturer_Name"
-F7 "MCP1501T-33E/CHY" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
-F8 "MCP1501T-33E/CHY" 1050 -700 50 H I L CNN "Arrow Part Number"
-F9 "https://www.arrow.com/en/products/mcp1501t-33echy/microchip-technology" 1050 -800 50 H I L CNN "Arrow Price/Stock"
-DRAW
-P 5 0 1 6 200 100 1000 100 1000 -300 200 -300 200 100 N
-X OUT 1 0 0 200 R 50 50 0 0 w
-X GND_1 2 0 -100 200 R 50 50 0 0 W
-X GND_2 3 0 -200 200 R 50 50 0 0 W
-X ~SHDN 4 1200 -100 200 L 50 50 0 0 I
-X GND_3 5 1200 -200 200 L 50 50 0 0 W
-X VDD 6 1200 0 200 L 50 50 0 0 W
-ENDDRAW
-ENDDEF
-#
 # SamacSys_Parts_MS563702BA03-50
 #
 DEF SamacSys_Parts_MS563702BA03-50 IC 0 30 Y Y 1 F N
@@ -675,19 +651,6 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GNDA
-#
-DEF power_GNDA #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GNDA" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GNDA 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
