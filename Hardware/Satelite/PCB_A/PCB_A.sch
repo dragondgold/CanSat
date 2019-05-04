@@ -319,7 +319,7 @@ F 6 "E-Switch" H 11150 2600 50  0001 L CNN "Manufacturer_Name"
 F 7 "500SSP1S1M6QEA" H 11150 2500 50  0001 L CNN "Manufacturer Part Number"
 F 8 "500SSP1S1M6QEA" H 11150 2200 50  0001 L CNN "Arrow Part Number"
 	1    10500 2900
-	0    -1   -1   0   
+	0    -1   1    0   
 $EndComp
 $Comp
 L power:GND #PWR011
@@ -818,13 +818,13 @@ Wire Wire Line
 Wire Wire Line
 	10200 2850 10200 2700
 Wire Wire Line
-	10200 2700 10350 2700
+	10200 2700 10450 2700
 Wire Wire Line
 	9200 2950 10200 2950
 Wire Wire Line
 	10200 2950 10200 3100
 Wire Wire Line
-	10200 3100 10450 3100
+	10200 3100 10350 3100
 $Comp
 L power:GND #PWR046
 U 1 1 5CCAD052
