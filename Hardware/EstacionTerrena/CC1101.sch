@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:EstacionTerrena-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -511,22 +511,6 @@ F 4 "RC0402JR-070RL" V 8950 3500 50  0001 C CNN "Manufacturer Part Number"
 	1    8950 3500
 	0    -1   -1   0   
 $EndComp
-$Comp
-L EstacionTerrena-rescue:0915BM15A0001E-SamacSys_Parts U5
-U 1 1 5BF115E1
-P 7150 3400
-F 0 "U5" H 7150 3766 50  0000 C CNN
-F 1 "0915BM15A0001E" H 7150 3674 50  0000 C CNN
-F 2 "SamacSys_Parts:0915BM15A0001E" H 7500 3600 50  0001 L CNN
-F 3 "http://www.mouser.com/datasheet/2/611/0915BM15A0001-242333.pdf" H 7500 3500 50  0001 L CNN
-F 4 "Signal Conditioning 915MHz BALUN/FILTER" H 7500 3400 50  0001 L CNN "Description"
-F 5 "0.8" H 7500 3300 50  0001 L CNN "Height"
-F 6 "JOHANSON TECHNOLOGY" H 7500 3200 50  0001 L CNN "Manufacturer_Name"
-F 7 "0915BM15A0001E" H 7500 3100 50  0001 L CNN "Manufacturer Part Number"
-F 8 "0915BM15A0001E" H 7500 3000 50  0001 L CNN "Arrow Part Number"
-	1    7150 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6400 3300 6650 3300
 $Comp
@@ -550,25 +534,6 @@ Wire Wire Line
 	3500 2300 3500 2450
 Wire Wire Line
 	2900 2300 3500 2300
-$Comp
-L EstacionTerrena-rescue:CC1101RGP-SamacSys_Parts U4
-U 1 1 5BBFFFB0
-P 2900 3150
-F 0 "U4" H 4200 3800 50  0000 L CNN
-F 1 "CC1101RGP" H 4200 3700 50  0000 L CNN
-F 2 "SamacSys_Parts:QFN50P400X400X100-21N-D" H 4250 3650 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/cc1101.pdf" H 4250 3550 50  0001 L CNN
-F 4 "Texas Instruments CC1101RGP, RF Transceiver IC Triple Band 1.8  3.6 V 20-Pin QFN" H 4250 3450 50  0001 L CNN "Description"
-F 5 "1" H 4250 3350 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 4250 3250 50  0001 L CNN "Manufacturer_Name"
-F 7 "CC1101RGP" H 4250 3150 50  0001 L CNN "Manufacturer Part Number"
-F 8 "8203068P" H 4250 3050 50  0001 L CNN "RS Part Number"
-F 9 "http://uk.rs-online.com/web/p/products/8203068P" H 4250 2950 50  0001 L CNN "RS Price/Stock"
-F 10 "CC1101RGP" H 4250 2850 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/cc1101rgp/texas-instruments" H 4250 2750 50  0001 L CNN "Arrow Price/Stock"
-	1    2900 3150
-	1    0    0    -1  
-$EndComp
 Text HLabel 3150 4700 0    50   Input ~ 0
 CS
 Wire Wire Line
@@ -637,7 +602,7 @@ F 4 "X7R" H 4500 3750 50  0001 C CNN "Dielectric"
 F 5 "16V" H 4500 3750 50  0001 C CNN "Voltage"
 F 6 "GCM155R71C104KA55D" H 4500 3750 50  0001 C CNN "Manufacturer Part Number"
 	1    4500 3750
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
@@ -800,4 +765,39 @@ D2 F7 FD DA 6B 00 00 60 22 3B 71 00 00 09 09 71 00 00 09 09 71 00 00 09 09 71 00
 09 71 00 00 09 FD 17 3C 6D 9D 90 5F F2 D3 C3 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L SamacSys_Parts:CC1101RGP U4
+U 1 1 5CD02CD0
+P 2900 3150
+F 0 "U4" H 4000 3850 50  0000 L CNN
+F 1 "CC1101RGP" H 4000 3750 50  0000 L CNN
+F 2 "QFN50P400X400X100-21N-D" H 4250 3650 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cc1101.pdf" H 4250 3550 50  0001 L CNN
+F 4 "Texas Instruments CC1101RGP, RF Transceiver IC Triple Band 1.8  3.6 V 20-Pin QFN" H 4250 3450 50  0001 L CNN "Description"
+F 5 "1" H 4250 3350 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 4250 3250 50  0001 L CNN "Manufacturer_Name"
+F 7 "CC1101RGP" H 4250 3150 50  0001 L CNN "Manufacturer Part Number"
+F 8 "8203068P" H 4250 3050 50  0001 L CNN "RS Part Number"
+F 9 "http://uk.rs-online.com/web/p/products/8203068P" H 4250 2950 50  0001 L CNN "RS Price/Stock"
+F 10 "CC1101RGP" H 4250 2850 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/cc1101rgp/texas-instruments" H 4250 2750 50  0001 L CNN "Arrow Price/Stock"
+	1    2900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:0915BM15A0001E U5
+U 1 1 5CD0A297
+P 7150 3400
+F 0 "U5" H 7150 3765 50  0000 C CNN
+F 1 "0915BM15A0001E" H 7150 3674 50  0000 C CNN
+F 2 "0915BM15A0001E" H 7500 3600 50  0001 L CNN
+F 3 "http://www.mouser.com/datasheet/2/611/0915BM15A0001-242333.pdf" H 7500 3500 50  0001 L CNN
+F 4 "Signal Conditioning 915MHz BALUN/FILTER" H 7500 3400 50  0001 L CNN "Description"
+F 5 "0.8" H 7500 3300 50  0001 L CNN "Height"
+F 6 "JOHANSON TECHNOLOGY" H 7500 3200 50  0001 L CNN "Manufacturer_Name"
+F 7 "0915BM15A0001E" H 7500 3100 50  0001 L CNN "Manufacturer Part Number"
+F 8 "0915BM15A0001E" H 7500 3000 50  0001 L CNN "Arrow Part Number"
+	1    7150 3400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
