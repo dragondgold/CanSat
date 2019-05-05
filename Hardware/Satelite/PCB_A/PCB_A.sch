@@ -319,7 +319,7 @@ F 6 "E-Switch" H 11150 2600 50  0001 L CNN "Manufacturer_Name"
 F 7 "500SSP1S1M6QEA" H 11150 2500 50  0001 L CNN "Manufacturer Part Number"
 F 8 "500SSP1S1M6QEA" H 11150 2200 50  0001 L CNN "Arrow Part Number"
 	1    10500 2900
-	0    -1   -1   0   
+	0    -1   1    0   
 $EndComp
 $Comp
 L power:GND #PWR011
@@ -447,12 +447,12 @@ $EndComp
 $Comp
 L power:+BATT #PWR014
 U 1 1 5C2D3F1A
-P 5050 1100
-F 0 "#PWR014" H 5050 950 50  0001 C CNN
-F 1 "+BATT" H 5064 1275 50  0000 C CNN
-F 2 "" H 5050 1100 50  0001 C CNN
-F 3 "" H 5050 1100 50  0001 C CNN
-	1    5050 1100
+P 4950 1100
+F 0 "#PWR014" H 4950 950 50  0001 C CNN
+F 1 "+BATT" H 4964 1275 50  0000 C CNN
+F 2 "" H 4950 1100 50  0001 C CNN
+F 3 "" H 4950 1100 50  0001 C CNN
+	1    4950 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -540,76 +540,61 @@ SCLK
 $Comp
 L Connector:TestPoint_Probe TP2
 U 1 1 5C2DEC1A
-P 5050 1400
-F 0 "TP2" H 5800 1550 50  0000 R CNN
-F 1 "TestPoint_GPSTX" H 5800 1450 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5250 1400 50  0001 C CNN
-F 3 "~" H 5250 1400 50  0001 C CNN
-	1    5050 1400
+P 4950 1400
+F 0 "TP2" H 5700 1550 50  0000 R CNN
+F 1 "TestPoint_GPSTX" H 5700 1450 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5150 1400 50  0001 C CNN
+F 3 "~" H 5150 1400 50  0001 C CNN
+	1    4950 1400
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 1400 5350 1400
-Text Label 5150 1400 0    50   ~ 0
+	4950 1400 5350 1400
+Text Label 5350 1400 2    50   ~ 0
 GPS_TX
-$Comp
-L Connector:TestPoint_Probe TP3
-U 1 1 5C2E59E7
-P 5050 1600
-F 0 "TP3" H 5800 1750 50  0000 R CNN
-F 1 "TestPoint_P1" H 5800 1650 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5250 1600 50  0001 C CNN
-F 3 "~" H 5250 1600 50  0001 C CNN
-	1    5050 1600
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5050 1600 5350 1600
-Text Label 5150 1600 0    50   ~ 0
-P1
 $Comp
 L Connector:TestPoint_Probe TP4
 U 1 1 5C2E7A24
-P 5050 1800
-F 0 "TP4" H 5800 1950 50  0000 R CNN
-F 1 "TestPoint_P1" H 5800 1850 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5250 1800 50  0001 C CNN
-F 3 "~" H 5250 1800 50  0001 C CNN
-	1    5050 1800
+P 4950 1600
+F 0 "TP4" H 5700 1750 50  0000 R CNN
+F 1 "TestPoint_P1" H 5700 1650 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5150 1600 50  0001 C CNN
+F 3 "~" H 5150 1600 50  0001 C CNN
+	1    4950 1600
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 1800 5350 1800
+	4950 1600 5350 1600
 $Comp
 L Connector:TestPoint_Probe TP5
 U 1 1 5C2E94B0
-P 5050 2000
-F 0 "TP5" H 5800 2150 50  0000 R CNN
-F 1 "TestPoint_P1" H 5800 2050 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5250 2000 50  0001 C CNN
-F 3 "~" H 5250 2000 50  0001 C CNN
-	1    5050 2000
+P 4950 1800
+F 0 "TP5" H 5700 1950 50  0000 R CNN
+F 1 "TestPoint_P1" H 5700 1850 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5150 1800 50  0001 C CNN
+F 3 "~" H 5150 1800 50  0001 C CNN
+	1    4950 1800
 	-1   0    0    -1  
 $EndComp
-Text Label 5100 1800 0    50   ~ 0
+Text Label 5350 1600 2    50   ~ 0
 S_GLOBO
-Text Label 5600 2000 2    50   ~ 0
+Text Label 5500 1800 2    50   ~ 0
 S_PARACAIDAS
 Wire Wire Line
-	5050 2000 5600 2000
+	4950 1800 5500 1800
 Wire Wire Line
 	5950 2050 5950 2000
 Wire Wire Line
-	5050 1100 5050 1200
+	4950 1100 4950 1200
 $Comp
 L Connector:TestPoint_Probe TP1
 U 1 1 5C2FCED2
-P 5050 1200
-F 0 "TP1" H 5800 1350 50  0000 R CNN
-F 1 "TestPoint_BATT" H 5800 1250 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5250 1200 50  0001 C CNN
-F 3 "~" H 5250 1200 50  0001 C CNN
-	1    5050 1200
+P 4950 1200
+F 0 "TP1" H 5700 1350 50  0000 R CNN
+F 1 "TestPoint_BATT" H 5700 1250 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5150 1200 50  0001 C CNN
+F 3 "~" H 5150 1200 50  0001 C CNN
+	1    4950 1200
 	-1   0    0    -1  
 $EndComp
 Wire Notes Line
@@ -833,13 +818,13 @@ Wire Wire Line
 Wire Wire Line
 	10200 2850 10200 2700
 Wire Wire Line
-	10200 2700 10350 2700
+	10200 2700 10450 2700
 Wire Wire Line
 	9200 2950 10200 2950
 Wire Wire Line
 	10200 2950 10200 3100
 Wire Wire Line
-	10200 3100 10450 3100
+	10200 3100 10350 3100
 $Comp
 L power:GND #PWR046
 U 1 1 5CCAD052
@@ -1004,20 +989,6 @@ F 3 "~" H 3850 1400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3350 1500 3350 1700
-$Comp
-L Device:Polyfuse F1
-U 1 1 5C662BCD
-P 3400 1400
-F 0 "F1" V 3173 1400 50  0000 C CNN
-F 1 "Polyfuse" V 3265 1400 50  0000 C CNN
-F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 3450 1200 50  0001 L CNN
-F 3 "~" H 3400 1400 50  0001 C CNN
-F 4 "0ZCG0150FF2C" V 3400 1400 50  0001 C CNN "Manufacturer Part Number"
-	1    3400 1400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3550 1400 3650 1400
 Wire Wire Line
 	3350 1500 3650 1500
 Wire Wire Line
@@ -1113,4 +1084,6 @@ Wire Wire Line
 Wire Wire Line
 	950  1650 950  1750
 Connection ~ 950  1750
+Wire Wire Line
+	3250 1400 3650 1400
 $EndSCHEMATC

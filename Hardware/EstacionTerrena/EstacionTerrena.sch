@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:EstacionTerrena-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -44,28 +44,6 @@ F 1 "GND" H 7255 4177 50  0000 C CNN
 F 2 "" H 7250 4350 50  0001 C CNN
 F 3 "" H 7250 4350 50  0001 C CNN
 	1    7250 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7050 4050 6700 4050
-$Comp
-L EstacionTerrena-rescue:5-1814832-1-SamacSys_Parts J1
-U 1 1 5BEE5678
-P 7250 4050
-F 0 "J1" H 7491 4026 50  0000 L CNN
-F 1 "5-1814832-1" H 7491 3934 50  0000 L CNN
-F 2 "SamacSys_Parts:5-1814832-1" H 7650 4150 50  0001 L CNN
-F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" H 7650 4050 50  0001 L CNN
-F 4 "SUBMINIATURE COAX" H 7650 3950 50  0001 L CNN "Description"
-F 5 "TE Connectivity" H 7650 3750 50  0001 L CNN "Manufacturer_Name"
-F 6 "5-1814832-1" H 7650 3650 50  0001 L CNN "Manufacturer Part Number"
-F 7 "1355074" H 7450 3550 50  0001 L CNN "RS Part Number"
-F 8 "http://uk.rs-online.com/web/p/products/1355074" H 7650 3450 50  0001 L CNN "RS Price/Stock"
-F 9 "70084637" H 7650 3350 50  0001 L CNN "Allied_Number"
-F 10 "https://www.alliedelec.com/te-connectivity-5-1814832-1/70084637/" H 7650 3250 50  0001 L CNN "Allied Price/Stock"
-F 11 "5-1814832-1" H 7650 3150 50  0001 L CNN "Arrow Part Number"
-F 12 "https://www.arrow.com/en/products/5-1814832-1/te-connectivity" H 7650 3050 50  0001 L CNN "Arrow Price/Stock"
-	1    7250 4050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -185,17 +163,6 @@ F 3 "~" H 1050 7300 50  0001 C CNN
 	1    1050 7300
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR026
-U 1 1 5C00A55B
-P 6050 5050
-F 0 "#PWR026" H 6050 4800 50  0001 C CNN
-F 1 "GND" H 6055 4877 50  0000 C CNN
-F 2 "" H 6050 5050 50  0001 C CNN
-F 3 "" H 6050 5050 50  0001 C CNN
-	1    6050 5050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5100 3950 5200 3950
 $Comp
@@ -243,8 +210,6 @@ F 3 "~" H 6150 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 4250 6100 4250
-Wire Wire Line
 	5100 4250 5350 4250
 Wire Wire Line
 	5200 3950 5200 2800
@@ -253,26 +218,6 @@ Wire Wire Line
 Connection ~ 5200 3950
 Wire Wire Line
 	5200 3950 6100 3950
-$Comp
-L Device:Jumper_NC_Dual JP1
-U 1 1 5C2DD6B3
-P 5600 4950
-F 0 "JP1" H 5600 5096 50  0000 C CNN
-F 1 "Jumper_NC_Dual" H 5600 5187 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 5600 4950 50  0001 C CNN
-F 3 "~" H 5600 4950 50  0001 C CNN
-	1    5600 4950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5350 4950 5350 4250
-Connection ~ 5350 4250
-Wire Wire Line
-	5600 4250 5600 4850
-Wire Wire Line
-	5850 4950 6050 4950
-Wire Wire Line
-	6050 4950 6050 5050
 Wire Wire Line
 	5100 4050 5250 4050
 Wire Wire Line
@@ -386,4 +331,29 @@ D2 F7 FD DA 6B 00 00 60 22 3B 71 00 00 09 09 71 00 00 09 09 71 00 00 09 09 71 00
 09 71 00 00 09 FD 17 3C 6D 9D 90 5F F2 D3 C3 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+Wire Wire Line
+	5350 4250 6100 4250
+Connection ~ 5350 4250
+Wire Wire Line
+	7050 4050 6700 4050
+$Comp
+L SamacSys_Parts:5-1814832-1 J1
+U 1 1 5CCF549E
+P 7250 4050
+F 0 "J1" H 7494 4025 50  0000 L CNN
+F 1 "5-1814832-1" H 7494 3934 50  0000 L CNN
+F 2 "5-1814832-1" H 7650 4150 50  0001 L CNN
+F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" H 7650 4050 50  0001 L CNN
+F 4 "SUBMINIATURE COAX" H 7650 3950 50  0001 L CNN "Description"
+F 5 "TE Connectivity" H 7650 3750 50  0001 L CNN "Manufacturer_Name"
+F 6 "5-1814832-1" H 7650 3650 50  0001 L CNN "Manufacturer Part Number"
+F 7 "1355074" H 7450 3550 50  0001 L CNN "RS Part Number"
+F 8 "http://uk.rs-online.com/web/p/products/1355074" H 7650 3450 50  0001 L CNN "RS Price/Stock"
+F 9 "70084637" H 7650 3350 50  0001 L CNN "Allied_Number"
+F 10 "https://www.alliedelec.com/te-connectivity-5-1814832-1/70084637/" H 7650 3250 50  0001 L CNN "Allied Price/Stock"
+F 11 "5-1814832-1" H 7650 3150 50  0001 L CNN "Arrow Part Number"
+F 12 "https://www.arrow.com/en/products/5-1814832-1/te-connectivity" H 7650 3050 50  0001 L CNN "Arrow Price/Stock"
+	1    7250 4050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

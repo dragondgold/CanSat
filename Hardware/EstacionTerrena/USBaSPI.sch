@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:EstacionTerrena-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -63,18 +63,6 @@ Wire Wire Line
 Connection ~ 1100 4600
 Wire Wire Line
 	1100 4600 1150 4600
-$Comp
-L EstacionTerrena-rescue:MCP2210-AXTEC_IC U3
-U 1 1 5B9999E2
-P 8250 4450
-F 0 "U3" H 8250 5115 50  0000 C CNN
-F 1 "MCP2210" H 8250 5024 50  0000 C CNN
-F 2 "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm" H 8050 4550 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/devicedoc/22288a.pdf" H 8050 4550 50  0001 C CNN
-F 4 "MCP2210-I/SS" H 8250 4450 50  0001 C CNN "Manufacturer Part Number"
-	1    8250 4450
-	1    0    0    -1  
-$EndComp
 Text Label 1650 4150 0    50   ~ 0
 D+
 Wire Wire Line
@@ -312,29 +300,29 @@ Connection ~ 9250 4350
 $Comp
 L power:GND #PWR018
 U 1 1 5B9A09D3
-P 8300 3500
-F 0 "#PWR018" H 8300 3250 50  0001 C CNN
-F 1 "GND" H 8305 3327 50  0000 C CNN
-F 2 "" H 8300 3500 50  0001 C CNN
-F 3 "" H 8300 3500 50  0001 C CNN
-	1    8300 3500
+P 8250 3450
+F 0 "#PWR018" H 8250 3200 50  0001 C CNN
+F 1 "GND" H 8255 3277 50  0000 C CNN
+F 2 "" H 8250 3450 50  0001 C CNN
+F 3 "" H 8250 3450 50  0001 C CNN
+	1    8250 3450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR017
 U 1 1 5B9A0A7A
-P 8300 3200
-F 0 "#PWR017" H 8300 3050 50  0001 C CNN
-F 1 "+3V3" H 8315 3373 50  0000 C CNN
-F 2 "" H 8300 3200 50  0001 C CNN
-F 3 "" H 8300 3200 50  0001 C CNN
-	1    8300 3200
+P 8250 3150
+F 0 "#PWR017" H 8250 3000 50  0001 C CNN
+F 1 "+3V3" H 8265 3323 50  0000 C CNN
+F 2 "" H 8250 3150 50  0001 C CNN
+F 3 "" H 8250 3150 50  0001 C CNN
+	1    8250 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8300 3250 8300 3200
+	8250 3200 8250 3150
 Wire Wire Line
-	8300 3450 8300 3500
+	8250 3400 8250 3450
 Wire Wire Line
 	5650 4350 5650 4300
 Wire Wire Line
@@ -462,25 +450,6 @@ Wire Wire Line
 Wire Wire Line
 	4950 3950 5650 3950
 $Comp
-L EstacionTerrena-rescue:MIC5323-3.3YD5_TR-SamacSys_Parts U2
-U 1 1 5BEF597E
-P 4550 4000
-F 0 "U2" H 4550 4317 50  0000 C CNN
-F 1 "MIC5323-3.3YD5_TR" H 4550 4225 50  0000 C CNN
-F 2 "SamacSys_Parts:SOT95P280X100-5N" H 5500 4100 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5323.pdf" H 5500 4000 50  0001 L CNN
-F 4 "Micrel MIC5323-3.3YD5 TR, LDO Voltage Regulator, 300mA, 3.3 V 2%, 2.65  5.5 Vin, 5-Pin TSOT-23" H 5500 3900 50  0001 L CNN "Description"
-F 5 "1" H 5500 3800 50  0001 L CNN "Height"
-F 6 "Micrel" H 5500 3700 50  0001 L CNN "Manufacturer_Name"
-F 7 "MIC5323-3.3YD5 TR" H 5500 3600 50  0001 L CNN "Manufacturer Part Number"
-F 8 "8855996P" H 5500 3500 50  0001 L CNN "RS Part Number"
-F 9 "http://uk.rs-online.com/web/p/products/8855996P" H 5500 3400 50  0001 L CNN "RS Price/Stock"
-F 10 "MIC5323-3.3YD5 TR" H 5500 3300 50  0001 L CNN "Arrow Part Number"
-F 11 "http://uk.rs-online.com/web/p/products/8855996P" H 5500 3200 50  0001 L CNN "Arrow Price/Stock"
-	1    4550 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R2
 U 1 1 5BEF5D80
 P 4250 5300
@@ -547,15 +516,15 @@ $EndComp
 $Comp
 L Device:C_Small C4
 U 1 1 5BEF7387
-P 8300 3350
-F 0 "C4" H 8392 3396 50  0000 L CNN
-F 1 "100nF" H 8392 3305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8300 3350 50  0001 C CNN
-F 3 "~" H 8300 3350 50  0001 C CNN
-F 4 "X7R" H 8300 3350 50  0001 C CNN "Dielectric"
-F 5 "16V" H 8300 3350 50  0001 C CNN "Voltage"
-F 6 "EMK107B7104KAHT" H 8300 3350 50  0001 C CNN "Manufacturer Part Number"
-	1    8300 3350
+P 8250 3300
+F 0 "C4" H 8342 3346 50  0000 L CNN
+F 1 "100nF" H 8342 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8250 3300 50  0001 C CNN
+F 3 "~" H 8250 3300 50  0001 C CNN
+F 4 "X7R" H 8250 3300 50  0001 C CNN "Dielectric"
+F 5 "16V" H 8250 3300 50  0001 C CNN "Voltage"
+F 6 "EMK107B7104KAHT" H 8250 3300 50  0001 C CNN "Manufacturer Part Number"
+	1    8250 3300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -710,4 +679,35 @@ D2 F7 FD DA 6B 00 00 60 22 3B 71 00 00 09 09 71 00 00 09 09 71 00 00 09 09 71 00
 09 71 00 00 09 FD 17 3C 6D 9D 90 5F F2 D3 C3 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L SamacSys_Parts:MIC5323-3.3YD5_TR U2
+U 1 1 5CCFA0D3
+P 4550 4000
+F 0 "U2" H 4550 4315 50  0000 C CNN
+F 1 "MIC5323-3.3YD5_TR" H 4550 4224 50  0000 C CNN
+F 2 "SOT95P280X100-5N" H 5500 4100 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5323.pdf" H 5500 4000 50  0001 L CNN
+F 4 "Micrel MIC5323-3.3YD5 TR, LDO Voltage Regulator, 300mA, 3.3 V 2%, 2.65  5.5 Vin, 5-Pin TSOT-23" H 5500 3900 50  0001 L CNN "Description"
+F 5 "1" H 5500 3800 50  0001 L CNN "Height"
+F 6 "Micrel" H 5500 3700 50  0001 L CNN "Manufacturer_Name"
+F 7 "MIC5323-3.3YD5 TR" H 5500 3600 50  0001 L CNN "Manufacturer Part Number"
+F 8 "8855996P" H 5500 3500 50  0001 L CNN "RS Part Number"
+F 9 "http://uk.rs-online.com/web/p/products/8855996P" H 5500 3400 50  0001 L CNN "RS Price/Stock"
+F 10 "MIC5323-3.3YD5 TR" H 5500 3300 50  0001 L CNN "Arrow Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/8855996P" H 5500 3200 50  0001 L CNN "Arrow Price/Stock"
+	1    4550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L AXTEC_IC:MCP2210 U3
+U 1 1 5CCFD092
+P 8250 4450
+F 0 "U3" H 8250 5115 50  0000 C CNN
+F 1 "MCP2210" H 8250 5024 50  0000 C CNN
+F 2 "" H 8050 4550 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22288A.pdf" H 8050 4550 50  0001 C CNN
+F 4 "MCP2210-I/SS" H 8250 4450 50  0001 C CNN "Manufacturer Part Number"
+	1    8250 4450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

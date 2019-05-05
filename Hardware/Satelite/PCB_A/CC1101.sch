@@ -668,19 +668,6 @@ F 11 "https://www.arrow.com/en/products/cc1101rgp/texas-instruments" H 3050 4550
 	1    1700 4950
 	1    0    0    -1  
 $EndComp
-$Comp
-L AXTEC_IC:+3V3_Internal #PWR?
-U 1 1 5BCB8B7A
-P 900 7350
-AR Path="/5BCB8B7A" Ref="#PWR?"  Part="1" 
-AR Path="/5BA17F9C/5BCB8B7A" Ref="#PWR36"  Part="1" 
-F 0 "#PWR36" H 900 7750 50  0001 C CNN
-F 1 "+3V3_Internal" H 885 7523 50  0000 C CNN
-F 2 "" H 900 7350 50  0001 C CNN
-F 3 "" H 900 7350 50  0001 C CNN
-	1    900  7350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3300 4950 3300 4850
 Wire Wire Line
@@ -769,58 +756,53 @@ Wire Wire Line
 Connection ~ 4500 2050
 Wire Wire Line
 	4500 2050 4500 1900
-Wire Wire Line
-	4450 1750 4650 1750
 $Comp
 L Device:C_Small C?
 U 1 1 5DCB1A77
-P 5100 2000
+P 4900 2000
 AR Path="/5B9997DB/5DCB1A77" Ref="C?"  Part="1" 
 AR Path="/5B9A8077/5DCB1A77" Ref="C?"  Part="1" 
 AR Path="/5BA17F9C/5DCB1A77" Ref="C13"  Part="1" 
-F 0 "C13" H 5192 2046 50  0000 L CNN
-F 1 "0.8pF" H 5192 1955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 5100 2000 50  0001 C CNN
-F 3 "~" H 5100 2000 50  0001 C CNN
-F 4 "NP0" H 5100 2000 50  0001 C CNN "Dielectric"
-F 5 "GRM1555C2AR80BA01D" H 5100 2000 50  0001 C CNN "Manufacturer Part Number"
-	1    5100 2000
+F 0 "C13" H 4992 2046 50  0000 L CNN
+F 1 "0.8pF" H 4992 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4900 2000 50  0001 C CNN
+F 3 "~" H 4900 2000 50  0001 C CNN
+F 4 "NP0" H 4900 2000 50  0001 C CNN "Dielectric"
+F 5 "GRM1555C2AR80BA01D" H 4900 2000 50  0001 C CNN "Manufacturer Part Number"
+	1    4900 2000
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:L L?
 U 1 1 5DCB84D8
-P 4800 1750
+P 5200 1750
 AR Path="/5B9A8077/5DCB84D8" Ref="L?"  Part="1" 
 AR Path="/5BA17F9C/5DCB84D8" Ref="L2"  Part="1" 
-F 0 "L2" V 4900 1750 50  0000 L CNN
-F 1 "10nH" V 4750 1650 50  0000 L CNN
-F 2 "Inductor_SMD:L_0402_1005Metric" H 4800 1750 50  0001 C CNN
-F 3 "" H 4800 1750 50  0001 C CNN
-F 4 "LQG15HN10NH02D" V 4800 1750 50  0001 C CNN "Manufacturer Part Number"
-	1    4800 1750
+F 0 "L2" V 5300 1750 50  0000 L CNN
+F 1 "10nH" V 5150 1650 50  0000 L CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 5200 1750 50  0001 C CNN
+F 3 "" H 5200 1750 50  0001 C CNN
+F 4 "LQG15HN10NH02D" V 5200 1750 50  0001 C CNN "Manufacturer Part Number"
+	1    5200 1750
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5DCBB81E
-P 5100 2200
+P 4900 2200
 AR Path="/5B9A8077/5DCBB81E" Ref="#PWR?"  Part="1" 
 AR Path="/5BA17F9C/5DCBB81E" Ref="#PWR048"  Part="1" 
-F 0 "#PWR048" H 5100 1950 50  0001 C CNN
-F 1 "GND" H 5105 2027 50  0000 C CNN
-F 2 "" H 5100 2200 50  0001 C CNN
-F 3 "" H 5100 2200 50  0001 C CNN
-	1    5100 2200
+F 0 "#PWR048" H 4900 1950 50  0001 C CNN
+F 1 "GND" H 4905 2027 50  0000 C CNN
+F 2 "" H 4900 2200 50  0001 C CNN
+F 3 "" H 4900 2200 50  0001 C CNN
+	1    4900 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 2100 5100 2200
+	4900 2100 4900 2200
 Wire Wire Line
-	5100 1900 5100 1750
-Wire Wire Line
-	5100 1750 4950 1750
-Connection ~ 5100 1750
+	4900 1900 4900 1750
 $Comp
 L Device:L L?
 U 1 1 5DCC2CE9
@@ -855,21 +837,6 @@ Wire Wire Line
 	7600 1650 7600 1750
 Wire Wire Line
 	7600 1750 7800 1750
-$Comp
-L AXTEC_IC:+3V3_Internal #PWR?
-U 1 1 5DCCF261
-P 7600 1250
-AR Path="/5DCCF261" Ref="#PWR?"  Part="1" 
-AR Path="/5BA17F9C/5DCCF261" Ref="#PWR54"  Part="1" 
-F 0 "#PWR54" H 7600 1650 50  0001 C CNN
-F 1 "+3V3_Internal" H 7585 1423 50  0000 C CNN
-F 2 "" H 7600 1250 50  0001 C CNN
-F 3 "" H 7600 1250 50  0001 C CNN
-	1    7600 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7600 1350 7600 1250
 $Comp
 L Device:L L?
 U 1 1 5DCDA4C3
@@ -1139,19 +1106,6 @@ Wire Wire Line
 	6700 4500 6900 4500
 Wire Wire Line
 	6900 4500 6900 4600
-$Comp
-L AXTEC_IC:+3V3_Internal #PWR?
-U 1 1 5DE3B026
-P 6250 4400
-AR Path="/5DE3B026" Ref="#PWR?"  Part="1" 
-AR Path="/5BA17F9C/5DE3B026" Ref="#PWR50"  Part="1" 
-F 0 "#PWR50" H 6250 4800 50  0001 C CNN
-F 1 "+3V3_Internal" H 6235 4573 50  0000 C CNN
-F 2 "" H 6250 4400 50  0001 C CNN
-F 3 "" H 6250 4400 50  0001 C CNN
-	1    6250 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6250 4400 6250 4500
 Wire Wire Line
@@ -1302,13 +1256,8 @@ F 4 "CC1190RGVR" H 6475 2023 50  0000 C CNN "Manufactuer Part Number"
 $EndComp
 Wire Wire Line
 	5800 1900 5600 1900
-Text Label 5350 2150 0    50   ~ 0
-VDD_PA
-Wire Wire Line
-	5100 1750 5600 1750
 Wire Wire Line
 	5600 1900 5600 1750
-Connection ~ 5600 1750
 Wire Wire Line
 	5600 1750 5800 1750
 Wire Wire Line
@@ -1321,9 +1270,9 @@ Wire Wire Line
 	5800 2400 5350 2400
 Wire Wire Line
 	5800 2500 5350 2500
-Text Label 5350 2400 0    50   ~ 0
-GDO2
 Text Label 5350 2500 0    50   ~ 0
+GDO2
+Text Label 5350 2400 0    50   ~ 0
 GDO0
 $Comp
 L Device:R R?
@@ -1477,4 +1426,57 @@ Wire Wire Line
 Connection ~ 7350 3650
 Wire Wire Line
 	7350 3650 7350 3700
+$Comp
+L AXTEC_IC:+3V3_Internal #PWR?
+U 1 1 5D657627
+P 900 7350
+AR Path="/5D657627" Ref="#PWR?"  Part="1" 
+AR Path="/5BA17F9C/5D657627" Ref="#PWR36"  Part="1" 
+F 0 "#PWR36" H 900 7750 50  0001 C CNN
+F 1 "+3V3_Internal" H 885 7523 50  0000 C CNN
+F 2 "" H 900 7350 50  0001 C CNN
+F 3 "" H 900 7350 50  0001 C CNN
+	1    900  7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L AXTEC_IC:+3V3_Internal #PWR?
+U 1 1 5D65CED0
+P 6250 4400
+AR Path="/5D65CED0" Ref="#PWR?"  Part="1" 
+AR Path="/5BA17F9C/5D65CED0" Ref="#PWR50"  Part="1" 
+F 0 "#PWR50" H 6250 4800 50  0001 C CNN
+F 1 "+3V3_Internal" H 6235 4573 50  0000 C CNN
+F 2 "" H 6250 4400 50  0001 C CNN
+F 3 "" H 6250 4400 50  0001 C CNN
+	1    6250 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1750 5600 1750
+Connection ~ 5600 1750
+Wire Wire Line
+	4450 1750 4900 1750
+Connection ~ 4900 1750
+Wire Wire Line
+	4900 1750 5050 1750
+Text Label 7200 1200 0    50   ~ 0
+VDD_PA
+Wire Wire Line
+	7600 1200 7200 1200
+Wire Wire Line
+	7600 1200 7600 1350
+$Comp
+L AXTEC_IC:+3V3_Internal #PWR?
+U 1 1 5E1A4DEA
+P 5350 2150
+AR Path="/5E1A4DEA" Ref="#PWR?"  Part="1" 
+AR Path="/5BA17F9C/5E1A4DEA" Ref="#PWR54"  Part="1" 
+F 0 "#PWR54" H 5350 2550 50  0001 C CNN
+F 1 "+3V3_Internal" H 5335 2323 50  0000 C CNN
+F 2 "" H 5350 2150 50  0001 C CNN
+F 3 "" H 5350 2150 50  0001 C CNN
+	1    5350 2150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
