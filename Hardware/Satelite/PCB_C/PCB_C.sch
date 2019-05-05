@@ -28,9 +28,8 @@ U 5BB12371
 F0 "Sensor presión" 50
 F1 "Sensor presión.sch" 50
 F2 "SCL" I R 1350 1750 50 
+F3 "SDA" B R 1350 1650 49 
 $EndSheet
-Text HLabel 1350 1650 0    50   BiDi ~ 0
-SDA
 $Sheet
 S 850  2150 500  550 
 U 5BB123AC
@@ -49,10 +48,6 @@ Wire Wire Line
 	1350 1100 1700 1100
 Wire Wire Line
 	1350 1200 1800 1200
-Wire Wire Line
-	1350 1650 1700 1650
-Wire Wire Line
-	1700 1650 1700 1100
 Connection ~ 1700 1100
 Wire Wire Line
 	1700 1100 2550 1100
@@ -65,9 +60,6 @@ Wire Wire Line
 	1800 1200 2550 1200
 Wire Wire Line
 	1350 2200 1700 2200
-Wire Wire Line
-	1700 2200 1700 1650
-Connection ~ 1700 1650
 Wire Wire Line
 	1350 2300 1800 2300
 Wire Wire Line
@@ -250,9 +242,9 @@ Wire Wire Line
 	9400 10400 8950 10400
 Wire Wire Line
 	9400 10500 8950 10500
-Text Label 8950 10200 0    50   ~ 0
-SDO
 Text Label 8950 10300 0    50   ~ 0
+SDO
+Text Label 8950 10200 0    50   ~ 0
 SDI
 Text Label 8950 10400 0    50   ~ 0
 SCLK
@@ -266,13 +258,13 @@ Wire Wire Line
 	11350 10400 10900 10400
 Wire Wire Line
 	11350 10500 10900 10500
-Text Label 11350 10200 2    50   ~ 0
-EXT_MISO
-Text Label 11350 10300 2    50   ~ 0
-EXT_MOSI
 Text Label 11350 10400 2    50   ~ 0
-EXT_SCLK
+EXT_MISO
 Text Label 11350 10500 2    50   ~ 0
+EXT_MOSI
+Text Label 11350 10300 2    50   ~ 0
+EXT_SCLK
+Text Label 11350 10200 2    50   ~ 0
 EXT_CS
 Wire Wire Line
 	9250 9600 9250 9650
@@ -302,22 +294,6 @@ Wire Notes Line
 	8550 9000 8550 11150
 Wire Notes Line
 	11750 9000 8550 9000
-$Comp
-L SamacSys_Parts:TCA9802DGKR U2
-U 1 1 5BFA3047
-P 6550 10350
-F 0 "U2" H 7100 10616 50  0000 C CNN
-F 1 "TCA9802DGKR" H 7100 10524 50  0000 C CNN
-F 2 "SamacSys_Parts:SOP65P490X110-8N" H 7500 10450 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/tca9802" H 7500 10350 50  0001 L CNN
-F 4 "Level-Translating I2C Bus Buffer/Repeater" H 7500 10250 50  0001 L CNN "Description"
-F 5 "1.1" H 7500 10150 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 7500 10050 50  0001 L CNN "Manufacturer_Name"
-F 7 "TCA9802DGKR" H 7500 9950 50  0001 L CNN "Manufacturer Part Number"
-F 8 "TCA9802DGKR" H 7500 9650 50  0001 L CNN "Arrow Part Number"
-	1    6550 10350
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3V3 #PWR027
 U 1 1 5BFA3EA3
@@ -399,20 +375,12 @@ Wire Wire Line
 	6550 10650 6450 10650
 Wire Wire Line
 	6450 10650 6450 10700
-Text Label 6250 10450 0    50   ~ 0
-SDA
-Text Label 6250 10550 0    50   ~ 0
-SCL
 Wire Wire Line
 	7650 10450 8100 10450
 Wire Wire Line
 	7650 10550 8100 10550
 Wire Wire Line
 	7650 10650 8100 10650
-Text Label 8100 10450 2    50   ~ 0
-SDA_EXT
-Text Label 8100 10550 2    50   ~ 0
-SCL_EXT
 Text Label 8100 10650 2    50   ~ 0
 I2C_EN
 Wire Notes Line
@@ -507,10 +475,6 @@ Text Label 2900 10800 0    50   ~ 0
 IO_EN
 Wire Wire Line
 	3350 10800 2900 10800
-Text Label 5300 10200 2    50   ~ 0
-EXT_IO0
-Text Label 5300 10300 2    50   ~ 0
-EXT_IO1
 Wire Wire Line
 	15400 1200 15000 1200
 Wire Wire Line
@@ -976,25 +940,25 @@ Wire Wire Line
 $Comp
 L Device:R R1
 U 1 1 5BFDEAF6
-P 5550 3350
-F 0 "R1" H 5620 3396 50  0000 L CNN
-F 1 "10k" H 5620 3304 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5480 3350 50  0001 C CNN
-F 3 "~" H 5550 3350 50  0001 C CNN
-F 4 "RC0603JR-0710KL" H 5550 3350 50  0001 C CNN "Manufacturer Part Number"
-	1    5550 3350
+P 4800 2450
+F 0 "R1" H 4870 2496 50  0000 L CNN
+F 1 "10k" H 4870 2404 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4730 2450 50  0001 C CNN
+F 3 "~" H 4800 2450 50  0001 C CNN
+F 4 "RC0603JR-0710KL" H 4800 2450 50  0001 C CNN "Manufacturer Part Number"
+	1    4800 2450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R4
 U 1 1 5C12A276
-P 5250 3350
-F 0 "R4" H 5320 3396 50  0000 L CNN
-F 1 "10k" H 5320 3304 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5180 3350 50  0001 C CNN
-F 3 "~" H 5250 3350 50  0001 C CNN
-F 4 "RC0603JR-0710KL" H 5250 3350 50  0001 C CNN "Manufacturer Part Number"
-	1    5250 3350
+P 4500 2450
+F 0 "R4" H 4570 2496 50  0000 L CNN
+F 1 "10k" H 4570 2404 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4430 2450 50  0001 C CNN
+F 3 "~" H 4500 2450 50  0001 C CNN
+F 4 "RC0603JR-0710KL" H 4500 2450 50  0001 C CNN "Manufacturer Part Number"
+	1    4500 2450
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1054,41 +1018,41 @@ F 3 "" H 11500 9600 50  0001 C CNN
 	1    11500 9600
 	1    0    0    -1  
 $EndComp
-Text Label 10250 3750 2    50   ~ 0
-I_SENSE_5V
-Text Label 10250 3650 2    50   ~ 0
-I_SENSE_3V3
-Text Label 10250 4050 2    50   ~ 0
-V_SENSE_3V3
-Text Label 10250 3950 2    50   ~ 0
-V_SENSE_5V
-Text Label 10250 3550 2    50   ~ 0
-I_SENSE_BATT
-Text Label 10250 4250 2    50   ~ 0
-AUX_ENABLE
-Text Label 10250 5250 2    50   ~ 0
-GPS_TX
-Text Label 10250 5150 2    50   ~ 0
-GPOUT
 Text Label 10250 4150 2    50   ~ 0
-P1
-Text Label 10250 5350 2    50   ~ 0
-CHG
-Text Label 6150 4650 0    50   ~ 0
-SDO
-Text Label 6150 4550 0    50   ~ 0
-SDI
+I_SENSE_5V
+Text Label 10250 3750 2    50   ~ 0
+I_SENSE_3V3
+Text Label 10250 3650 2    50   ~ 0
+V_SENSE_3V3
+Text Label 10250 4050 2    50   ~ 0
+V_SENSE_5V
+Text Label 8100 2150 3    50   ~ 0
+I_SENSE_BATT
+Text Label 10200 3950 2    50   ~ 0
+ENABLE_5V
+Text Label 8500 2150 3    50   ~ 0
+GPS_TX
 Text Label 6150 4450 0    50   ~ 0
-SCLK
+GPOUT
+Text Label 8400 2150 3    50   ~ 0
+P1
+Text Label 6150 4550 0    50   ~ 0
+CHG
+Text Label 6500 3850 0    50   ~ 0
+SDO
 Text Label 6150 4350 0    50   ~ 0
+SDI
+Text Label 6500 3750 0    50   ~ 0
+SCLK
+Text Label 6500 4150 0    50   ~ 0
 CS
-Text Label 10250 4850 2    50   ~ 0
+Text Label 6450 5150 0    50   ~ 0
 S_GLOBO
-Text Label 10250 4450 2    50   ~ 0
+Text Label 6200 5250 0    50   ~ 0
 S_PARACAIDAS
-Text Label 10250 4750 2    50   ~ 0
+Text Label 8200 2150 3    50   ~ 0
 I2C_EN
-Text Label 6150 3650 0    50   ~ 0
+Text Label 4500 2850 1    50   ~ 0
 SCL
 Wire Wire Line
 	6150 4450 6800 4450
@@ -1102,43 +1066,35 @@ Wire Wire Line
 	6150 4950 6800 4950
 Wire Wire Line
 	6150 4850 6800 4850
-Text Label 10250 4550 2    50   ~ 0
+Text Label 6200 5350 0    50   ~ 0
 IO_EN
-Text Label 6150 4950 0    50   ~ 0
-TX_ARDUINO
 Text Label 6150 4850 0    50   ~ 0
-RX_ARDUINO
-Text Label 15100 2600 0    50   ~ 0
-AUX_ENABLE
-Text Label 15100 2900 0    50   ~ 0
-AUX_ENABLE
-Text Label 2900 10300 0    50   ~ 0
 TX_ARDUINO
-Text Label 2900 10200 0    50   ~ 0
+Text Label 6150 4650 0    50   ~ 0
 RX_ARDUINO
 $Comp
 L AXTEC_IC:+3V3_Internal #PWR55
 U 1 1 5CEE9F2A
-P 5400 3000
-F 0 "#PWR55" H 5400 3400 50  0001 C CNN
-F 1 "+3V3_Internal" H 5385 3173 50  0000 C CNN
-F 2 "" H 5400 3000 50  0001 C CNN
-F 3 "" H 5400 3000 50  0001 C CNN
-	1    5400 3000
+P 4650 2100
+F 0 "#PWR55" H 4650 2500 50  0001 C CNN
+F 1 "+3V3_Internal" H 4635 2273 50  0000 C CNN
+F 2 "" H 4650 2100 50  0001 C CNN
+F 3 "" H 4650 2100 50  0001 C CNN
+	1    4650 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 3000 5400 3100
+	4650 2100 4650 2200
 Wire Wire Line
-	5400 3100 5250 3100
+	4650 2200 4500 2200
 Wire Wire Line
-	5250 3100 5250 3200
+	4500 2200 4500 2300
 Wire Wire Line
-	5400 3100 5550 3100
+	4650 2200 4800 2200
 Wire Wire Line
-	5550 3100 5550 3200
-Connection ~ 5400 3100
-Text Label 10250 5050 2    50   ~ 0
+	4800 2200 4800 2300
+Connection ~ 4650 2200
+Text Label 10250 4250 2    50   ~ 0
 SPI_BUFFER_EN
 $Comp
 L AXTEC_IC:Conector_Expansion_CanSat J4
@@ -1183,21 +1139,6 @@ F 3 "~" H 13250 7100 50  0001 C CNN
 	1    13250 7100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:TestPoint_Probe TP6
-U 1 1 5C2EEB35
-P 15100 8300
-F 0 "TP6" H 15253 8402 50  0000 L CNN
-F 1 "TestPoint_VREF" H 15253 8311 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 15300 8300 50  0001 C CNN
-F 3 "~" H 15300 8300 50  0001 C CNN
-	1    15100 8300
-	1    0    0    -1  
-$EndComp
-Text Label 14850 8300 0    50   ~ 0
-+VREF
-Wire Wire Line
-	14850 8300 15100 8300
 Text Label 14950 8450 0    50   ~ 0
 SDA
 Text Label 14950 8600 0    50   ~ 0
@@ -1208,7 +1149,7 @@ U 1 1 5C30929D
 P 15100 8450
 F 0 "TP7" H 15253 8552 50  0000 L CNN
 F 1 "TestPoint_SDAint" H 15253 8461 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 15300 8450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 15300 8450 50  0001 C CNN
 F 3 "~" H 15300 8450 50  0001 C CNN
 	1    15100 8450
 	1    0    0    -1  
@@ -1219,7 +1160,7 @@ U 1 1 5C309301
 P 15100 8600
 F 0 "TP8" H 15253 8702 50  0000 L CNN
 F 1 "TestPoint_SCLint" H 15253 8611 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 15300 8600 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 15300 8600 50  0001 C CNN
 F 3 "~" H 15300 8600 50  0001 C CNN
 	1    15100 8600
 	1    0    0    -1  
@@ -1228,8 +1169,6 @@ Wire Wire Line
 	15100 8600 14950 8600
 Wire Wire Line
 	15100 8450 14950 8450
-Text Label 14650 8750 0    50   ~ 0
-CHG_DETECT
 Wire Wire Line
 	14650 8750 15100 8750
 $Comp
@@ -1238,7 +1177,7 @@ U 1 1 5C356783
 P 15100 8750
 F 0 "TP9" H 15253 8852 50  0000 L CNN
 F 1 "TestPoint_CHGDTC" H 15253 8761 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 15300 8750 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 15300 8750 50  0001 C CNN
 F 3 "~" H 15300 8750 50  0001 C CNN
 	1    15100 8750
 	1    0    0    -1  
@@ -1253,7 +1192,7 @@ U 1 1 5C357495
 P 15100 8900
 F 0 "TP10" H 15253 9002 50  0000 L CNN
 F 1 "TestPoint_RXard" H 15253 8911 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 15300 8900 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 15300 8900 50  0001 C CNN
 F 3 "~" H 15300 8900 50  0001 C CNN
 	1    15100 8900
 	1    0    0    -1  
@@ -1264,7 +1203,7 @@ U 1 1 5C357592
 P 15100 9050
 F 0 "TP11" H 15253 9152 50  0000 L CNN
 F 1 "TestPoint_TXard" H 15253 9061 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 15300 9050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 15300 9050 50  0001 C CNN
 F 3 "~" H 15300 9050 50  0001 C CNN
 	1    15100 9050
 	1    0    0    -1  
@@ -1273,73 +1212,13 @@ Wire Wire Line
 	14600 8900 15100 8900
 Wire Wire Line
 	14600 9050 15100 9050
-Text Label 14700 9200 0    50   ~ 0
-SCL_PIC16
-Text Label 14700 9350 0    50   ~ 0
-SDA_PIC16
-$Comp
-L Connector:TestPoint_Probe TP12
-U 1 1 5C38BC62
-P 15100 9200
-F 0 "TP12" H 15253 9302 50  0000 L CNN
-F 1 "TestPoint_SCLPIC" H 15253 9211 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 15300 9200 50  0001 C CNN
-F 3 "~" H 15300 9200 50  0001 C CNN
-	1    15100 9200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint_Probe TP13
-U 1 1 5C38BCCE
-P 15100 9350
-F 0 "TP13" H 15253 9452 50  0000 L CNN
-F 1 "TestPoint_SDAPIC" H 15253 9361 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 15300 9350 50  0001 C CNN
-F 3 "~" H 15300 9350 50  0001 C CNN
-	1    15100 9350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15100 9200 14700 9200
-Wire Wire Line
-	15100 9350 14700 9350
-Text Label 15050 9500 2    50   ~ 0
-TX_DEBUG
-Text Label 15050 9650 2    50   ~ 0
-RX_DEBUG
-$Comp
-L Connector:TestPoint_Probe TP14
-U 1 1 5C3C17EB
-P 15100 9500
-F 0 "TP14" H 15253 9602 50  0000 L CNN
-F 1 "TestPoint_TXDBG" H 15253 9511 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 15300 9500 50  0001 C CNN
-F 3 "~" H 15300 9500 50  0001 C CNN
-	1    15100 9500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint_Probe TP15
-U 1 1 5C3C1861
-P 15100 9650
-F 0 "TP15" H 15253 9752 50  0000 L CNN
-F 1 "TestPoint_RXDBG" H 15253 9661 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 15300 9650 50  0001 C CNN
-F 3 "~" H 15300 9650 50  0001 C CNN
-	1    15100 9650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14650 9500 15100 9500
-Wire Wire Line
-	15100 9650 14650 9650
 $Comp
 L Connector:TestPoint_Probe TP1
 U 1 1 5C3F7ABA
 P 13800 9200
 F 0 "TP1" H 13953 9302 50  0000 L CNN
 F 1 "TestPoint_3V3int" H 13953 9211 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 14000 9200 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 14000 9200 50  0001 C CNN
 F 3 "~" H 14000 9200 50  0001 C CNN
 	1    13800 9200
 	1    0    0    -1  
@@ -1350,7 +1229,7 @@ U 1 1 5C3F7B50
 P 13800 9350
 F 0 "TP2" H 13953 9452 50  0000 L CNN
 F 1 "TestPoint_VBUS" H 13953 9361 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 14000 9350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 14000 9350 50  0001 C CNN
 F 3 "~" H 14000 9350 50  0001 C CNN
 	1    13800 9350
 	1    0    0    -1  
@@ -1361,7 +1240,7 @@ U 1 1 5C3F7BCC
 P 13800 9500
 F 0 "TP3" H 13953 9602 50  0000 L CNN
 F 1 "TestPoint_3V3ext" H 13953 9511 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 14000 9500 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 14000 9500 50  0001 C CNN
 F 3 "~" H 14000 9500 50  0001 C CNN
 	1    13800 9500
 	1    0    0    -1  
@@ -1422,7 +1301,7 @@ U 1 1 5C44AEF7
 P 13800 9650
 F 0 "TP4" H 13953 9752 50  0000 L CNN
 F 1 "TestPoint_5Vext" H 13953 9661 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 14000 9650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 14000 9650 50  0001 C CNN
 F 3 "~" H 14000 9650 50  0001 C CNN
 	1    13800 9650
 	1    0    0    -1  
@@ -1447,7 +1326,7 @@ U 1 1 5C4D6CB3
 P 13850 8750
 F 0 "TP5" H 14003 8852 50  0000 L CNN
 F 1 "TestPoint_GND" H 14003 8761 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 14050 8750 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm" H 14050 8750 50  0001 C CNN
 F 3 "~" H 14050 8750 50  0001 C CNN
 	1    13850 8750
 	1    0    0    -1  
@@ -1665,16 +1544,16 @@ Connection ~ 1500 7900
 $Comp
 L Device:C_Small C?
 U 1 1 5D338E9F
-P 6600 3200
+P 6150 3200
 AR Path="/5BB122CA/5D338E9F" Ref="C?"  Part="1" 
 AR Path="/5BB123AC/5D338E9F" Ref="C?"  Part="1" 
 AR Path="/5D338E9F" Ref="C6"  Part="1" 
-F 0 "C6" H 6692 3246 50  0000 L CNN
-F 1 "4.7uF" H 6692 3155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6600 3200 50  0001 C CNN
-F 3 "~" H 6600 3200 50  0001 C CNN
-F 4 "GRM21BR71A475KE51K" H 6600 3200 50  0001 C CNN "Manufacturer Part Number"
-	1    6600 3200
+F 0 "C6" H 6242 3246 50  0000 L CNN
+F 1 "4.7uF" H 6242 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6150 3200 50  0001 C CNN
+F 3 "~" H 6150 3200 50  0001 C CNN
+F 4 "GRM21BR71A475KE51K" H 6150 3200 50  0001 C CNN "Manufacturer Part Number"
+	1    6150 3200
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1782,15 +1661,7 @@ Wire Wire Line
 	9650 4250 10250 4250
 Wire Wire Line
 	9650 4150 10250 4150
-Wire Wire Line
-	6800 3550 5550 3550
-Wire Wire Line
-	5550 3550 5550 3500
-Wire Wire Line
-	6800 3650 5250 3650
-Wire Wire Line
-	5250 3650 5250 3500
-Text Label 6150 3550 0    50   ~ 0
+Text Label 7500 2300 1    50   ~ 0
 SDA
 Wire Wire Line
 	6800 4050 6600 4050
@@ -1823,23 +1694,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR06
 U 1 1 5D5C79B9
-P 6600 3300
-F 0 "#PWR06" H 6600 3050 50  0001 C CNN
-F 1 "GND" H 6605 3127 50  0000 C CNN
-F 2 "" H 6600 3300 50  0001 C CNN
-F 3 "" H 6600 3300 50  0001 C CNN
-	1    6600 3300
+P 6150 3350
+F 0 "#PWR06" H 6150 3100 50  0001 C CNN
+F 1 "GND" H 6155 3177 50  0000 C CNN
+F 2 "" H 6150 3350 50  0001 C CNN
+F 3 "" H 6150 3350 50  0001 C CNN
+	1    6150 3350
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 3050 6600 3050
-Wire Wire Line
 	6150 3050 6150 2600
-Wire Wire Line
-	6600 3050 6600 3100
-Connection ~ 6600 3050
-Wire Wire Line
-	6150 3050 6600 3050
 $Comp
 L power:VBUS #PWR02
 U 1 1 5D63DA87
@@ -1863,7 +1727,7 @@ Text Label 6500 5050 0    50   ~ 0
 SWO
 Wire Wire Line
 	6800 5050 6500 5050
-Text Label 6500 3850 0    50   ~ 0
+Text Label 6500 3950 0    50   ~ 0
 nRST
 Wire Wire Line
 	6800 3850 6500 3850
@@ -1901,13 +1765,13 @@ Text Notes 10400 3650 0    50   ~ 10
 SLOW
 Text Notes 10400 3550 0    50   ~ 10
 SLOW
-Text Notes 6350 5550 2    50   ~ 10
+Text Notes 6150 5550 2    50   ~ 10
 SLOW
-Text Notes 6350 5350 2    50   ~ 10
+Text Notes 6150 5350 2    50   ~ 10
 SLOW
-Text Notes 6350 5250 2    50   ~ 10
+Text Notes 6150 5250 2    50   ~ 10
 SLOW
-Text Notes 6350 5150 2    50   ~ 10
+Text Notes 6150 5150 2    50   ~ 10
 SLOW
 Wire Wire Line
 	1150 7600 1300 7600
@@ -1929,10 +1793,6 @@ Wire Wire Line
 	5300 10400 4850 10400
 Wire Wire Line
 	5300 10500 4850 10500
-Text Label 5300 10400 2    50   ~ 0
-EXT_IO2
-Text Label 5300 10500 2    50   ~ 0
-EXT_IO3
 $Comp
 L SamacSys_Parts:W25Q32BVSSIG U3
 U 1 1 5D9EA0F1
@@ -2049,13 +1909,13 @@ Text Label 7150 7100 0    50   ~ 0
 MMISO
 Text Label 7150 7000 0    50   ~ 0
 MCS
-Text Label 7400 2150 3    50   ~ 0
+Text Label 7900 2350 1    50   ~ 0
 MCS
-Text Label 7500 2150 3    50   ~ 0
+Text Label 7600 2400 1    50   ~ 0
 MMISO
-Text Label 7600 2150 3    50   ~ 0
+Text Label 7400 2400 1    50   ~ 0
 MMOSI
-Text Label 7700 2150 3    50   ~ 0
+Text Label 7700 2400 1    50   ~ 0
 MCLK
 Wire Wire Line
 	7400 2600 7400 2150
@@ -2183,18 +2043,14 @@ Wire Wire Line
 	3250 10850 3250 10700
 Wire Wire Line
 	3250 10700 3350 10700
-Text Label 8100 2150 3    50   ~ 0
+Text Label 6150 4750 0    50   ~ 0
 GPIO2
-Text Label 8200 2150 3    50   ~ 0
+Text Label 6150 4950 0    50   ~ 0
 GPIO3
 Wire Wire Line
 	8100 2150 8100 2600
 Wire Wire Line
 	8200 2150 8200 2600
-Text Label 2900 10400 0    50   ~ 0
-GPIO2
-Text Label 2900 10500 0    50   ~ 0
-GPIO3
 Wire Wire Line
 	2900 10500 3350 10500
 Wire Wire Line
@@ -2281,8 +2137,8 @@ $Comp
 L Sensor_Temperature:Si7051-A20 U7
 U 1 1 5D3B31C1
 P 2850 2400
-F 0 "U7" H 3150 2800 50  0000 L CNN
-F 1 "Si7051-A20" H 2950 2700 50  0000 L CNN
+F 0 "U7" H 2400 2800 50  0000 L CNN
+F 1 "Si7051-A20" H 2300 2700 50  0000 L CNN
 F 2 "Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm" H 2850 2000 50  0001 C CNN
 F 3 "https://www.silabs.com/documents/public/data-sheets/Si7050-1-3-4-5-A20.pdf" H 2650 2700 50  0001 C CNN
 F 4 "SI7051-A20-IM" H 2850 2400 50  0001 C CNN "Manufacturer Part Number"
@@ -2292,33 +2148,29 @@ $EndComp
 $Comp
 L AXTEC_IC:+3V3_Internal #PWR1
 U 1 1 5D3FBC3E
-P 2850 1800
-F 0 "#PWR1" H 2850 2200 50  0001 C CNN
-F 1 "+3V3_Internal" H 2835 1973 50  0000 C CNN
-F 2 "" H 2850 1800 50  0001 C CNN
-F 3 "" H 2850 1800 50  0001 C CNN
-	1    2850 1800
+P 3100 1950
+F 0 "#PWR1" H 3100 2350 50  0001 C CNN
+F 1 "+3V3_Internal" H 3085 2123 50  0000 C CNN
+F 2 "" H 3100 1950 50  0001 C CNN
+F 3 "" H 3100 1950 50  0001 C CNN
+	1    3100 1950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5D3FD0BC
-P 2850 1950
+P 3400 2350
 AR Path="/5BB122CA/5D3FD0BC" Ref="C?"  Part="1" 
 AR Path="/5BB12371/5D3FD0BC" Ref="C?"  Part="1" 
 AR Path="/5D3FD0BC" Ref="C1"  Part="1" 
-F 0 "C1" H 2758 1904 50  0000 R CNN
-F 1 "1uF" H 2758 1995 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 2850 1950 50  0001 C CNN
-F 3 "~" H 2850 1950 50  0001 C CNN
-F 4 "GRM155R61E105KA12D" H 2850 1950 50  0001 C CNN "Manufacturer Part Number"
-	1    2850 1950
+F 0 "C1" H 3308 2304 50  0000 R CNN
+F 1 "1uF" H 3308 2395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3400 2350 50  0001 C CNN
+F 3 "~" H 3400 2350 50  0001 C CNN
+F 4 "GRM155R61E105KA12D" H 3400 2350 50  0001 C CNN "Manufacturer Part Number"
+	1    3400 2350
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	2850 1850 2850 1800
-Wire Wire Line
-	2850 2050 2850 2100
 $Comp
 L power:GND #PWR041
 U 1 1 5D45F3A9
@@ -2371,4 +2223,190 @@ F 3 "" H 2000 3750 50  0001 C CNN
 	1    2000 3750
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR042
+U 1 1 5CD332F1
+P 3400 2700
+F 0 "#PWR042" H 3400 2450 50  0001 C CNN
+F 1 "GND" H 3405 2527 50  0000 C CNN
+F 2 "" H 3400 2700 50  0001 C CNN
+F 3 "" H 3400 2700 50  0001 C CNN
+	1    3400 2700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2100 2850 2050
+Wire Wire Line
+	2850 2050 3100 2050
+Wire Wire Line
+	3400 2050 3400 2250
+Wire Wire Line
+	3400 2450 3400 2700
+Wire Wire Line
+	3100 1950 3100 2050
+Connection ~ 3100 2050
+Wire Wire Line
+	3100 2050 3400 2050
+Text Label 2900 10300 0    50   ~ 0
+GPIO2
+Text Label 2900 10400 0    50   ~ 0
+TX_ARDUINO
+Text Label 2900 10500 0    50   ~ 0
+RX_ARDUINO
+Text Label 5300 10500 2    50   ~ 0
+EXT_IO3
+Text Label 5300 10200 2    50   ~ 0
+EXT_IO0
+Text Label 5300 10400 2    50   ~ 0
+EXT_IO2
+Text Label 5300 10300 2    50   ~ 0
+EXT_IO1
+Text Label 2900 10200 0    50   ~ 0
+GPIO3
+Text Label 8100 10550 2    50   ~ 0
+SDA_EXT
+Text Label 8100 10450 2    50   ~ 0
+SCL_EXT
+Text Label 6250 10450 0    50   ~ 0
+SCL
+Text Label 6250 10550 0    50   ~ 0
+SDA
+$Comp
+L SamacSys_Parts:TCA9802DGKR U2
+U 1 1 5BFA3047
+P 6550 10350
+F 0 "U2" H 7100 10616 50  0000 C CNN
+F 1 "TCA9802DGKR" H 7100 10524 50  0000 C CNN
+F 2 "SamacSys_Parts:SOP65P490X110-8N" H 7500 10450 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/tca9802" H 7500 10350 50  0001 L CNN
+F 4 "Level-Translating I2C Bus Buffer/Repeater" H 7500 10250 50  0001 L CNN "Description"
+F 5 "1.1" H 7500 10150 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 7500 10050 50  0001 L CNN "Manufacturer_Name"
+F 7 "TCA9802DGKR" H 7500 9950 50  0001 L CNN "Manufacturer Part Number"
+F 8 "TCA9802DGKR" H 7500 9650 50  0001 L CNN "Arrow Part Number"
+	1    6550 10350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1100 1700 1650
+Wire Wire Line
+	1350 1650 1700 1650
+Connection ~ 1700 1650
+Wire Wire Line
+	1700 1650 1700 2200
+Text Label 8600 2150 3    50   ~ 0
+ENABLE_3V3
+Text Label 15600 2900 2    50   ~ 0
+ENABLE_5V
+Text Label 15600 2600 2    50   ~ 0
+ENABLE_3V3
+Wire Wire Line
+	9650 5450 10250 5450
+Wire Wire Line
+	9650 5550 10250 5550
+Wire Wire Line
+	7900 2600 7900 2150
+Wire Wire Line
+	8300 2150 8300 2600
+Text Label 6500 3650 0    50   ~ 0
+SCL
+Text Label 4800 2850 1    50   ~ 0
+SDA
+Wire Wire Line
+	4500 2600 4500 2850
+Wire Wire Line
+	4800 2600 4800 2850
+Wire Wire Line
+	6800 3650 6500 3650
+Wire Wire Line
+	6800 3550 6500 3550
+Wire Wire Line
+	6150 3350 6150 3300
+Wire Wire Line
+	6150 3100 6150 3050
+Connection ~ 6150 3050
+Wire Wire Line
+	6150 3050 6800 3050
+Wire Wire Line
+	6800 3750 6500 3750
+Wire Wire Line
+	6800 3950 6500 3950
+Wire Wire Line
+	6800 4150 6500 4150
+Wire Wire Line
+	8400 2150 8400 2600
+Wire Wire Line
+	6800 4750 6150 4750
+Wire Wire Line
+	6800 5150 6450 5150
+Wire Wire Line
+	8500 2150 8500 2600
+Wire Wire Line
+	8600 2150 8600 2600
+Wire Wire Line
+	6200 5250 6800 5250
+Wire Wire Line
+	6200 5350 6800 5350
+Text Label 14650 8750 0    50   ~ 0
+CHG
+Text Label 14700 9300 0    50   ~ 0
+SDI
+Text Label 14700 9450 0    50   ~ 0
+SDO
+Text Label 14700 9600 0    50   ~ 0
+SCLK
+Text Label 14700 9750 0    50   ~ 0
+CS
+$Comp
+L Connector:TestPoint_Probe TP6
+U 1 1 5D61011B
+P 15100 9300
+F 0 "TP6" H 15253 9402 50  0000 L CNN
+F 1 "TestPoint_SDI" H 15253 9311 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 15300 9300 50  0001 C CNN
+F 3 "~" H 15300 9300 50  0001 C CNN
+	1    15100 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP12
+U 1 1 5D610391
+P 15100 9450
+F 0 "TP12" H 15253 9552 50  0000 L CNN
+F 1 "TestPoint_SD0" H 15253 9461 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 15300 9450 50  0001 C CNN
+F 3 "~" H 15300 9450 50  0001 C CNN
+	1    15100 9450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP13
+U 1 1 5D610509
+P 15100 9600
+F 0 "TP13" H 15253 9702 50  0000 L CNN
+F 1 "TestPoint_SCLK" H 15253 9611 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 15300 9600 50  0001 C CNN
+F 3 "~" H 15300 9600 50  0001 C CNN
+	1    15100 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP14
+U 1 1 5D6106C4
+P 15100 9750
+F 0 "TP14" H 15253 9852 50  0000 L CNN
+F 1 "TestPoint_CS" H 15253 9761 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 15300 9750 50  0001 C CNN
+F 3 "~" H 15300 9750 50  0001 C CNN
+	1    15100 9750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14700 9300 15100 9300
+Wire Wire Line
+	14700 9450 15100 9450
+Wire Wire Line
+	14700 9600 15100 9600
+Wire Wire Line
+	14700 9750 15100 9750
 $EndSCHEMATC
