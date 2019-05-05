@@ -342,7 +342,7 @@ U 1 1 5CCF549E
 P 7250 4050
 F 0 "J1" H 7494 4025 50  0000 L CNN
 F 1 "5-1814832-1" H 7494 3934 50  0000 L CNN
-F 2 "5-1814832-1" H 7650 4150 50  0001 L CNN
+F 2 "SamacSys_Parts:5-1814832-1" H 7650 4150 50  0001 L CNN
 F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814832&DocType=Customer+Drawing&DocLang=English" H 7650 4050 50  0001 L CNN
 F 4 "SUBMINIATURE COAX" H 7650 3950 50  0001 L CNN "Description"
 F 5 "TE Connectivity" H 7650 3750 50  0001 L CNN "Manufacturer_Name"
