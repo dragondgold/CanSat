@@ -1,4 +1,88 @@
-15815914375935696
+15854835934631701
+AXTEC
+A2235-H
+
+GPS
+0
+30
+30
+AXTEC
+B39921B3588U410
+
+
+0
+6
+6
+AXTEC
+Conector_Expansion_CanSat
+
+
+0
+24
+24
+AXTEC
+Conector_PCB_A-B
+
+
+0
+17
+17
+AXTEC
+Conector_PCB_B-C_Lado_B
+
+
+0
+40
+40
+AXTEC
+Conector_PCB_B-C_Lado_C
+
+
+0
+40
+40
+AXTEC
+Empty_Footprint
+
+
+0
+0
+0
+AXTEC
+Logo_AXTEC
+
+
+0
+0
+0
+AXTEC
+MH_CanSat
+
+
+0
+3
+3
+AXTEC
+PCB_mayor_diametro
+
+
+0
+0
+0
+AXTEC
+Serigrafia tapa superior
+
+
+0
+0
+0
+AXTEC
+SRN3010TA-4R7M
+
+
+0
+2
+2
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -64896,6 +64980,97 @@ rotary encoder
 0
 5
 4
+SamacSys_Parts
+5-1814832-1
+5-1814832-1
+Connector
+0
+5
+5
+SamacSys_Parts
+0915BM15A0001E
+0915BM15A0001E-1
+Filter
+0
+6
+6
+SamacSys_Parts
+45100001
+451-00001-2
+Antenna
+0
+72
+72
+SamacSys_Parts
+524652071
+52465-2071
+Connector
+0
+20
+20
+SamacSys_Parts
+AP9211SAACHAC7
+U-DFN2030-6 (Type C)
+Integrated Circuit
+0
+7
+7
+SamacSys_Parts
+LFXTAL016178_1
+LFXTAL016178_1
+Crystal or Oscillator
+0
+4
+4
+SamacSys_Parts
+LGA_PACKAGE_20_PINS
+LGA package 20 pins
+Integrated Circuit
+0
+20
+20
+SamacSys_Parts
+MS5637_1
+MS5637_1
+Integrated Circuit
+0
+4
+4
+SamacSys_Parts
+NE555DR
+D (R-PDSO-G8)
+Integrated Circuit
+0
+8
+8
+SamacSys_Parts
+SOIC127P790X216-8N
+8-Pin SOIC 208-mil (Package Code SS)_1
+Integrated Circuit
+0
+8
+8
+SamacSys_Parts
+SON100P300X300X80-7N
+DFN6
+Hygrometer
+0
+7
+7
+SamacSys_Parts
+SOP65P490X110-8N
+DGK
+Integrated Circuit
+0
+8
+8
+SamacSys_Parts
+SOT95P280X145-6N
+DBV (R-PDSO-G6)
+Integrated Circuit
+0
+6
+6
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
