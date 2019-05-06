@@ -707,8 +707,8 @@ U 1 1 5D24EEFF
 P 6350 4600
 AR Path="/5D24EEFF" Ref="Q?"  Part="1" 
 AR Path="/5BC14C3C/5D24EEFF" Ref="Q?"  Part="1" 
-AR Path="/5BC13C37/5D24EEFF" Ref="Q?"  Part="1" 
-F 0 "Q?" V 6950 4700 50  0000 C CNN
+AR Path="/5BC13C37/5D24EEFF" Ref="Q2"  Part="1" 
+F 0 "Q2" V 6950 4700 50  0000 C CNN
 F 1 "SSM3J338R,LF" V 6850 4700 50  0000 C CNN
 F 2 "SamacSys_Parts:SSM3J332RLFT" H 6800 4550 50  0001 L CNN
 F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30384&prodName=SSM3J338R" H 6800 4450 50  0001 L CNN
@@ -734,8 +734,8 @@ AR Path="/5BA1A7F9/5D24EF0A" Ref="R?"  Part="1"
 AR Path="/5BA1A77A/5D24EF0A" Ref="R?"  Part="1" 
 AR Path="/5BC300BF/5D24EF0A" Ref="R?"  Part="1" 
 AR Path="/5BC14C3C/5D24EF0A" Ref="R?"  Part="1" 
-AR Path="/5BC13C37/5D24EF0A" Ref="R?"  Part="1" 
-F 0 "R?" V 6200 4400 50  0000 L CNN
+AR Path="/5BC13C37/5D24EF0A" Ref="R13"  Part="1" 
+F 0 "R13" V 6200 4400 50  0000 L CNN
 F 1 "100k" V 6000 4350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6030 4450 50  0001 C CNN
 F 3 "~" H 6100 4450 50  0001 C CNN
@@ -756,8 +756,8 @@ AR Path="/5BA1A77A/5D24EF13" Ref="R?"  Part="1"
 AR Path="/5D24EF13" Ref="R?"  Part="1" 
 AR Path="/5BB1631B/5D24EF13" Ref="R?"  Part="1" 
 AR Path="/5BC28DAC/5D24EF13" Ref="R?"  Part="1" 
-AR Path="/5BC13C37/5D24EF13" Ref="R?"  Part="1" 
-F 0 "R?" V 6450 4800 50  0000 L CNN
+AR Path="/5BC13C37/5D24EF13" Ref="R15"  Part="1" 
+F 0 "R15" V 6450 4800 50  0000 L CNN
 F 1 "1k" V 6250 4800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6280 4850 50  0001 C CNN
 F 3 "~" H 6350 4850 50  0001 C CNN
