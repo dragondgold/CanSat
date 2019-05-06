@@ -917,7 +917,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 1450 1800 1450
 Wire Wire Line
-	7050 1500 8850 1500
+	7050 1500 7550 1500
 $Comp
 L AXTEC_IC:Spacer M1
 U 1 1 5C2DF64C
@@ -1124,17 +1124,6 @@ F 3 "" H 3450 1400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3100 1400 3450 1400
-$Comp
-L Diode:1N4007 D4
-U 1 1 5C28CCE7
-P 7050 1250
-F 0 "D4" V 7004 1329 50  0000 L CNN
-F 1 "1N4007" V 7096 1329 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA" H 7050 1075 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7050 1250 50  0001 C CNN
-	1    7050 1250
-	0    1    1    0   
-$EndComp
 Text Label 3150 2100 0    50   ~ 0
 D6
 $Comp
@@ -1229,10 +1218,10 @@ D-
 Text Label 9450 2800 0    50   ~ 0
 D+
 $Comp
-L Graphic:Logo_Open_Hardware_Large #LOGO?
+L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 5C3319FC
 P 8750 5500
-F 0 "#LOGO?" H 8750 6000 50  0001 C CNN
+F 0 "#LOGO1" H 8750 6000 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Large" H 8750 5100 50  0001 C CNN
 F 2 "" H 8750 5500 50  0001 C CNN
 F 3 "~" H 8750 5500 50  0001 C CNN
@@ -1263,21 +1252,10 @@ Wire Wire Line
 Wire Wire Line
 	9750 2800 9850 2800
 $Comp
-L PCB_D-rescue:FT231XS-Interface_USB-PCB_D-rescue-PCB_D-rescue U3
-U 1 1 5C33DAA5
-P 8750 3000
-F 0 "U3" H 9250 3900 50  0000 C CNN
-F 1 "FT231XS" H 9150 3800 50  0000 C CNN
-F 2 "Package_SO:SSOP-20_3.9x8.7mm_P0.635mm" H 9350 2050 50  0001 C CNN
-F 3 "http://www.ftdichip.com/Products/ICs/FT231X.html" H 8750 3000 50  0001 C CNN
-	1    8750 3000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
+L power:GND #PWR024
 U 1 1 5C73E497
 P 7900 3750
-F 0 "#PWR?" H 7900 3500 50  0001 C CNN
+F 0 "#PWR024" H 7900 3500 50  0001 C CNN
 F 1 "GND" H 7904 3576 50  0000 C CNN
 F 2 "" H 7900 3750 50  0001 C CNN
 F 3 "" H 7900 3750 50  0001 C CNN
@@ -1286,4 +1264,56 @@ F 3 "" H 7900 3750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7900 3600 7900 3750
+$Comp
+L Interface_USB:FT231XS U3
+U 1 1 5CD17CE6
+P 8750 3000
+F 0 "U3" H 9100 3950 50  0000 C CNN
+F 1 "FT231XS" H 9100 3850 50  0000 C CNN
+F 2 "Package_SO:SSOP-20_3.9x8.7mm_P0.635mm" H 9350 2050 50  0001 C CNN
+F 3 "http://www.ftdichip.com/Products/ICs/FT231X.html" H 8750 3000 50  0001 C CNN
+F 4 "FT231XS-U" H 8750 3000 50  0001 C CNN "Manufacturer Part Number"
+	1    8750 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 1400 7550 1500
+Connection ~ 7550 1500
+Wire Wire Line
+	7550 1500 8850 1500
+$Comp
+L power:+5V #PWR023
+U 1 1 5CD2C70A
+P 7550 1100
+F 0 "#PWR023" H 7550 950 50  0001 C CNN
+F 1 "+5V" H 7564 1275 50  0000 C CNN
+F 2 "" H 7550 1100 50  0001 C CNN
+F 3 "" H 7550 1100 50  0001 C CNN
+	1    7550 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D4
+U 1 1 5C28CCE7
+P 7050 1250
+F 0 "D4" V 7004 1329 50  0000 L CNN
+F 1 "RS1A-E3/5AT" V 7096 1329 50  0001 L CNN
+F 2 "Diode_SMD:D_SMA" H 7050 1075 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7050 1250 50  0001 C CNN
+F 4 "RS1A-E3/5AT" V 7050 1250 50  0001 C CNN "Manufacturer Part Number"
+	1    7050 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4148 D7
+U 1 1 5CD16F3E
+P 7550 1250
+F 0 "D7" V 7500 1400 50  0000 C CNN
+F 1 "1N4148" V 7600 1500 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 7550 1075 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85561/ls4148.pdf" H 7550 1250 50  0001 C CNN
+F 4 "LS4148-GS08" H 7550 1250 50  0001 C CNN "Manufacturer Part Number"
+	1    7550 1250
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
