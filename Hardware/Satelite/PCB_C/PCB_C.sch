@@ -745,8 +745,8 @@ F 0 "J3" H 15300 2250 50  0000 C CNN
 F 1 "Conector_PCB_B-C" H 15600 2150 50  0000 C CNN
 F 2 "AXTEC:Conector_PCB_B-C_Lado_C" H 14150 2200 50  0001 C CNN
 F 3 "" H 14150 2200 50  0001 C CNN
-F 4 "Hecho con dos 53307-2071 y sus dos opuestos 52465-2071" H 0   -150 50  0001 C CNN "Notes"
-F 5 "53307-2071" H 14250 1450 50  0001 C CNN "Manufacturer Part Number"
+F 4 "Hecho con dos 53353-1071 y sus dos opuestos 52465-2071" H 0   -150 50  0001 C CNN "Notes"
+F 5 "53353-1071" H 14250 1450 50  0001 C CNN "Manufacturer Part Number"
 F 6 "2" H 14250 1450 50  0001 C CNN "Quantity"
 	1    14250 1450
 	1    0    0    -1  
@@ -979,7 +979,7 @@ F 0 "M1" H 14321 7093 50  0000 R CNN
 F 1 "Spacer" H 14321 7001 50  0000 R CNN
 F 2 "AXTEC:Empty_Footprint" H 14300 7250 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 14400 7350 50  0001 C CNN
-F 4 "R30-3011002" H 14321 6955 50  0001 R CNN "Manufacturer Part Number"
+F 4 "R30-3010702" H 14321 6955 50  0001 R CNN "Manufacturer Part Number"
 	1    14400 7100
 	-1   0    0    -1  
 $EndComp
@@ -991,7 +991,7 @@ F 0 "M2" H 14921 7093 50  0000 R CNN
 F 1 "Spacer" H 14921 7001 50  0000 R CNN
 F 2 "AXTEC:Empty_Footprint" H 14900 7250 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 15000 7350 50  0001 C CNN
-F 4 "R30-3011002" H 14921 6955 50  0001 R CNN "Manufacturer Part Number"
+F 4 "R30-3010702" H 14921 6955 50  0001 R CNN "Manufacturer Part Number"
 	1    15000 7100
 	-1   0    0    -1  
 $EndComp
@@ -1003,7 +1003,7 @@ F 0 "M3" H 15521 7093 50  0000 R CNN
 F 1 "Spacer" H 15521 7001 50  0000 R CNN
 F 2 "AXTEC:Empty_Footprint" H 15500 7250 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 15600 7350 50  0001 C CNN
-F 4 "R30-3011002" H 15521 6955 50  0001 R CNN "Manufacturer Part Number"
+F 4 "R30-3010702" H 15521 6955 50  0001 R CNN "Manufacturer Part Number"
 	1    15600 7100
 	-1   0    0    -1  
 $EndComp
