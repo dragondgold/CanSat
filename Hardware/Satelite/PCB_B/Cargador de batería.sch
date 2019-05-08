@@ -263,7 +263,7 @@ U 1 1 5CC7F175
 P 6350 3550
 F 0 "U10" H 6900 3815 50  0000 C CNN
 F 1 "BQ21040DBVR" H 6900 3724 50  0000 C CNN
-F 2 "SOT95P280X145-6N" H 7300 3650 50  0001 L CNN
+F 2 "SamacSys_Parts:SOT95P280X145-6N" H 7300 3650 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/bq21040" H 7300 3550 50  0001 L CNN
 F 4 "0.8A Single Input Single-Cell Li-Ion and Li-Pol Battery Charger" H 7300 3450 50  0001 L CNN "Description"
 F 5 "1.45" H 7300 3350 50  0001 L CNN "Height"
@@ -312,18 +312,6 @@ Connection ~ 7050 3750
 Wire Wire Line
 	7050 3750 6350 3750
 $Comp
-L Device:Thermistor_NTC TH1
-U 1 1 5CC9077E
-P 6700 4150
-F 0 "TH1" H 6547 4104 50  0000 R CNN
-F 1 "Thermistor_NTC" H 6547 4195 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6700 4200 50  0001 C CNN
-F 3 "~" H 6700 4200 50  0001 C CNN
-F 4 "P12013CT-ND" H 6700 4150 50  0001 C CNN "Manufacturer Part Number"
-	1    6700 4150
-	1    0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5CC95641
 P 6700 4300
@@ -343,4 +331,20 @@ Wire Wire Line
 	6700 3550 6350 3550
 Text Notes 6200 4750 0    50   ~ 0
 El termistor debe estar en contacto\ndirecto con la batería
+$Comp
+L Device:R R?
+U 1 1 5CD36697
+P 6700 4150
+AR Path="/5BA17F9C/5CD36697" Ref="R?"  Part="1" 
+AR Path="/5BA1A7F9/5CD36697" Ref="R?"  Part="1" 
+AR Path="/5BA1A77A/5CD36697" Ref="R?"  Part="1" 
+AR Path="/5BC300BF/5CD36697" Ref="R19"  Part="1" 
+F 0 "R19" V 6800 4150 50  0000 L CNN
+F 1 "100k" V 6600 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6630 4150 50  0001 C CNN
+F 3 "~" H 6700 4150 50  0001 C CNN
+F 4 "RC0603JR-07100KL" V 6700 4150 50  0001 C CNN "Manufacturer Part Number"
+	1    6700 4150
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
