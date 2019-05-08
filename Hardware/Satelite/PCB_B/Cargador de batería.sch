@@ -333,18 +333,21 @@ Text Notes 6200 4750 0    50   ~ 0
 El termistor debe estar en contacto\ndirecto con la batería
 $Comp
 L Device:R R?
-U 1 1 5CD36697
+U 1 1 5CD971D1
 P 6700 4150
-AR Path="/5BA17F9C/5CD36697" Ref="R?"  Part="1" 
-AR Path="/5BA1A7F9/5CD36697" Ref="R?"  Part="1" 
-AR Path="/5BA1A77A/5CD36697" Ref="R?"  Part="1" 
-AR Path="/5BC300BF/5CD36697" Ref="R19"  Part="1" 
+AR Path="/5BA17F9C/5CD971D1" Ref="R?"  Part="1" 
+AR Path="/5BA1A7F9/5CD971D1" Ref="R?"  Part="1" 
+AR Path="/5BA1A77A/5CD971D1" Ref="R?"  Part="1" 
+AR Path="/5CD971D1" Ref="R?"  Part="1" 
+AR Path="/5BB1631B/5CD971D1" Ref="R?"  Part="1" 
+AR Path="/5BC28DAC/5CD971D1" Ref="R?"  Part="1" 
+AR Path="/5BC300BF/5CD971D1" Ref="R19"  Part="1" 
 F 0 "R19" V 6800 4150 50  0000 L CNN
-F 1 "100k" V 6600 4050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6630 4150 50  0001 C CNN
+F 1 "10k" V 6600 4150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6630 4150 50  0001 C CNN
 F 3 "~" H 6700 4150 50  0001 C CNN
-F 4 "RC0603JR-07100KL" V 6700 4150 50  0001 C CNN "Manufacturer Part Number"
+F 4 "RC0603JR-0710KL" V 6700 4150 50  0001 C CNN "Manufacturer Part Number"
 	1    6700 4150
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
