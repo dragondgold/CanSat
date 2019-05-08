@@ -75,9 +75,9 @@ U 1 1 5BBBF74C
 P 850 7800
 F 0 "J5" H 900 8250 50  0000 R CNN
 F 1 "USB_B_Micro" H 1050 8150 50  0000 R CNN
-F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 1000 7750 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1000 7750 50  0001 C CNN
 F 3 "https://www.molex.com/webdocs/datasheets/pdf/en-us/1050170001_IO_CONNECTORS.pdf" H 1000 7750 50  0001 C CNN
-F 4 "105017-0001" H 850 7800 50  0001 C CNN "Manufacturer Part Number"
+F 4 "47346-1001" H 850 7800 50  0001 C CNN "Manufacturer Part Number"
 	1    850  7800
 	1    0    0    -1  
 $EndComp

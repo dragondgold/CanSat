@@ -111,9 +111,9 @@ U 1 1 5BBD7273
 P 10150 2700
 F 0 "J4" H 9920 2691 50  0000 R CNN
 F 1 "USB_B_Micro" H 9920 2599 50  0000 R CNN
-F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 10300 2650 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 10300 2650 50  0001 C CNN
 F 3 "https://www.molex.com/pdm_docs/sd/1050170001_sd.pdf" H 10300 2650 50  0001 C CNN
-F 4 "105017-0001" H 10150 2700 50  0001 C CNN "Manufacturer Part Number"
+F 4 "47346-1001" H 10150 2700 50  0001 C CNN "Manufacturer Part Number"
 	1    10150 2700
 	-1   0    0    -1  
 $EndComp
