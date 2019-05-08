@@ -1261,12 +1261,6 @@ Wire Wire Line
 Wire Wire Line
 	5600 1750 5800 1750
 Wire Wire Line
-	5800 2300 5700 2300
-Wire Wire Line
-	5700 2300 5700 2150
-Wire Wire Line
-	5350 2150 5700 2150
-Wire Wire Line
 	5800 2400 5350 2400
 Wire Wire Line
 	5800 2500 5350 2500
@@ -1469,14 +1463,69 @@ Wire Wire Line
 $Comp
 L AXTEC_IC:+3V3_Internal #PWR?
 U 1 1 5E1A4DEA
-P 5350 2150
+P 4900 2750
 AR Path="/5E1A4DEA" Ref="#PWR?"  Part="1" 
 AR Path="/5BA17F9C/5E1A4DEA" Ref="#PWR54"  Part="1" 
-F 0 "#PWR54" H 5350 2550 50  0001 C CNN
-F 1 "+3V3_Internal" H 5335 2323 50  0000 C CNN
-F 2 "" H 5350 2150 50  0001 C CNN
-F 3 "" H 5350 2150 50  0001 C CNN
-	1    5350 2150
+F 0 "#PWR54" H 4900 3150 50  0001 C CNN
+F 1 "+3V3_Internal" H 4885 2923 50  0000 C CNN
+F 2 "" H 4900 2750 50  0001 C CNN
+F 3 "" H 4900 2750 50  0001 C CNN
+	1    4900 2750
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CD45ACE
+P 4900 3850
+AR Path="/5B9A8077/5CD45ACE" Ref="#PWR?"  Part="1" 
+AR Path="/5BA17F9C/5CD45ACE" Ref="#PWR059"  Part="1" 
+F 0 "#PWR059" H 4900 3600 50  0001 C CNN
+F 1 "GND" H 4905 3677 50  0000 C CNN
+F 2 "" H 4900 3850 50  0001 C CNN
+F 3 "" H 4900 3850 50  0001 C CNN
+	1    4900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CD45AD5
+P 4900 3000
+AR Path="/5B9A8077/5CD45AD5" Ref="R?"  Part="1" 
+AR Path="/5BA17F9C/5CD45AD5" Ref="R16"  Part="1" 
+F 0 "R16" H 4970 3046 50  0000 L CNN
+F 1 "10K" H 4970 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4830 3000 50  0001 C CNN
+F 3 "~" H 4900 3000 50  0001 C CNN
+F 4 "RC0603JR-0710KL" H 4900 3000 50  0001 C CNN "Manufacturer Part Number"
+	1    4900 3000
+	1    0    0    -1  
+$EndComp
+Text Label 4950 3200 0    50   ~ 0
+HGM
+Wire Wire Line
+	4900 2750 4900 2850
+$Comp
+L Device:Jumper JP?
+U 1 1 5CD45AE3
+P 4900 3500
+AR Path="/5B9A8077/5CD45AE3" Ref="JP?"  Part="1" 
+AR Path="/5BA17F9C/5CD45AE3" Ref="JP1"  Part="1" 
+F 0 "JP1" V 4854 3627 50  0000 L CNN
+F 1 "Jumper" V 4945 3627 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4900 3500 50  0001 C CNN
+F 3 "~" H 4900 3500 50  0001 C CNN
+	1    4900 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 3150 4900 3200
+Wire Wire Line
+	4900 3800 4900 3850
+Wire Wire Line
+	4900 3200 5100 3200
+Connection ~ 4900 3200
+Text Label 5350 2300 0    50   ~ 0
+HGM
+Wire Wire Line
+	5350 2300 5800 2300
 $EndSCHEMATC
