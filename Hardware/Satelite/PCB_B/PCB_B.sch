@@ -985,7 +985,7 @@ F 0 "M1" H 5379 6993 50  0000 L CNN
 F 1 "Spacer" H 5379 6901 50  0000 L CNN
 F 2 "AXTEC:Empty_Footprint" H 5200 7150 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 5300 7250 50  0001 C CNN
-F 4 "R30-3011202" H 5379 6855 50  0001 L CNN "Manufacturer Part Number"
+F 4 "R30-3001202" H 5379 6855 50  0001 L CNN "Manufacturer Part Number"
 	1    5300 7000
 	1    0    0    -1  
 $EndComp
@@ -997,7 +997,7 @@ F 0 "M2" H 5879 6993 50  0000 L CNN
 F 1 "Spacer" H 5879 6901 50  0000 L CNN
 F 2 "AXTEC:Empty_Footprint" H 5700 7150 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 5800 7250 50  0001 C CNN
-F 4 "R30-3011202" H 5879 6855 50  0001 L CNN "Manufacturer Part Number"
+F 4 "R30-3001202" H 5879 6855 50  0001 L CNN "Manufacturer Part Number"
 	1    5800 7000
 	1    0    0    -1  
 $EndComp
@@ -1009,7 +1009,7 @@ F 0 "M3" H 6379 6993 50  0000 L CNN
 F 1 "Spacer" H 6379 6901 50  0000 L CNN
 F 2 "AXTEC:Empty_Footprint" H 6200 7150 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 6300 7250 50  0001 C CNN
-F 4 "R30-3011202" H 6379 6855 50  0001 L CNN "Manufacturer Part Number"
+F 4 "R30-3001202" H 6379 6855 50  0001 L CNN "Manufacturer Part Number"
 	1    6300 7000
 	1    0    0    -1  
 $EndComp
