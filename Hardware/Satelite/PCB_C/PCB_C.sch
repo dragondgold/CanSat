@@ -1026,7 +1026,7 @@ Text Label 10250 3650 2    50   ~ 0
 V_SENSE_3V3
 Text Label 10250 4050 2    50   ~ 0
 V_SENSE_5V
-Text Label 8100 2150 3    50   ~ 0
+Text Label 8100 2050 3    50   ~ 0
 I_SENSE_BATT
 Text Label 10200 3950 2    50   ~ 0
 ENABLE_5V
@@ -1038,11 +1038,11 @@ Text Label 8400 2150 3    50   ~ 0
 P1
 Text Label 6150 4550 0    50   ~ 0
 CHG
-Text Label 6500 3850 0    50   ~ 0
+Text Label 6500 3750 0    50   ~ 0
 SDO
 Text Label 6150 4350 0    50   ~ 0
 SDI
-Text Label 6500 3750 0    50   ~ 0
+Text Label 6500 3950 0    50   ~ 0
 SCLK
 Text Label 6500 4150 0    50   ~ 0
 CS
@@ -1569,31 +1569,13 @@ F 4 "451-00002" H 9250 6200 50  0001 C CNN "Manufacturer Part Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9650 3550 10250 3550
-Wire Wire Line
 	9650 3950 10250 3950
-Wire Wire Line
-	9650 4450 10250 4450
-Wire Wire Line
-	9650 4750 10250 4750
-Wire Wire Line
-	9650 5350 10250 5350
 Wire Wire Line
 	9650 3650 10250 3650
 Wire Wire Line
 	9650 3750 10250 3750
 Wire Wire Line
 	9650 4050 10250 4050
-Wire Wire Line
-	9650 4550 10250 4550
-Wire Wire Line
-	9650 5150 10250 5150
-Wire Wire Line
-	9650 4850 10250 4850
-Wire Wire Line
-	9650 5050 10250 5050
-Wire Wire Line
-	9650 5250 10250 5250
 $Comp
 L power:GND #PWR015
 U 1 1 5D0605B3
@@ -1661,7 +1643,7 @@ Wire Wire Line
 	9650 4250 10250 4250
 Wire Wire Line
 	9650 4150 10250 4150
-Text Label 7500 2300 1    50   ~ 0
+Text Label 7500 2150 3    50   ~ 0
 SDA
 Wire Wire Line
 	6800 4050 6600 4050
@@ -1727,7 +1709,7 @@ Text Label 6500 5050 0    50   ~ 0
 SWO
 Wire Wire Line
 	6800 5050 6500 5050
-Text Label 6500 3950 0    50   ~ 0
+Text Label 6500 3850 0    50   ~ 0
 nRST
 Wire Wire Line
 	6800 3850 6500 3850
@@ -1909,13 +1891,13 @@ Text Label 7150 7100 0    50   ~ 0
 MMISO
 Text Label 7150 7000 0    50   ~ 0
 MCS
-Text Label 7900 2350 1    50   ~ 0
+Text Label 7900 2150 3    50   ~ 0
 MCS
-Text Label 7600 2400 1    50   ~ 0
+Text Label 7600 2150 3    50   ~ 0
 MMISO
-Text Label 7400 2400 1    50   ~ 0
+Text Label 7400 2150 3    50   ~ 0
 MMOSI
-Text Label 7700 2400 1    50   ~ 0
+Text Label 7700 2150 3    50   ~ 0
 MCLK
 Wire Wire Line
 	7400 2600 7400 2150
@@ -2048,7 +2030,7 @@ GPIO2
 Text Label 6150 4950 0    50   ~ 0
 GPIO3
 Wire Wire Line
-	8100 2150 8100 2600
+	8100 2050 8100 2600
 Wire Wire Line
 	8200 2150 8200 2600
 Wire Wire Line
@@ -2301,13 +2283,7 @@ ENABLE_5V
 Text Label 15600 2600 2    50   ~ 0
 ENABLE_3V3
 Wire Wire Line
-	9650 5450 10250 5450
-Wire Wire Line
-	9650 5550 10250 5550
-Wire Wire Line
 	7900 2600 7900 2150
-Wire Wire Line
-	8300 2150 8300 2600
 Text Label 6500 3650 0    50   ~ 0
 SCL
 Text Label 4800 2850 1    50   ~ 0
@@ -2318,8 +2294,6 @@ Wire Wire Line
 	4800 2600 4800 2850
 Wire Wire Line
 	6800 3650 6500 3650
-Wire Wire Line
-	6800 3550 6500 3550
 Wire Wire Line
 	6150 3350 6150 3300
 Wire Wire Line
