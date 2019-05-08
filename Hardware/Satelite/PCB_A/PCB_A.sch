@@ -22,7 +22,6 @@ F 0 "J5" H 9680 5092 50  0000 L CNN
 F 1 "Servo Paracaídas" H 9680 5001 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9600 5050 50  0001 C CNN
 F 3 "~" H 9600 5050 50  0001 C CNN
-F 4 "61300311121" H 9600 5050 50  0001 C CNN "Manufacturer Part Number"
 	1    9600 5050
 	0    -1   -1   0   
 $EndComp
@@ -34,7 +33,6 @@ F 0 "J3" H 8230 5092 50  0000 L CNN
 F 1 "Servo Globo" H 8230 5001 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8150 5050 50  0001 C CNN
 F 3 "~" H 8150 5050 50  0001 C CNN
-F 4 "61300311121" H 8150 5050 50  0001 C CNN "Manufacturer Part Number"
 	1    8150 5050
 	0    -1   -1   0   
 $EndComp
