@@ -20,9 +20,9 @@ U 1 1 5B99984B
 P 1800 4100
 F 0 "J2" H 1800 4550 50  0000 C CNN
 F 1 "USB_B_Micro" H 1855 4476 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 1950 4050 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1950 4050 50  0001 C CNN
 F 3 "https://www.molex.com/webdocs/datasheets/pdf/en-us/1050170001_IO_CONNECTORS.pdf" H 1950 4050 50  0001 C CNN
-F 4 "105017-0001" H 1800 4100 50  0001 C CNN "Manufacturer Part Number"
+F 4 "47346-1001" H 1800 4100 50  0001 C CNN "Manufacturer Part Number"
 	1    1800 4100
 	1    0    0    -1  
 $EndComp
