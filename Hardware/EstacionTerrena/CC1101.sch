@@ -914,12 +914,6 @@ Wire Wire Line
 Wire Wire Line
 	5550 2100 5100 2100
 Wire Wire Line
-	5100 1850 5450 1850
-Wire Wire Line
-	5450 2000 5450 1850
-Wire Wire Line
-	5550 2000 5450 2000
-Wire Wire Line
 	5350 1450 5550 1450
 Wire Wire Line
 	5350 1600 5350 1450
@@ -1359,17 +1353,6 @@ RF_P
 Text Label 2800 1250 0    50   ~ 0
 RF_N
 $Comp
-L power:+3V3 #PWR033
-U 1 1 5CCF98DA
-P 5100 1850
-F 0 "#PWR033" H 5100 1700 50  0001 C CNN
-F 1 "+3V3" H 5115 2023 50  0000 C CNN
-F 2 "" H 5100 1850 50  0001 C CNN
-F 3 "" H 5100 1850 50  0001 C CNN
-	1    5100 1850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR049
 U 1 1 5CCFCB92
 P 1150 7050
@@ -1446,4 +1429,68 @@ F 3 "" H 1850 7050 50  0001 C CNN
 	1    1850 7050
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5CD4AF72
+P 4400 3450
+AR Path="/5B9A8077/5CD4AF72" Ref="#PWR016"  Part="1" 
+AR Path="/5BA17F9C/5CD4AF72" Ref="#PWR?"  Part="1" 
+F 0 "#PWR016" H 4400 3200 50  0001 C CNN
+F 1 "GND" H 4405 3277 50  0000 C CNN
+F 2 "" H 4400 3450 50  0001 C CNN
+F 3 "" H 4400 3450 50  0001 C CNN
+	1    4400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5CD6637D
+P 4400 2600
+AR Path="/5B9A8077/5CD6637D" Ref="R3"  Part="1" 
+AR Path="/5BA17F9C/5CD6637D" Ref="R?"  Part="1" 
+F 0 "R3" H 4470 2646 50  0000 L CNN
+F 1 "10K" H 4470 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4330 2600 50  0001 C CNN
+F 3 "~" H 4400 2600 50  0001 C CNN
+F 4 "RC0603JR-0710KL" H 4400 2600 50  0001 C CNN "Manufacturer Part Number"
+	1    4400 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2000 5100 2000
+Text Label 5100 2000 0    50   ~ 0
+HGM
+Text Label 4450 2800 0    50   ~ 0
+HGM
+$Comp
+L power:+3V3 #PWR015
+U 1 1 5CDA2E4F
+P 4400 2350
+F 0 "#PWR015" H 4400 2200 50  0001 C CNN
+F 1 "+3V3" H 4415 2523 50  0000 C CNN
+F 2 "" H 4400 2350 50  0001 C CNN
+F 3 "" H 4400 2350 50  0001 C CNN
+	1    4400 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2350 4400 2450
+$Comp
+L Device:Jumper JP1
+U 1 1 5CD5F03C
+P 4400 3100
+F 0 "JP1" V 4354 3227 50  0000 L CNN
+F 1 "Jumper" V 4445 3227 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4400 3100 50  0001 C CNN
+F 3 "~" H 4400 3100 50  0001 C CNN
+	1    4400 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 2750 4400 2800
+Wire Wire Line
+	4400 3400 4400 3450
+Wire Wire Line
+	4400 2800 4600 2800
+Connection ~ 4400 2800
 $EndSCHEMATC
