@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name AXTEC)(type KiCad)(uri ${KIPRJMOD}/../../Librerias-KICAD/AXTEC.pretty)(options "")(descr ""))
+)

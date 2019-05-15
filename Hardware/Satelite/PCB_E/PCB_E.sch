@@ -250,11 +250,11 @@ F 3 "https://www.mouser.com/datasheet/2/527/ssw_sm-1370305.pdf" H 10250 4800 50 
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	4150 750  4150 3750
+	4150 750  4150 4400
 Wire Notes Line
-	4150 3750 6450 3750
+	4150 4400 6450 4400
 Wire Notes Line
-	6450 3750 6450 750 
+	6450 4400 6450 750 
 Wire Notes Line
 	6450 750  4150 750 
 Text Notes 4350 1000 0    118  ~ 0
@@ -449,12 +449,12 @@ $EndComp
 $Comp
 L power:GND #PWR07
 U 1 1 5BC9E797
-P 5250 4850
-F 0 "#PWR07" H 5250 4600 50  0001 C CNN
-F 1 "GND" H 5254 4676 50  0000 C CNN
-F 2 "" H 5250 4850 50  0001 C CNN
-F 3 "" H 5250 4850 50  0001 C CNN
-	1    5250 4850
+P 5250 5400
+F 0 "#PWR07" H 5250 5150 50  0001 C CNN
+F 1 "GND" H 5254 5226 50  0000 C CNN
+F 2 "" H 5250 5400 50  0001 C CNN
+F 3 "" H 5250 5400 50  0001 C CNN
+	1    5250 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -504,36 +504,36 @@ IO6
 $Comp
 L PCB_E-rescue:MH_CanSat-AXTEC_IC MH1
 U 1 1 5BC69FBC
-P 5250 4650
-F 0 "MH1" H 5528 4765 50  0000 L CNN
-F 1 "MH_CanSat" H 5528 4674 50  0000 L CNN
-F 2 "AXTEC:MH_CanSat" H 5250 4650 50  0001 C CNN
-F 3 "" H 5250 4650 50  0001 C CNN
-	1    5250 4650
+P 5250 5200
+F 0 "MH1" H 5528 5315 50  0000 L CNN
+F 1 "MH_CanSat" H 5528 5224 50  0000 L CNN
+F 2 "AXTEC:MH_CanSat" H 5250 5200 50  0001 C CNN
+F 3 "" H 5250 5200 50  0001 C CNN
+	1    5250 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 4750 5100 4800
+	5100 5300 5100 5350
 Wire Wire Line
-	5100 4800 5250 4800
+	5100 5350 5250 5350
 Wire Wire Line
-	5400 4800 5400 4750
+	5400 5350 5400 5300
 Wire Wire Line
-	5250 4750 5250 4800
-Connection ~ 5250 4800
+	5250 5300 5250 5350
+Connection ~ 5250 5350
 Wire Wire Line
-	5250 4800 5400 4800
+	5250 5350 5400 5350
 Wire Wire Line
-	5250 4850 5250 4800
+	5250 5400 5250 5350
 Wire Notes Line
-	4150 3900 4150 5900
+	4150 4450 4150 6450
 Wire Notes Line
-	4150 5900 6450 5900
+	4150 6450 6450 6450
 Wire Notes Line
-	6450 5900 6450 3900
+	6450 6450 6450 4450
 Wire Notes Line
-	6450 3900 4150 3900
-Text Notes 4450 4150 0    118  ~ 0
+	6450 4450 4150 4450
+Text Notes 4450 4700 0    118  ~ 0
 Agujeros de montaje
 Wire Wire Line
 	8100 2950 7850 2950
@@ -570,37 +570,37 @@ Wire Wire Line
 $Comp
 L PCB_E-rescue:Spacer-AXTEC_IC M1
 U 1 1 5C332544
-P 4400 5450
-F 0 "M1" H 4479 5443 50  0000 L CNN
-F 1 "Spacer" H 4479 5351 50  0000 L CNN
-F 2 "AXTEC:Empty_Footprint" H 4300 5600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 4400 5700 50  0001 C CNN
-F 4 "R30-3011202" H 4479 5305 50  0001 L CNN "Manufacturer Part Number"
-	1    4400 5450
+P 4400 6000
+F 0 "M1" H 4479 5993 50  0000 L CNN
+F 1 "Spacer" H 4479 5901 50  0000 L CNN
+F 2 "AXTEC:Empty_Footprint" H 4300 6150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 4400 6250 50  0001 C CNN
+F 4 "R30-3011202" H 4479 5855 50  0001 L CNN "Manufacturer Part Number"
+	1    4400 6000
 	1    0    0    -1  
 $EndComp
 $Comp
 L PCB_E-rescue:Spacer-AXTEC_IC M2
 U 1 1 5C332635
-P 5250 5450
-F 0 "M2" H 5329 5443 50  0000 L CNN
-F 1 "Spacer" H 5329 5351 50  0000 L CNN
-F 2 "AXTEC:Empty_Footprint" H 5150 5600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 5250 5700 50  0001 C CNN
-F 4 "R30-3011202" H 5329 5305 50  0001 L CNN "Manufacturer Part Number"
-	1    5250 5450
+P 5250 6000
+F 0 "M2" H 5329 5993 50  0000 L CNN
+F 1 "Spacer" H 5329 5901 50  0000 L CNN
+F 2 "AXTEC:Empty_Footprint" H 5150 6150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 5250 6250 50  0001 C CNN
+F 4 "R30-3011202" H 5329 5855 50  0001 L CNN "Manufacturer Part Number"
+	1    5250 6000
 	1    0    0    -1  
 $EndComp
 $Comp
 L PCB_E-rescue:Spacer-AXTEC_IC M3
 U 1 1 5C332687
-P 6000 5450
-F 0 "M3" H 6079 5443 50  0000 L CNN
-F 1 "Spacer" H 6079 5351 50  0000 L CNN
-F 2 "AXTEC:Empty_Footprint" H 5900 5600 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 6000 5700 50  0001 C CNN
-F 4 "R30-3011202" H 6079 5305 50  0001 L CNN "Manufacturer Part Number"
-	1    6000 5450
+P 6000 6000
+F 0 "M3" H 6079 5993 50  0000 L CNN
+F 1 "Spacer" H 6079 5901 50  0000 L CNN
+F 2 "AXTEC:Empty_Footprint" H 5900 6150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/181/R30-301-1135805.pdf" H 6000 6250 50  0001 C CNN
+F 4 "R30-3011202" H 6079 5855 50  0001 L CNN "Manufacturer Part Number"
+	1    6000 6000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -690,4 +690,48 @@ Text Label 9650 4000 0    50   ~ 0
 IO4
 Text Label 9650 4100 0    50   ~ 0
 IO5
+$Comp
+L Connector_Generic:Conn_01x03 J9
+U 1 1 5CDCF65D
+P 4400 4100
+F 0 "J9" H 4318 4417 50  0000 C CNN
+F 1 "Conn_01x03" H 4318 4326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4400 4100 50  0001 C CNN
+F 3 "~" H 4400 4100 50  0001 C CNN
+	1    4400 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J10
+U 1 1 5CDD16C8
+P 4950 4100
+F 0 "J10" H 4868 4417 50  0000 C CNN
+F 1 "Conn_01x03" H 4868 4326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4950 4100 50  0001 C CNN
+F 3 "~" H 4950 4100 50  0001 C CNN
+	1    4950 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J11
+U 1 1 5CDD1C29
+P 5500 4100
+F 0 "J11" H 5418 4417 50  0000 C CNN
+F 1 "Conn_01x03" H 5418 4326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5500 4100 50  0001 C CNN
+F 3 "~" H 5500 4100 50  0001 C CNN
+	1    5500 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J13
+U 1 1 5CDD2034
+P 6050 4100
+F 0 "J13" H 5968 4417 50  0000 C CNN
+F 1 "Conn_01x03" H 5968 4326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6050 4100 50  0001 C CNN
+F 3 "~" H 6050 4100 50  0001 C CNN
+	1    6050 4100
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
