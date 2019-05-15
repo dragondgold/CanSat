@@ -482,8 +482,6 @@ Connection ~ 2500 3900
 Wire Wire Line
 	2500 3900 2900 3900
 Connection ~ 2150 3900
-Text Label 5050 6250 0    50   ~ 0
-D7
 Text Label 3150 1700 0    50   ~ 0
 D2
 Text Label 3150 1800 0    50   ~ 0
@@ -802,37 +800,6 @@ Wire Notes Line
 Wire Wire Line
 	7050 1500 7050 2600
 Connection ~ 8850 1500
-Wire Wire Line
-	5050 6250 5050 6300
-$Comp
-L Device:LED D?
-U 1 1 5BC9091B
-P 5050 6800
-AR Path="/5B9997DB/5BC9091B" Ref="D?"  Part="1" 
-AR Path="/5BC9091B" Ref="D1"  Part="1" 
-F 0 "D1" V 5088 6683 50  0000 R CNN
-F 1 "Verde" V 4997 6683 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 5050 6800 50  0001 C CNN
-F 3 "~" H 5050 6800 50  0001 C CNN
-F 4 "150060VS75000" V 5050 6800 50  0001 C CNN "Manufacturer Part Number"
-	1    5050 6800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5050 6650 5050 6600
-$Comp
-L power:GND #PWR013
-U 1 1 5BC96C3C
-P 5050 7050
-F 0 "#PWR013" H 5050 6800 50  0001 C CNN
-F 1 "GND" H 5054 6876 50  0000 C CNN
-F 2 "" H 5050 7050 50  0001 C CNN
-F 3 "" H 5050 7050 50  0001 C CNN
-	1    5050 7050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5050 7050 5050 6950
 $Comp
 L Connector_Generic:Conn_01x03 J1
 U 1 1 5BC51AA7
@@ -977,20 +944,6 @@ F 3 "~" H 3950 6200 50  0001 C CNN
 F 4 "EMK107B7104KAHT" H 3950 6200 50  0001 C CNN "Manufacturer Part Number"
 	1    3950 6200
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5C2EDFB7
-P 5050 6450
-AR Path="/5B9997DB/5C2EDFB7" Ref="R?"  Part="1" 
-AR Path="/5C2EDFB7" Ref="R4"  Part="1" 
-F 0 "R4" H 5120 6496 50  0000 L CNN
-F 1 "220" H 5120 6405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4980 6450 50  0001 C CNN
-F 3 "~" H 5050 6450 50  0001 C CNN
-F 4 "RC0603JR-13220RL" H 5050 6450 50  0001 C CNN "Manufacturer Part Number"
-	1    5050 6450
-	1    0    0    -1  
 $EndComp
 $Comp
 L AXTEC_IC:BOM_Jumper JP1
@@ -1155,7 +1108,7 @@ Wire Wire Line
 Text Label 3150 1600 0    50   ~ 0
 TXD
 Text Label 3150 1500 0    50   ~ 0
-TX_ESP32
+TX_SUP
 Text Label 1200 5400 2    50   ~ 0
 RXD
 Text Label 1200 5500 2    50   ~ 0
@@ -1185,8 +1138,6 @@ Wire Wire Line
 Connection ~ 3850 6900
 Text Label 4250 6700 0    50   ~ 0
 TX_USB
-Text Label 4250 6900 0    50   ~ 0
-TX_ESP32
 Wire Wire Line
 	4200 6900 4650 6900
 Wire Wire Line
@@ -1316,4 +1267,90 @@ F 4 "LS4148-GS08" H 7550 1250 50  0001 C CNN "Manufacturer Part Number"
 	1    7550 1250
 	0    1    1    0   
 $EndComp
+$Comp
+L Device:R R?
+U 1 1 5CDE5E1F
+P 4900 6500
+AR Path="/5BA17F9C/5CDE5E1F" Ref="R?"  Part="1" 
+AR Path="/5BA1A7F9/5CDE5E1F" Ref="R?"  Part="1" 
+AR Path="/5BA1A77A/5CDE5E1F" Ref="R?"  Part="1" 
+AR Path="/5CDE5E1F" Ref="R3"  Part="1" 
+F 0 "R3" V 5000 6500 50  0000 L CNN
+F 1 "1k" V 4800 6500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4830 6500 50  0001 C CNN
+F 3 "~" H 4900 6500 50  0001 C CNN
+F 4 "RC0603JR-071KL" V 4900 6500 50  0001 C CNN "Manufacturer Part Number"
+	1    4900 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 5CDE5E2B
+P 4900 7350
+F 0 "#PWR025" H 4900 7100 50  0001 C CNN
+F 1 "GND" H 4905 7177 50  0000 C CNN
+F 2 "" H 4900 7350 50  0001 C CNN
+F 3 "" H 4900 7350 50  0001 C CNN
+	1    4900 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC817 Q1
+U 1 1 5CDE5E32
+P 5000 7150
+F 0 "Q1" H 5191 7196 50  0000 L CNN
+F 1 "BC817" H 5191 7104 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5200 7075 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 5000 7150 50  0001 L CNN
+F 4 "BC817-16LT1G" H 5000 7150 50  0001 C CNN "Manufacturer Part Number"
+	1    5000 7150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 7150 5750 7150
+$Comp
+L Device:R R?
+U 1 1 5CDE5E3B
+P 5350 7150
+AR Path="/5BA17F9C/5CDE5E3B" Ref="R?"  Part="1" 
+AR Path="/5BA1A7F9/5CDE5E3B" Ref="R?"  Part="1" 
+AR Path="/5BA1A77A/5CDE5E3B" Ref="R?"  Part="1" 
+AR Path="/5CDE5E3B" Ref="R4"  Part="1" 
+F 0 "R4" V 5450 7150 50  0000 L CNN
+F 1 "1k" V 5250 7150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5280 7150 50  0001 C CNN
+F 3 "~" H 5350 7150 50  0001 C CNN
+F 4 "RC0603JR-071KL" V 5350 7150 50  0001 C CNN "Manufacturer Part Number"
+	1    5350 7150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5CDE5E42
+P 4900 6800
+F 0 "D1" V 4845 6878 50  0000 L CNN
+F 1 "Rojo" V 4936 6878 50  0000 L CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4900 6800 50  0001 C CNN
+F 3 "~" H 4900 6800 50  0001 C CNN
+F 4 "150060RS75000" V 4900 6800 50  0001 C CNN "Manufacturer Part Number"
+	1    4900 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 5CDED934
+P 4900 6300
+F 0 "#PWR013" H 4900 6150 50  0001 C CNN
+F 1 "+5V" H 4914 6475 50  0000 C CNN
+F 2 "" H 4900 6300 50  0001 C CNN
+F 3 "" H 4900 6300 50  0001 C CNN
+	1    4900 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6300 4900 6350
+Text Label 5600 7150 0    50   ~ 0
+SCK
+Text Label 4250 6900 0    50   ~ 0
+TX_SUP
 $EndSCHEMATC
