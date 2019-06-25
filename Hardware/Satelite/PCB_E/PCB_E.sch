@@ -655,6 +655,8 @@ F 0 "J12" H 9143 2965 50  0000 C CNN
 F 1 "Conector_Expansion_CanSat" H 9143 2874 50  0000 C CNN
 F 2 "AXTEC:Conector_Expansion_CanSat" H 8750 2600 50  0001 C CNN
 F 3 "" H 8750 2600 50  0001 C CNN
+F 4 "SSQ-106-03-T-S" H 8750 2100 50  0001 C CNN "Manufacturer Part Number"
+F 5 "4" H 8750 2100 50  0001 C CNN "Quantity"
 	1    8750 2100
 	1    0    0    -1  
 $EndComp
