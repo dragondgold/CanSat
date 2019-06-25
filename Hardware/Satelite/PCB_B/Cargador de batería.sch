@@ -268,7 +268,7 @@ F 3 "http://www.ti.com/lit/gpn/bq21040" H 7300 3550 50  0001 L CNN
 F 4 "0.8A Single Input Single-Cell Li-Ion and Li-Pol Battery Charger" H 7300 3450 50  0001 L CNN "Description"
 F 5 "1.45" H 7300 3350 50  0001 L CNN "Height"
 F 6 "Texas Instruments" H 7300 3250 50  0001 L CNN "Manufacturer_Name"
-F 7 "BQ21040DBVR" H 7300 3150 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "BQ21040DBVR" H 7300 3150 50  0001 L CNN "Manufacturer Part Number"
 F 8 "595-BQ21040DBVR" H 7300 3050 50  0001 L CNN "Mouser Part Number"
 F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-BQ21040DBVR" H 7300 2950 50  0001 L CNN "Mouser Price/Stock"
 F 10 "" H 7300 2850 50  0001 L CNN "RS Part Number"
