@@ -3,9 +3,6 @@
     <div class="row">
       <div class="col-md-12">
         <vuestic-widget class="no-h-padding" :headerText="$t('cansat.mission.dashboard.title')">
-          <Highcharts ref="highcharts" :options="options"/>
-          <a href @click.prevent="addSample">Agregar muestra</a>
-
           <div v-if="(isProjectCreated && isTestOk) || isImported">
             <div class="form-wizard-tab-content">
               <controls-widget></controls-widget>
