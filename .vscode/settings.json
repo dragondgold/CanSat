@@ -1,2 +1,8 @@
 {
+    "files.associations": {
+        "stdio.h": "c",
+        "sensor_manager.h": "c",
+        "minmea.h": "c",
+        "sup_cmd_manager.h": "c"
+    }
 }
