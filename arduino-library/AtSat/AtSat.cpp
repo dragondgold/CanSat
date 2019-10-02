@@ -3,9 +3,13 @@
 #include <stdint.h>
 #include <string.h>
 
-AtSat::AtSat(Stream &port)
+AtSat::AtSat(bool debugMode)
 {
-    _port = port;
+    _debug = debugMode;
+}
+
+void AtSat::init(void) {
+    Serial.begin(9600);
 }
 
 bool AtSat::buildPacket(atsat_encoded_packet_t* packet, uint8_t data[], size_t length) {
@@ -86,12 +90,30 @@ bool AtSat::buildPacket(atsat_encoded_packet_t* packet, uint8_t data[], size_t l
 }
 
 void AtSat::sendPacket(atsat_encoded_packet_t *packet) {
-    _port.write(packet->raw, packet->length);
+    Serial.write(packet->raw, packet->length);
 }
 
-bool AtSat::sendSensor(uint8_t sensorId, uint32_t data) {
-    uint8_t bytes[] = { (uint8_t) (data >> 24), (uint8_t) (data >> 16), (uint8_t) (data >> 8), (uint8_t) data };
-    return sendSensor(sensorId, bytes, sizeof(bytes));
+bool AtSat::sendSensor(uint8_t sensorId, float data) {
+    if(!_debug) {
+        uint8_t bytes[4];
+        uint8_t *ptr = (uint8_t *) &data;
+        
+        bytes[0] = *ptr++;
+        bytes[1] = *ptr++;
+        bytes[2] = *ptr++;
+        bytes[3] = *ptr++;
+        
+        return sendSensor(sensorId, bytes, sizeof(bytes));
+    }
+    else {
+        Serial.print("Envio de sensor '");
+        Serial.print(sensorId);
+        Serial.print("' con valor '");
+        Serial.print(data);
+        Serial.println("'");
+
+        return true;
+    }
 }
 
 bool AtSat::sendSensor(uint8_t sensorId, uint8_t data[], size_t size) {

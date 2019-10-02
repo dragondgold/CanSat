@@ -23,16 +23,18 @@ private:
 
     uint8_t tempBuffer[MAX_DATA_LENGTH];
 
-    Stream &_port;
-
-public:
-    AtSat(Stream &port);
+    bool _debug;
 
     bool buildPacket(atsat_encoded_packet_t *packet, uint8_t data[], size_t length);
     void sendPacket(atsat_encoded_packet_t *packet);
-
-    bool sendSensor(uint8_t sensorId, uint32_t data);
     bool sendSensor(uint8_t sensorId, uint8_t data[], size_t size);
+
+public:
+
+    AtSat(bool debugMode);
+
+    void init(void);
+    bool sendSensor(uint8_t sensorId, float data);
 };
 
 #endif
