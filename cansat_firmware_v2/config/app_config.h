@@ -2,7 +2,7 @@
 #define __APP_CONFIG_H__
 
 #define MANUFACTURER_NAME               "AXTEC"
-#define MODEL_NUM                       "BEE-COUNTER-V2"
+#define MODEL_NUM                       "CANSAT"
 #define SERIAL_NUMBER                   "1"
 #define HW_VERSION                      "1.0.0"
 #define FW_VERSION                      "1.0.0"

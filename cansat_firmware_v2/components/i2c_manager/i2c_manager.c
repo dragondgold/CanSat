@@ -5,7 +5,6 @@
 #include "FreeRTOS.h"
 #include "semphr.h"
 #include "task.h"
-#include "sdk_config.h"
 #include "nrf_twi_mngr.h"
 #include "nrf_gpio.h"
 

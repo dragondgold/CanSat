@@ -337,11 +337,17 @@ int main(void)
 
     if(!i2c_manager_init())
     {
-        NRF_LOG_ERROR("Failed initializing aux_ps_manager");
+        NRF_LOG_ERROR("Failed initializing i2c_manager");
         NRF_LOG_FLUSH();
         while(true);
     }
-    //err += spi_manager_init();
+
+    if(!spi_manager_init())
+    {
+        NRF_LOG_ERROR("Failed initializing spi_manager");
+        NRF_LOG_FLUSH();
+        while(true);
+    }
     //err += sensor_manager_init();
     //err += battery_manager_init();
     //err += servo_manager_init();
