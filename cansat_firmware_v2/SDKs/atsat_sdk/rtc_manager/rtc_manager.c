@@ -101,10 +101,12 @@ static void events_thread(void * pvParameters)
     }
 }
 
-void rtc_manager_init(void)
+bool rtc_manager_init(void)
 {
     nrfx_err_t err;
     rtc_disabled = true;
+
+    NRF_LOG_INFO("Initializing");
 
     // Create events queue
     events_queue = xQueueCreateStatic(RTC_MANAGER_MAX_EVENTS,
@@ -125,18 +127,23 @@ void rtc_manager_init(void)
                       RTC_MANAGER_TASK_PRIORITY,
                       xStack,
                       &xTaskBuffer);
-    APP_ERROR_CHECK_BOOL(xHandle != NULL);
+    if(xHandle == NULL) {
+        return false;
+    }
 
     // Initialize RTC peripheral
     nrf_drv_rtc_config_t config = NRF_DRV_RTC_DEFAULT_CONFIG;
     config.reliable = true;
     err = nrf_drv_rtc_init(&m_rtc, &config, rtc_handler);
-    APP_ERROR_CHECK_BOOL(err == NRFX_SUCCESS);
+    if(err != NRFX_SUCCESS) {
+        return false;
+    }
 
     // Disable RTC to save power
     nrf_drv_rtc_disable(&m_rtc);
 
-    NRF_LOG_INFO("RTC manager started");
+    NRF_LOG_INFO("Initialized");
+    return true;
 }
 
 bool rtc_manager_request_event(rtc_event_t * event, TickType_t timeout)

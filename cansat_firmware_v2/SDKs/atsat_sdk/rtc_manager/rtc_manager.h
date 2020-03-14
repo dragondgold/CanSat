@@ -21,7 +21,7 @@ struct rtc_event_t
     bool is_ppi;
 };
 
-void rtc_manager_init(void);
+bool rtc_manager_init(void);
 
 /**
  * @brief Function for requesting a new event to the RTC peripheral.

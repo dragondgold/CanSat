@@ -7,6 +7,6 @@
 #define TIME_MANAGER_TASK_PRIORITY              tskIDLE_PRIORITY + 3
 #define TIME_MANAGER_INTERVAL_MS                1000
 
-void time_manager_init(void);
+bool time_manager_init(void);
 
 #endif

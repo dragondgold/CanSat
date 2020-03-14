@@ -318,8 +318,13 @@ int main(void)
     // power_management_init();
 
     // ble_manager_init();
-    // time_manager_init();
     // rtc_manager_init();
+    if(!time_manager_init())
+    {
+        NRF_LOG_ERROR("Failed initializing time_manager");
+        NRF_LOG_FLUSH();
+        while(true);
+    }
 
     if(!led_manager_init())
     {
@@ -348,8 +353,14 @@ int main(void)
         NRF_LOG_FLUSH();
         while(true);
     }
+
+    if(!battery_manager_init())
+    {
+        NRF_LOG_ERROR("Failed initializing battery_manager");
+        NRF_LOG_FLUSH();
+        while(true);
+    }
     //err += sensor_manager_init();
-    //err += battery_manager_init();
     //err += servo_manager_init();
     //err += com_manager_init();
     //err += power_monitor_init();

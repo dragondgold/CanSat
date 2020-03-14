@@ -31,15 +31,13 @@ static void monitor_thread(void * pvParameters)
         // Add seconds to the calendar to keep time in sync
         calendar_add_seconds(TIME_MANAGER_INTERVAL_MS / 1000);
 
-        // Update timestamp in BLE service
-        ble_manager_update_time(calendar_get_timestamp());
-
         vTaskDelayUntil(&last_wake_time, pdMS_TO_TICKS(TIME_MANAGER_INTERVAL_MS));
     }
 }
 
-void time_manager_init(void)
+bool time_manager_init(void)
 {
+    NRF_LOG_INFO("Initializing");
     calendar_init();
     xHandle = xTaskCreateStatic(
                       monitor_thread,
@@ -49,8 +47,10 @@ void time_manager_init(void)
                       TIME_MANAGER_TASK_PRIORITY,
                       xStack,
                       &xTaskBuffer);
-    APP_ERROR_CHECK_BOOL(xHandle != NULL);
+    if(xHandle == NULL) {
+        return false;
+    }
     
-    NRF_LOG_INFO("Time manager started");
-    NRF_LOG_FLUSH();
+    NRF_LOG_INFO("Initialized");
+    return true;
 }
