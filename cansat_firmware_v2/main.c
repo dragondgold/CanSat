@@ -39,7 +39,6 @@
 #include "timers.h"
 #include "semphr.h"
 
-#include "system_monitor.h"
 #include "time_manager.h"
 #include "rtc_manager.h"
 #include "led_manager.h"
